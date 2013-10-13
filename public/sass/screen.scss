@@ -14,7 +14,7 @@ $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", Times New Roman, Times, Serif;
   width: 100%;
   max-width: 1200px;
   min-width: 320px;
-  padding: 0 13px;
+  padding: 0 20px;
   position: relative;
 }
 
@@ -39,11 +39,12 @@ $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", Times New Roman, Times, Serif;
 
 .site-nav {
   display: inline-block;
-  position: relative;
-  float: right;
+  position: absolute;
+  // float: right;
   font-family: $sansSerif;
   font-weight: bold;
-  top: 59px;
+  right: 20px;
+  bottom: -1px;
   @include responsiveType(16);
 
   li {
@@ -53,7 +54,12 @@ $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", Times New Roman, Times, Serif;
     a {
       color: $dkGrey;
       display: block;
-      padding: 10px 0 23px 0
+      padding: 10px 0 23px 0;
+      border-bottom: 1px solid $ltGrey;
+
+      &:hover {
+        border-bottom: 1px solid $blue;
+      }
     }
 
     .current {
@@ -61,4 +67,19 @@ $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", Times New Roman, Times, Serif;
       border-bottom: 1px solid $blue;
     }
   }
+}
+
+.home--featured-content {
+  border-bottom: 1px solid $ltGrey;
+
+  .featured-content--container {
+    width: 100%;
+    max-width: 780px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+.home--featured-content:last-child {
+  border-bottom: none;
 }

@@ -9,6 +9,7 @@ gem 'will_paginate'
 gem 'haml'
 gem 'unicorn'
 gem 'warden'
+gem 'redcarpet' # markdown for haml
 
 group :production do
   gem 'pg'
