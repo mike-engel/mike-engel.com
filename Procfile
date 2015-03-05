@@ -1,1 +1,0 @@
-web: unicorn -p 3001 -E development config.ru
