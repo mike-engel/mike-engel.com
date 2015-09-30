@@ -1,0 +1,11 @@
+{
+  "partials": "./partials",
+  "templates": "./templates",
+  "assets": "./assets",
+  "content": "./content",
+  "build": "./public",
+  "contentTemplates": {
+    "page": "page/*",
+    "caseStudy": "caseStudies/*"
+  }
+}
