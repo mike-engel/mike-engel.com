@@ -54,7 +54,8 @@ h3 {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   max-width: 25em;
 }
 
@@ -79,6 +80,11 @@ h3,
   .rem-type(27);
 }
 
+h4,
+.h4 {
+  .rem-type(18);
+}
+
 dt,
 dd {
   margin-left: 0;
@@ -93,10 +99,27 @@ dt {
   font-weight: 700;
 }
 
+.text-small,
+.text-tiny {
+  color: @grey;
+}
+
 .text-small {
+  .rem-type(16)
+}
+
+.text-tiny {
   .rem-type(12);
 }
 
 .text-green {
   color: @green;
+
+  @media (min-width: @bpLarge) {
+    a&:hover,
+    a&:active {
+      color: lighten(@green, 15%);
+      border-color: lighten(@green, 15%);
+    }
+  }
 }

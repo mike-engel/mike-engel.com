@@ -1,0 +1,62 @@
+.resume-header {
+  padding-top: 1px;
+
+  .back-button {
+    margin: 1em 0;
+  }
+
+  .logo,
+  .resume-meta {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.resume-meta {
+  li:nth-child(n+1) {
+    .rem-type(14);
+  }
+}
+
+.resume-summary {
+  margin: 1em 0 0.5em 0;
+}
+
+.desktop-column {
+  @media print, (min-width: @bpLarge) {
+    display: inline-block;
+    vertical-align: top;
+
+    &:first-of-type {
+      width: calc(~"66.6666666666% - 2.5em");
+      margin-right: 2.5em;
+    }
+
+    &:last-child {
+      width: 33.3333333333%;
+      margin-left: -0.3em;
+    }
+  }
+
+  .h3 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.resume-experience,
+.resume-education {
+  li + li {
+    margin-top: 2em;
+  }
+
+  .h4 {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+  }
+
+  p {
+    margin: 0;
+    // margin: 0.3em 0 0 0;
+  }
+}
