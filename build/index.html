@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.00001,minimum-scale=1.00001,maximum-scale=1.00001,user-scalable=no">
-  <meta name="description" content="Mike Engel is a designer/developer">
+  <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="Mike Engel is a designer &amp; developer creating pleasant, user driven experiences accessible by everyone and their devices.">
 
   <title>Mike Engel</title>
 
@@ -20,21 +20,28 @@
     <ul>
       <li><a href="#projects">projects</a></li>
       <li><a href="#contact">contact</a></li>
+      <li><a href="resume.html">resume</a></li>
+      <li class="employment-status"><a href="#contact" class="text-green">Available for full time work</a></li>
     </ul>
   </nav>
 </header>
 
   <div class="site-constraint">
-    <h1 class="page-intro">I&rsquo;m a designer &amp; developer creating pleasant, user driven experiences accessible by everyone and their devices.</h1>
+    <p class="hidden h3 text-green thanks-message">Thanks for your message&mdash;It&rsquo;s probably already in my inbox. I&rsquo;ll get back to you soon.</p>
+<h1 class="page-intro">I&rsquo;m a designer &amp; developer creating pleasant, user driven experiences accessible by everyone and their devices.</h1>
 <h2 class="h3" id="projects">Recent projects</h2>
 <dl class="projects">
+  <span>
+    <dt>Geolert</dt>
+    <dd>An upcoming iOS app to alert you when you&rsquo;re close to that place you always miss.</dd>
+  </span>
   <span>
     <dt><a href="https://datuhealth.github.io/stranger">Stranger</a></dt>
     <dd>A command line tool for catching pesky CSS regressions before they go live.</dd>
   </span>
   <span>
     <dt><a href="https://datuhealth.github.io/isotip">Isotip</a></dt>
-    <dd>Responsive tooltips written in pure javascript.</dd>
+    <dd>Intellegent &amp; responsive tooltips written in pure javascript.</dd>
   </span>
   <span>
     <dt><a href="https://datuhealth.github.io/floating-label">FloatingLabel.js</a></dt>
@@ -44,9 +51,13 @@
     <dt><a href="https://github.com/mike-engel/bkmrkd">bkmrkd</a></dt>
     <dd>Simple self-hosted bookmarking for your travels across the web.</dd>
   </span>
+  <span>
+    <dt><a href="https://github.com/datuhealth/ampersand-expanding-textarea-view">Ampersand expanding textarea</a></dt>
+    <dd>A simple expanding textarea view for your <a href="https://ampersandjs.com">ampersand.js</a> project.</dd>
+  </span>
 </dl>
 <h2 class="h3" id="contact">Contact</h2>
-<form class="form" action="//formspree.io/you@email.com" method="POST" role="form">
+<form class="form contact-form" action="//formspree.io/mike@mike-engel.com" method="POST" role="form">
   <fieldset>
     <input type="hidden" name="_next" aria-hidden="true" value="//mike-engel.com/?thanks=true">
     <input type="hidden" name="_gotcha" aria-hidden="true">
@@ -62,9 +73,9 @@
     </div>
     <div>
       <label for="body">Let loose</label>
-      <textarea id="body" name="_body" placeholder="Let loose">
-    </textarea></div>
-    <button type="submit">Send</button>
+      <textarea id="body" name="body" placeholder="Let loose"></textarea>
+    </div>
+    <button class="btn" type="submit">send</button>
   </fieldset>
 </form>
   </div>
@@ -73,5 +84,6 @@
   </footer>
   <script src="https://use.typekit.net/uma3wew.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="/lib/js/main.js"></script>
 </body>
 </html>
