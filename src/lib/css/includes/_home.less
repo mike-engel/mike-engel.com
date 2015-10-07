@@ -4,7 +4,7 @@
 
   @media (min-width: @bpMedium) {
     .h1;
-    margin: 1.5em 0;
+    margin: 1.3em 0;
   }
 }
 
@@ -18,9 +18,22 @@
     margin-bottom: 1.5em;
     vertical-align: top;
 
+    @media (min-width: @bpMedium) {
+      margin-right: 2em;
+      width: calc(~'50% - 2em');
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
     @media (min-width: @bpLarge) {
       margin-right: 2em;
-      width: calc(33.3333333333% - 2em);
+      width: calc(~'33.3333333333% - 2em');
+
+      &:nth-child(2n) {
+        margin-right: 2em;
+      }
 
       &:nth-child(3n) {
         margin-right: 0;
@@ -37,6 +50,11 @@
 
   &.hiding {
     opacity: 0.0;
+  }
+
+  &.hidden {
+    margin: 0;
+    padding: 0;
   }
 }
 
