@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "The website for mike-engel.com",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "harp --server ./src;watchify ./src/lib/js/_bundle.js -o ./src/lib/js/main.js",
+    "compile": "harp compile ./src ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike-engel/mike-engel.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mike-engel/mike-engel.com/issues"
+  },
+  "homepage": "https://github.com/mike-engel/mike-engel.com#readme",
+  "devDependencies": {
+    "floating-label": "^1.0.0",
+    "watchify": "^3.4.0"
+  }
+}

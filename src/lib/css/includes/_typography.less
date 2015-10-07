@@ -1,0 +1,102 @@
+@sansStack: "adelle-sans", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+@serifStack: "freight-display-pro", Georgia, "Times New Roman", Times, Serif;
+@monoStack: Input, "Source Sans Pro", Monaco, Bitstream Vera, Monospace;
+
+html,
+body {
+  font: normal 400 16px/1.4 @sansStack;
+  color: @black;
+
+  @media (min-width: @bpLarge) {
+    font-size: 18px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: @blue;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color @transitionTime, border-color @transitionTime;
+
+  @media (min-width: @bpLarge) {
+    &:not(.hidden-link):hover,
+    &:not(.hidden-link):active {
+      color: lighten(@blue, 15%);
+      border-color: lighten(@blue, 15%);
+    }
+  }
+}
+
+h1,
+h2,
+h3 {
+  // font-family: @serifStack;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h2,
+.h3 {
+  margin-top: 1.5em;
+  padding-top: 0.5em;
+
+  @media (min-width: @bpMedium) {
+    margin-top: 3em;
+  }
+}
+
+h1,
+h2,
+h3 {
+  max-width: 25em;
+}
+
+p {
+  max-width: 40em;
+}
+
+// Perfect fifth | 1.5
+// http://www.modularscale.com/?18&px&1.5&web&text
+h1,
+.h1 {
+  .rem-type(60.75);
+}
+
+h2,
+.h2 {
+  .rem-type(40.5);
+}
+
+h3,
+.h3 {
+  .rem-type(27);
+}
+
+dt,
+dd {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+dd + dt {
+  margin-top: 1em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+.text-small {
+  .rem-type(12);
+}
+
+.text-green {
+  color: @green;
+}

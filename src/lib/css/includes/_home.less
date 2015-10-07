@@ -1,0 +1,45 @@
+.page-intro {
+  .h2;
+  margin: 1em 0;
+
+  @media (min-width: @bpMedium) {
+    .h1;
+    margin: 1.5em 0;
+  }
+}
+
+.projects {
+  .rem-type(0);
+
+  span {
+    .rem-type(18);
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5em;
+    vertical-align: top;
+
+    @media (min-width: @bpLarge) {
+      margin-right: 2em;
+      width: calc(33.3333333333% - 2em);
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.thanks-message {
+  margin-top: 1em;
+  height: 0;
+  overflow: hidden;
+  transition: opacity @transitionTime, height @transitionTime;
+
+  &.hiding {
+    opacity: 0.0;
+  }
+}
+
+.contact-form {
+  max-width: 40em;
+}
