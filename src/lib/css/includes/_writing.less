@@ -1,0 +1,28 @@
+.writing {
+  h2,
+  h3,
+  h4 {
+    margin-top: 0.7em;
+
+    @media (min-width: @bpMedium) {
+      margin-top: 1em;
+    }
+  }
+
+  p {
+    .rem-type(21);
+    line-height: 1.6;
+  }
+}
+
+pre {
+  .rem-type(14);
+  border-radius: 3px;
+}
+
+code {
+  .rem-type(18);
+  padding: 3px;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+}

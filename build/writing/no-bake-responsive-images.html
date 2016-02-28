@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" manifest="/auto.appcache">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="Mike Engel is a designer &amp; developer creating pleasant, user driven experiences accessible by everyone and their devices.">
+
+  <title>No-bake responsive images</title>
+
+  <link href="/lib/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <nav class="main-nav site-constraint">
+    <a class="hidden-link" href="/">
+      <svg class="logo" width="46px" height="50px" viewBox="0 0 46 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M0,9.26966292 L0,50 L12,44.9438202 L12,0 L0,9.26966292 Z M46,9.26966292 L46,50 L34,44.9438202 L34,0 L46,9.26966292 Z M12,0 L12,19.1964286 L23,33.59375 L23,14.9619223 L12,0 Z M34,0 L34,19.1964286 L23,33.59375 L23,14.9619223 L34,0 Z"></path>
+      </svg>
+    </a>
+    <ul>
+      <li><a href="/#projects">projects</a></li>
+      <li><a href="/#contact">contact</a></li>
+      <li><a href="/writing">writing</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div class="site-constraint writing">
+    <h1>No-bake responsive images</h1><p>So you want to use images on your site. You’re also concerned about performance and bandwidth. You’ve heard about this new thing called “responsive images”. They sound pretty great . You can use different sized images for different sized screens. You can even show one image on mobile, and another on desktop. Then it dawns on you. You have 20 photos on your site. You have four breakpoints in your CSS. That could be up to 80 photos you have to manage. Fret not. We’re going to use the internet.</p>
+<h2>A preamble</h2><p>So, you’re reading this and maybe you haven’t used responsive images before. Maybe you’ve heard of responsive web design, but not responsive images. Let me briefly explain what they are and why they exist.</p>
+<p>Since the dawn of the <code>&lt;img&gt;</code> tag, images have become really easy to add to a webpage. That comes at a cost though. As we got into the age of 27&quot; monitors, retina screens, smartphones, and now 5K displays, we’ve found ourselves delivering megabytes of data to all screens on all connections. A group of people knew it could be better and formed the <a href="http://ricg.io">Responsive Issues Community Group</a> to solve this problem (and more like it as time goes on). Out comes <strong>srcset</strong>, <strong>sizes</strong>, and <strong>picture</strong>. This is supposed to be a brief tour, so instead I’m going to point you to Eric Portis’ excellent post, <a href="http://ericportis.com/posts/2014/srcset-sizes/">Srcset &amp; Sizes</a>. You should also read the <a href="https://scottjehl.github.com/picturefill">Picturefill demo site</a>, which contains a bunch of examples on srcset, sizes, and picture.</p>
+<p>If you want a single image’s content on all screen sizes, but want to serve the minimum number of pixels needed for the screen, the markup looks a little like this:</p>
+<pre><code class="language-html">&lt;img src=&quot;fallback.jpg&quot;
+  srcset=&quot;small.jpg 320w,
+    medium.jpg 768w,
+    large.jpg 1024w,
+    superHuge.jpg 5000w&quot;
+  sizes=&quot;(min-width: 1024px) 50vw, 100vw&quot;&gt;
+</code></pre>
+<p>Want to show one image optimized for mobile, and another for desktop? Picture’s got you covered.</p>
+<pre><code class="language-html">&lt;picture&gt;
+  &lt;source srcset=&quot;desktop-1024.jpg 1024w, desktop-5000.jpg 5000w&quot; media=&quot;(min-width: 1024px)&gt;
+  &lt;source srcset=&quot;mobile-320.jpg 320w, mobile-768.jpg 768w&quot; media=&quot;(min-width: 320px)&gt;
+  &lt;img src=&quot;fallback.jpg&quot;&gt;
+&lt;/picture&gt;
+</code></pre>
+<p>This is great — we’ve now got the ability to save user’s bandwidth and serve different photos on different screen sizes. But if you’re looking at those srcset attributes and thinking, “wow, that’s a lot of images to create and maintain.” I feel you. Sure there are tools for gulp and grunt and some other build tool I’m sure, but you still have to create and maintain a config file, manage all those images on your server, recompile all of them if the image changes, yadda yadda yadda.</p>
+<h2>Cloud processing? Cloud processing.</h2><p>If you’re tired of hearing about the cloud, I’m sorry. But hear me out because the cloud may just make implementing responsive images as easy as an <code>&lt;img&gt;</code> tag.</p>
+<p>The two services I know of (there are probably more) are <a href="http://www.imgix.com/">Imgix</a> and <a href="http://cloudinary.com/">Cloudinary</a>. If you’ve never heard of them, they allow you to customize and change images using query parameters in your URL. They can do a lot of really cool things, but I’m only going to touch on one feature here: <em>scaling</em>. You’ve probably guessed where this is going by now.</p>
+<p>We’re going to upload <em>one</em> really big master image and let the cloud handle the different sizes we need. Let’s get to an example. Remember the simple img example we had before? Here’s what it looks like with <em>the cloud</em>.</p>
+<pre><code class="language-html">&lt;img src=&quot;https://res.cloudinary.com/beardfury/image/upload/c_scale,w_1000/v1444865801/forest.jpg&quot;
+  srcset=&quot;https://res.cloudinary.com/beardfury/image/upload/c_scale,w_320/v1444865801/forest.jpg 320w,
+    https://res.cloudinary.com/beardfury/image/upload/c_scale,w_768/v1444865801/forest.jpg 768w,
+    https://res.cloudinary.com/beardfury/image/upload/c_scale,w_1024/v1444865801/forest.jpg 1024w,
+    https://res.cloudinary.com/beardfury/image/upload/c_scale,w_5000/v1444865801/forest.jpg 5000w&quot;
+  sizes=&quot;(min-width: 1024px) 50vw, 100vw&quot;&gt;
+</code></pre>
+<p>Want those different images on mobile and desktop? Well, you have to upload <em>two</em> photos now, but it’s still better than 5.</p>
+<pre><code class="language-html">&lt;picture&gt;
+  &lt;source srcset=&quot;https://res.cloudinary.com/beardfury/image/upload/c_scale,w_1024/v1444865801/forest.jpg 1024w,
+      https://res.cloudinary.com/beardfury/image/upload/c_scale,w_5000/v1444865801/forest.jpg 5000w&quot;
+    media=&quot;(min-width: 1024px)&quot;&gt;
+  &lt;source srcset=&quot;https://res.cloudinary.com/beardfury/image/upload/c_scale,w_320/v1444865801/forest.jpg 320w,
+      https://res.cloudinary.com/beardfury/image/upload/c_scale,w_768/v1444865801/forest.jpg 768w&quot;
+    media=&quot;(min-width: 320px)&quot;&gt;
+  &lt;img src=&quot;https://res.cloudinary.com/beardfury/image/upload/c_scale,w_1000/v1444865801/forest.jpg&quot; alt=&quot;Green forest scene&quot;&gt;
+&lt;/picture&gt;
+</code></pre>
+<p>Image management? Piece of cake. It’s like it used to be again. You know, the good old days of <code>&lt;img&gt;</code> before all this responsive stuff came about. The days where we used one <em>huge</em> image to cover all bases and forced the user to wait 30 seconds for that 24 megapixel picture of a cat to download.</p>
+<h2>One up</h2><p>You might be thinking this is cool, but you’ve still got to manage all those pesky urls in your markup. I mean, it’s still way easier, but yeah, it can be better. If you’re using a templating system like Handlebars or EJS, <em>it’s time to get crazy</em>.</p>
+<p>Because I prefer EJS, these examples are going to be written with EJS. First, let’s write a function to create <strong>src</strong> and <strong>srcset</strong> strings for us.</p>
+<pre><code class="language-javascript">function generateResponsiveString (filename, widths, isFallback) {
+  &#39;use strict&#39;
+
+  const urlPrefix = &#39;https://res.cloudinary.com/beardfury/image/upload/c_scale,w_&#39;
+
+  let fullString = &#39;&#39;
+
+  if (isFallback) {
+    return urlPrefix + widths + filename
+  }
+
+  widths.forEach(function (width) {
+    fullString += urlPrefix + width + filename + &#39; &#39; + width + &#39;w, &#39;
+  })
+
+  // strip the trailing comma and space
+  return fullString.substr(0, fullString.length - 2)
+}
+</code></pre>
+<p>Ok, cool. Now let&#39;s use it in a template.</p>
+<pre><code class="language-html">&lt;div class=&quot;portfolio-item-1&quot;&gt;
+  &lt;img src=&quot;&lt;%= responsiveImageString(&#39;v1444865801/forest.jpg&#39;, 1000, true) %&gt;&quot;
+    srcset=&quot;&lt;%= responsiveImageString(&#39;v1444865801/forest.jpg&#39;, [320, 768, 1024, 5000]) %&gt;&quot;
+    sizes=&quot;(min-width: 1024px) 50vw, 100vw)
+    alt=&quot;Green forest scene&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Responsive images. Using the cloud. Without much typing. Barely any typing at all.</p>
+<h2>Use it right now</h2><p>Go on, try it. <a href="http://cloudinary.com/">Cloudinary</a> is free to start and then starts pricing in tiers and plugins. <a href="https://www.imgix.com/">Imgix</a> charges a couple bucks for a bunch of photos, with bandwidth on top of that. I’ll let you choose which you like best. If you want a self-hosted solution, a quick search on github produced two options written in Go: <a href="https://github.com/ReshNesh/pixlserv">pixlserv</a> and <a href="https://github.com/h2non/imaginary">imaginary</a>.</p>
+<p>You’re also going to want to use <a href="https://github.com/scottjehl/picturefill">Picturefill</a>, the responsive image polyfill. Why? Unfortunately, not all browsers support <strong>picture</strong>, and older ones don’t even support <strong>srcset</strong> or <strong>sizes</strong>.</p>
+<p>Want to play around with this or see it in action? Here’s a <a href="http://codepen.io/mike-engel/pen/avLVvW">codepen</a> for you.</p>
+<p>Client hints are something to keep an eye on, as they’re going to make this process <em>even easier</em>. For more info, check out this post by <a href="https://blog.imgix.com/2015/10/13/next-generation-responsive-images-with-client.html">imgix</a>.</p>
+<p>Use your new spare time to learn something cool.</p>
+  </div>
+  <footer class="site-footer site-constraint">
+  <span class="text-tiny">&copy; 2016 Mike Engel</span>
+  <a href="https://twitter.com/beardfury" class="text-tiny">twitter</a>
+  <a href="https://www.linkedin.com/in/beardfury" class="text-tiny">linkedin</a>
+</footer>
+<script src="https://use.typekit.net/uma3wew.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="/lib/js/main.js"></script>
+<script src="/lib/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://use.typekit.net/uma3wew.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="/lib/js/main.js"></script>
+</body>
+</html>

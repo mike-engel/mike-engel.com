@@ -43,13 +43,24 @@ h3 {
 }
 
 .h2,
-.h3 {
+.writing h2,
+.h3,
+.writing h3 {
   margin-top: 1.5em;
   padding-top: 0.5em;
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   @media (min-width: @bpMedium) {
     margin-top: 3em;
   }
+}
+
+.h2 + .h3,
+.writing h2 + h3 {
+  margin-top: 0;
 }
 
 h1,
@@ -60,29 +71,31 @@ h4 {
 }
 
 p {
+  .rem-type(18);
+  line-height: 1.6;
   max-width: 40em;
 }
 
-// Perfect fifth | 1.5
+// Perfect fourth | 1.333
 // http://www.modularscale.com/?18&px&1.5&web&text
 h1,
 .h1 {
-  .rem-type(60.75);
+  .rem-type(50);
 }
 
 h2,
 .h2 {
-  .rem-type(40.5);
+  .rem-type(37);
 }
 
 h3,
 .h3 {
-  .rem-type(27);
+  .rem-type(28);
 }
 
 h4,
 .h4 {
-  .rem-type(18);
+  .rem-type(21);
 }
 
 dt,

@@ -1,0 +1,5 @@
+<h1 class="h2">Writing</h1>
+<% for (var slug in public.writing._data) { %>
+<h2 class="h3"><a href="/writing/<%= slug %>"><%= public.writing._data[slug].title %></a></h2>
+<p class="writing-summary"><%= public.writing._data[slug].summary %></p>
+<% } %>

@@ -10,10 +10,13 @@
   <link href="/lib/css/main.css" rel="stylesheet">
 </head>
 <body>
-  <%- partial('./partials/_nav') %>
-  <div class="site-constraint">
+  <%- partial('../partials/_nav') %>
+  <div class="site-constraint writing">
     <%- yield %>
   </div>
-  <%- partial('./partials/_footer') %>
+  <%- partial('../partials/_footer') %>
+  <script src="https://use.typekit.net/uma3wew.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="/lib/js/main.js"></script>
 </body>
 </html>
