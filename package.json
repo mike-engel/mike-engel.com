@@ -21,6 +21,7 @@
   "homepage": "https://github.com/mike-engel/mike-engel.com#readme",
   "devDependencies": {
     "floating-label": "^1.0.0",
+    "harp": "^0.23.0",
     "watchify": "^3.4.0"
   }
 }
