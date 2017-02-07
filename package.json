@@ -6,8 +6,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "harp --server ./src;watchify ./src/lib/js/_bundle.js -o ./src/lib/js/main.js",
-    "compile": "harp compile ./src ./build"
+    "start": "harp server ./src;watchify ./src/lib/js/_bundle.js -o ./src/lib/js/main.js",
+    "compile": "harp compile ./src ./build",
+    "deploy": "now deploy --static -a mike-engel.com -a www.mike-engel.com ./build"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,16 @@
     "floating-label": "^1.0.0",
     "harp": "^0.23.0",
     "watchify": "^3.4.0"
+  },
+  "now": {
+    "aliases": [
+      "mike-engel.com",
+      "www.mike-engel.com"
+    ],
+    "files": [
+      "build/**/*"
+    ],
+    "name": "portfolio",
+    "type": "static"
   }
 }
