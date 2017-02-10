@@ -31,23 +31,45 @@
     display: none;
   }
 
+  .h3 + p {
+    margin-top: 0;
+  }
+
   @media print {
     html,
-    body {
-      font-size: 16px;
+    body { font-size: 16px; }
+
+    .site-constraint { width: 670px; }
+
+    .site-footer { display: none; }
+
+    .back-button { display: none; }
+
+    .h3 { font-size: 1.25rem; }
+
+    .h4 { font-size: 1rem; }
+
+    p { line-height: 1.4; }
+
+    p + p { margin: 0.75em 0; }
+
+    .h3 + p { margin-bottom: 0.75em; }
+
+    .logo {
+      height: 35px;
+      margin-right: 1em;
     }
 
-    .site-constraint {
-      width: 670px;
+    .resume-meta li:first-child {
+      font-weight: bold;
+      font-size: 1rem;
     }
 
-    .site-footer {
-      display: none;
-    }
+    .resume-summary { margin-top: 0.75em; }
 
-    .back-button {
-      display: none;
-    }
+    .resume-summary ~ .h3 { margin-top: 0.75em; }
+
+    .resume-experience li + li, .resume-education li + li { margin-top: 1.0em; }
   }
 </style>
 <header class="resume-header">
@@ -69,13 +91,13 @@
     <li>mike@mike-engel.com</li>
   </ul>
 </header>
-<h1 class="h3 resume-summary">I&rsquo;m a designer &amp; developer creating pleasant, user driven experiences accessible by everyone and their devices.</h1>
-<h2 class="h3">Experience</h2>
+<h1 class="h3 resume-summary">I&rsquo;m a designer &amp; developer creating pleasant, user driven experiences.</h1>
+<h2 class="h3" id="experience">Experience</h2>
 <ul class="resume-experience">
   <li>
     <h3 class="h4">Welltok</h3>
     <p class="text-small">November 2015 &ndash; Current</p>
-    <p>Led a small team responsible for creating and maintaining a lightweight, funcational node service. Led initiatives for better documentation, testing. Co-led effort to stabilize, document, and standardize the front end tech stack.</p>
+    <p>Led a small team responsible for creating and maintaining a lightweight, funcational node service. Led initiatives for better documentation and testing. Co-led effort to stabilize, document, and standardize the front end tech stack.</p>
   </li>
   <li>
     <h3 class="h4">Datu Health</h3>
@@ -88,7 +110,7 @@
     <p>I worked with international financial and energy companies to create social communities, games, trading platforms, and more.</p>
   </li>
 </ul>
-<h2 class="h3">Education</h2>
+<h2 class="h3" id="education">Education</h2>
 <ul class="resume-education">
   <li>
     <h3 class="h4">Rocky Mountain College of Art &plus; Design</h3>
@@ -96,11 +118,11 @@
     <p>Bachelor of Fine Arts, Communications Design</p>
   </li>
 </ul>
-<h2 class="h3">Skills</h2>
-<p>Over the last seven years I&rsquo;ve used and become deeply familiar with HTML, CSS, Javascript (&plus;NodeJS), Docker, Git, the Adobe Creative Suite, and Sketch 3.</p>
-<p>At Welltok I built several front end applications using React, Redux, and Sass backed by Node services. I also dove into functional programming and developer tooling. I also strove to improve project documentation and provide good templates for other projects.</p>
+<h2 class="h3" id="skills">Skills</h2>
+<p>I&rsquo;m deeply familiar with HTML, CSS, JavaScript (including NodeJS), Git, the Adobe Creative Suite, and Sketch 3. I&rsquo;m getting more familiar with functional programming, Swift, Docker, and ML languages like Elm and Haskell.</p>
+<p>At Welltok I built several front end applications using React, Redux, and Sass backed by Node and Rails services. I also dove into functional programming and developer tooling and also strove to improve project documentation and provide good templates for other projects.</p>
 <p>At Datu Health I spent my time building web apps with NodeJS, Backbone, and Ampersand.js.</p>
-<p>In my spare time I&rsquo;ve created two well received iOS apps written in swift.</p>
+<p>In my spare time I&rsquo;ve created two well received iOS apps written in swift, as well as contributed to several open source projects.</p>
   </div>
   <footer class="site-footer site-constraint">
   <span class="text-tiny">&copy; 2017 Mike Engel</span>
