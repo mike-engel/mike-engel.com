@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-  <meta name="description" content="Mike Engel is a designer &amp; developer creating pleasant, user driven experiences accessible by everyone and their devices.">
+  <meta name="description" content="Mike Engel is a designer &amp; developer creating pleasant, user driven experiences.">
 
   <title>Mike Engel</title>
 
@@ -21,7 +21,7 @@
       <li><a href="/#projects">projects</a></li>
       <li><a href="/#contact">contact</a></li>
       <li><a href="/writing">writing</a></li>
-      <li><a href="/resume">resume</a></li>
+      <li><a href="/resume.html">resume</a></li>
     </ul>
   </nav>
 </header>
@@ -32,9 +32,12 @@
     display: none;
   }
 
-  .h3 + p {
+  .h3 + p,
+  .h4 + p {
     margin-top: 0;
   }
+
+  .h4 { margin-bottom: 0.25em; }
 
   @media print {
     html,
@@ -120,10 +123,12 @@
   </li>
 </ul>
 <h2 class="h3" id="skills">Skills</h2>
-<p>I&rsquo;m deeply familiar with HTML, CSS, JavaScript (including NodeJS), Git, the Adobe Creative Suite, and Sketch 3. I&rsquo;m getting more familiar with functional programming, Swift, Docker, and ML languages like Elm and Haskell.</p>
-<p>At Welltok I built several front end applications using React, Redux, and Sass backed by Node and Rails services. I also dove into functional programming and developer tooling and also strove to improve project documentation and provide good templates for other projects.</p>
-<p>At Datu Health I spent my time building web apps with NodeJS, Backbone, and Ampersand.js.</p>
-<p>In my spare time I&rsquo;ve created two well received iOS apps written in swift, as well as contributed to several open source projects.</p>
+<h3 class="h4" id="skills-strong">Strong</h3>
+<p>HTML, CSS, JavaScript, NodeJS, ExpressJS, React, Redux, Less, Sass, Git, Information Achitecture, User experience design, the Adobe Creative Suite (Photoshop, Illustrator, Indesign), and Sketch 3.</p>
+<h3 class="h4" id="skills-proficient">Proficient</h3>
+<p>Swift, Docker, Ruby on Rails, Ruby, GraphQL, SQL (PostgreSQL, MySQL), NoSQL (RethinkDB, MongoDB), and Webpack.</p>
+<h3 class="h4" id="skills-learning">Learning</h3>
+<p>Elm, Functional programming, and Rust.</p>
   </div>
   <footer class="site-footer site-constraint">
   <span class="text-tiny">&copy; 2017 Mike Engel</span>
