@@ -24,11 +24,15 @@
 
     .h4 { font-size: 1rem; }
 
+    .text-small + .text-small { margin-top: 0.25em; }
+
     p { line-height: 1.4; }
 
     p + p { margin: 0.75em 0; }
 
-    .h3 + p { margin-bottom: 0.75em; }
+    .h3 > * { margin-bottom: 0.5em; }
+
+    .h3 + .h4 { margin-top: 0; }
 
     .logo {
       height: 35px;
@@ -42,7 +46,10 @@
 
     .resume-summary { margin-top: 0.75em; }
 
-    .resume-summary ~ .h3 { margin-top: 0.75em; }
+    .resume-summary ~ .h3 {
+      margin-top: 0.75em;
+      margin-bottom: 0.25em;
+    }
 
     .resume-experience li + li, .resume-education li + li { margin-top: 1.0em; }
   }
@@ -71,18 +78,21 @@
 <ul class="resume-experience">
   <li>
     <h3 class="h4">Welltok</h3>
+    <p class="text-small">Lead software engineer / Team lead</p>
     <p class="text-small">November 2015 &ndash; Current</p>
-    <p>Led a small team responsible for creating and maintaining a lightweight, functional node service. Led initiatives for better documentation and testing. Co-led effort to stabilize, document, and standardize the front end tech stack.</p>
+    <p>Led a team of 8 developers responsible for creating a lightweight, functional node service in addition to maintaining an old Rails app. Led initiatives for better documentation and testing. Co-founded the front end working group in an effort to stabilize, document, and standardize the front end tech stack.</p>
   </li>
   <li>
     <h3 class="h4">Datu Health</h3>
+    <p class="text-small">UX Engineer</p>
     <p class="text-small">November 2013 &ndash; October 2015</p>
-    <p>I worked with both the design and development teams to iteratively create interactive prototypes, along with co-creating and maintaining a front-end library and a prototypes site for publicly viewing and presenting the prototypes.</p>
+    <p>Worked with the design and development teams to iteratively create interactive prototypes to assist in product discovery and implementation. Co-created a front end library for sharing CSS and JavaScript with the development team. Created an authenticated prototype site for publicly viewing and presenting interactive prototypes to clients as well as design, development, and leadership.</p>
   </li>
   <li>
     <h3 class="h4">Markit on Demand</h3>
+    <p class="text-small">Interface designer</p>
     <p class="text-small">May 2011 &ndash; November 2013</p>
-    <p>I worked with international financial and energy companies to create social communities, games, trading platforms, and more.</p>
+    <p>I worked with international financial and energy companies to design social communities, games, trading platforms, and more.</p>
   </li>
 </ul>
 <h2 class="h3" id="education">Education</h2>
@@ -94,9 +104,7 @@
   </li>
 </ul>
 <h2 class="h3" id="skills">Skills</h2>
-<h3 class="h4" id="skills-strong">Strong</h3>
-<p>HTML, CSS, JavaScript, NodeJS, ExpressJS, React, Redux, Less, Sass, Git, Information Achitecture, User experience design, the Adobe Creative Suite (Photoshop, Illustrator, Indesign), and Sketch 3.</p>
 <h3 class="h4" id="skills-proficient">Proficient</h3>
-<p>Swift, Docker, Ruby on Rails, Ruby, GraphQL, SQL (PostgreSQL, MySQL), NoSQL (RethinkDB, MongoDB), and Webpack.</p>
+<p>HTML, CSS, JavaScript, Node.js, Express.js, React, Redux, Less, Sass, Git, Information Achitecture, User experience design, the Adobe Creative Suite (Photoshop, Illustrator, Indesign), and Sketch 3, Swift, Docker, Ruby on Rails, Ruby, GraphQL, SQL (PostgreSQL, MySQL), NoSQL (RethinkDB, MongoDB), and Webpack.</p>
 <h3 class="h4" id="skills-learning">Learning</h3>
 <p>Elm, Functional programming, and Rust.</p>
