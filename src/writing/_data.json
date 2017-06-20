@@ -1,4 +1,9 @@
 {
+  "introducing-locale": {
+    "title": "Introducing Locale",
+    "publishDate": "2017-06-18",
+    "summary": "Introducing Locale, a polyfill to understand your users' preferred languages."
+  },
   "no-bake-responsive-images": {
     "title": "No-bake responsive images",
     "publishDate": "2015-10-16",
