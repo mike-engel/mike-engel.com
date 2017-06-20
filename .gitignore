@@ -1,6 +1,10 @@
 .DS_Store
 Thumbs.db
+
+.folio
+.next
 node_modules
+build
+
 *.orig
 *.log
-.folio/
