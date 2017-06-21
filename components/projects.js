@@ -20,10 +20,9 @@ const projects = [
     url: "https://passablewords.now.sh"
   },
   {
-    description:
-      "A command line tool for catching pesky CSS regressions before they go live.",
-    name: "Stranger",
-    url: "https://datuhealth.github.io/stranger"
+    description: "A polyfill to understand your users' preferred languages",
+    name: "Locale",
+    url: "https://locale.now.sh"
   },
   {
     description:

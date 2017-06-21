@@ -38,12 +38,18 @@ const Layout = ({ children, description, title }) =>
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
       />
+      <link
+        rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css"
+      />
     </Head>
     <Nav />
     <main className="site-constraint">
       {children}
     </main>
     <Footer />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" />
+    <script>hljs.initHighlightingOnLoad();</script>
     <style jsx global>
       {`
         * { box-sizing: border-box; }

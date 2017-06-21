@@ -64,8 +64,10 @@ h3 {
   padding-top: 0.5em;
 }
 
+.h2 + .h3 { margin-top: 0; }
+
 .h3 + p,
-.h4 + p { margin-top: 0 }
+.h4 + p { margin-top: 0; }
 
 h1,
 h2,
@@ -77,8 +79,6 @@ p {
   max-width: 40em;
 }
 
-// Perfect fifth | 1.5
-// http://www.modularscale.com/?18&px&1.5&web&text
 h1,
 .h1 { ${remType(50)} }
 
@@ -107,6 +107,18 @@ dt { font-weight: 700; }
 .text-small { ${remType(16)} }
 
 .text-tiny { ${remType(12)}; }
+
+pre {
+  ${remType(14)};
+  border-radius: 3px;
+}
+
+code {
+  ${remType(18)};
+  padding: 3px;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+}
 
 @media (min-width: ${bpMedium}) {
   .h2,
