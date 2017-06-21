@@ -20,7 +20,7 @@ const Nav = () =>
         <li><a href="/#projects">projects</a></li>
         <li><a href="/#contact">contact</a></li>
         <li><a href="/writing">writing</a></li>
-        <li><a href="/resume.html">resume</a></li>
+        <li><a href="/resume">resume</a></li>
       </ul>
     </nav>
     <style jsx>

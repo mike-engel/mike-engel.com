@@ -1,4 +1,10 @@
-import { black, blue, lightGrey, transitionTime } from "../constants/css";
+import {
+  black,
+  blue,
+  lightGrey,
+  sansStack,
+  transitionTime
+} from "../constants/css";
 import React from "react";
 
 const ContactForm = () =>
@@ -39,6 +45,8 @@ const ContactForm = () =>
     </fieldset>
     <style jsx>
       {`
+      form { max-width: 40em; }
+
       form > span,
       form > div { position: relative; }
 
@@ -80,7 +88,7 @@ const ContactForm = () =>
       input[type="email"],
       textarea {
         font-size: 1rem;
-        font-family: @sansStack;
+        font-family: ${sansStack};
         padding: 15px 0.5em 0.5em 0.5em;
         width: 100%;
         border-width: 0 0 2px 0;

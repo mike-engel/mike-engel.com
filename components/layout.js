@@ -9,8 +9,10 @@ import {
   h2Size,
   h3Size,
   h4Size,
+  helpers,
   hoverBlue,
-  transitionTime
+  transitionTime,
+  typography
 } from "../constants/css";
 import Footer from "./footer";
 import Head from "next/head";
@@ -48,52 +50,14 @@ const Layout = ({ children, description, title }) =>
 
         html,
         body {
-          color: ${black};
-          font-size: 16px;
           height: 100%;
-          line-height: 1.4;
           margin: 0;
           padding: 0;
           width: 100%;
         }
 
-        body { font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; }
-
-        a {
-          color: ${blue};
-          text-decoration: none;
-          border-bottom: 2px solid transparent;
-          transition: color ${transitionTime}, border-color ${transitionTime};
-        }
-
-        ul {
-          list-style-type: none;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-
-        h1,
-        h2,
-        h3 {
-          font-weight: 700;
-          line-height: 1.2;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4 { max-width: 25em; }
-
-        h1 { font-size: ${h1Size}; }
-        h2 { font-size: ${h2Size}; }
-        h3 { font-size: ${h3Size}; }
-        h4 { font-size: ${h4Size}; }
-
-        p {
-          line-height: 1.6;
-          max-width: 40em;
-        }
+        ${helpers}
+        ${typography}
 
         .site-constraint {
           width: 90vw;

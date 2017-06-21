@@ -7,28 +7,22 @@ import React from "react";
 
 const Index = () =>
   <Layout>
-    <h1>
+    <h1 className="h2">
       I&rsquo;m a designer &amp; developer creating pleasant, user driven
       experiences.
     </h1>
-    <h2 id="projects">Recent projects</h2>
+    <h2 className="h3" id="projects">Recent projects</h2>
     <Projects />
-    <h2 id="contact">Contact</h2>
+    <h2 className="h3" id="contact">Contact</h2>
     <ContactForm />
     <style jsx>
       {`
       h1,
       h2 { padding-top: 0.5em; }
 
-      h1 {
-        font-size: ${h2Size};
-        margin: 0.5em 0;
-      }
+      h1 { margin: 0.5em 0; }
 
-      h2 {
-        font-size: ${h4Size};
-        margin-top: 1.5em;
-      }
+      h2 { margin-top: 1.5em; }
 
       @media (min-width: ${bpMedium}) {
         h1 {
