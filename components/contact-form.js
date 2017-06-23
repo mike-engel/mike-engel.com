@@ -22,7 +22,7 @@ const inputStyle = {
   }),
   input: Object.assign({}, inputStyles, {
     borderBottomWidth: 2,
-    borderBottomColor: black,
+    borderColor: black,
     width: "100%"
   }),
   label: Object.assign({}, labelStyles, {
