@@ -31,18 +31,11 @@
   },
   "dependencies": {
     "commonmark": "^0.27.0",
+    "floating-label-react": "^0.1.0",
     "next": "^3.0.0-beta16",
     "prettier": "^1.4.4",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
-  },
-  "babel": {
-    "presets": [
-      "next/babel"
-    ],
-    "plugins": [
-      "markdown-in-js/babel"
-    ]
   }
 }

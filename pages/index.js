@@ -1,7 +1,6 @@
 import { bpMedium, h1Size, h2Size, h3Size, h4Size } from "../constants/css";
 import ContactForm from "../components/contact-form";
 import Layout from "../components/layout";
-import markdown from "markdown-in-js";
 import Projects from "../components/projects";
 import React from "react";
 

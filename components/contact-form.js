@@ -5,7 +5,37 @@ import {
   sansStack,
   transitionTime
 } from "../constants/css";
+import FloatingLabel, {
+  floatingStyles,
+  focusStyles,
+  inputStyles,
+  labelStyles
+} from "floating-label-react";
 import React from "react";
+
+const inputStyle = {
+  floating: Object.assign({}, floatingStyles, {
+    color: blue
+  }),
+  focus: Object.assign({}, focusStyles, {
+    borderColor: blue
+  }),
+  input: Object.assign({}, inputStyles, {
+    borderBottomWidth: 2,
+    borderBottomColor: black,
+    width: "100%"
+  }),
+  label: Object.assign({}, labelStyles, {
+    marginTop: "0.5em",
+    width: "100%"
+  })
+};
+
+const textareaStyle = Object.assign({}, inputStyle, {
+  input: Object.assign({}, inputStyle.input, {
+    minHeight: "150px"
+  })
+});
 
 const ContactForm = () =>
   <form
@@ -24,23 +54,26 @@ const ContactForm = () =>
       <input type="hidden" name="_gotcha" aria-hidden="true" />
     </fieldset>
     <fieldset>
-      <div>
-        <label htmlFor="email">Your email</label>
-        <input id="email" type="email" name="email" placeholder="Your email" />
-      </div>
-      <div>
-        <label htmlFor="subject">A quick summary</label>
-        <input
-          id="subject"
-          type="text"
-          name="_subject"
-          placeholder="A quick summary"
-        />
-      </div>
-      <div>
-        <label htmlFor="body">Let loose</label>
-        <textarea id="body" name="body" placeholder="Let loose" />
-      </div>
+      <FloatingLabel
+        id="email"
+        name="email"
+        placeholder="Your email"
+        styles={inputStyle}
+        type="email"
+      />
+      <FloatingLabel
+        id="subject"
+        name="_subject"
+        placeholder="A quick summary"
+        styles={inputStyle}
+      />
+      <FloatingLabel
+        id="body"
+        element="textarea"
+        name="body"
+        placeholder="Let loose"
+        styles={textareaStyle}
+      />
       <button className="btn" type="submit">send</button>
     </fieldset>
     <style jsx>
@@ -65,49 +98,6 @@ const ContactForm = () =>
       fieldset > span + span,
       fieldset > div + div { margin-top: 1em; }
 
-      label {
-        font-size: 0.66666rem;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        font-weight: 700;
-        color: ${blue};
-        letter-spacing: 0.03em;
-        line-height: 1;
-        opacity: 0;
-        z-index: 0;
-        transition: opacity ${transitionTime}, top ${transitionTime};
-      }
-
-      label.floating {
-        top: 0;
-        opacity: 1;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        font-size: 1rem;
-        font-family: ${sansStack};
-        padding: 15px 0.5em 0.5em 0.5em;
-        width: 100%;
-        border-width: 0 0 2px 0;
-        border-style: solid;
-        border-color: ${black};
-        border-radius: 0;
-        z-index: 100;
-        transition: border-color ${transitionTime};
-      }
-
-      input[type="text"]:focus,
-      input[type="email"]:focus,
-      textarea:focus {
-        outline: none;
-        border-color: ${blue};
-      }
-
-      textarea { min-height: 150px; }
-
       button {
         background: transparent;
         border: 2px solid ${black};
@@ -120,10 +110,6 @@ const ContactForm = () =>
         margin-top: 1em;
         padding: 10px 15px;
       }
-
-      ::-webkit-input-placeholder { color: ${lightGrey}; }
-      ::-moz-input-placeholder { color: ${lightGrey}; }
-      ::-ms-input-placeholder { color: ${lightGrey}; }
     `}
     </style>
   </form>;

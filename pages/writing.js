@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import Link from "next/link";
 import React from "react";
 import { remType } from "../constants/css";
 import writings from "../constants/writing";
@@ -10,9 +11,12 @@ const Writing = () =>
       return (
         <div key={idx}>
           <h2 className="h3">
-            <a href={`/writing/${title.toLowerCase().replace(/ /g, "-")}`}>
-              {title}
-            </a>
+            <Link
+              href={`/writing/${title.toLowerCase().replace(/ /g, "-")}`}
+              prefetch
+            >
+              <a>{title}</a>
+            </Link>
           </h2>
           <p className="writing-summary">{summary}</p>
         </div>
