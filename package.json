@@ -20,7 +20,9 @@
     "url": "https://github.com/mike-engel/mike-engel.com/issues"
   },
   "homepage": "https://github.com/mike-engel/mike-engel.com#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "lighthouse": "^2.1.0"
+  },
   "now": {
     "alias": [
       "mike-engel.com",

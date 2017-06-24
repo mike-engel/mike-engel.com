@@ -2,8 +2,8 @@ export const white = "#FFF";
 export const black = "#0B2940";
 export const grey = "#355873";
 export const lightGrey = "#7B92A4";
-export const blue = "#0589ED";
-export const hoverBlue = "#43acfb";
+export const blue = "#0079d2";
+export const hoverBlue = "#0589ED";
 export const green = "#00B375";
 
 export const transitionTime = "200ms";

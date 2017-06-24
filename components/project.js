@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const Project = ({ description, name, url }) =>
-  <span>
+  <div>
     <dt><a href={url}>{name}</a></dt>
     <dd>{description}</dd>
     <style jsx>
@@ -18,7 +18,7 @@ const Project = ({ description, name, url }) =>
 
       dt { font-weight: 700; }
 
-      span {
+      div {
           font-size: 1rem;
           display: inline-block;
           width: 100%;
@@ -27,27 +27,27 @@ const Project = ({ description, name, url }) =>
       }
 
       @media (min-width: ${bpMedium}) {
-          span {
+          div {
               margin-right:2em;
               width: calc(50% - 2em);
           }
 
-          span:nth-child(2n) { margin-right: 0; }
+          div:nth-child(2n) { margin-right: 0; }
       }
 
       @media (min-width: ${bpLarge}) {
-          span {
+          div {
               margin-right:2em;
               width: calc(33.3333333333% - 2em);
           }
 
-          span:nth-child(2n) { margin-right: 2em; }
+          div:nth-child(2n) { margin-right: 2em; }
 
-          span:nth-child(3n) { margin-right: 0; }
+          div:nth-child(3n) { margin-right: 0; }
       }
     `}
     </style>
-  </span>;
+  </div>;
 
 Project.displayName = "Project";
 Project.propTypes = {

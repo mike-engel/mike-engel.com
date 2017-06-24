@@ -6,7 +6,7 @@ const Nav = () =>
   <header>
     <nav className="site-constraint">
       <Link href="/" prefetch>
-        <a>
+        <a className="hidden-link" title="logo – click to go to the home page">
           <svg
             width="46px"
             height="50px"
