@@ -3,6 +3,11 @@ import React from "react";
 
 const projects = [
   {
+    description: "A polyfill to understand your users' preferred languages",
+    name: "Locale",
+    url: "https://locale.now.sh"
+  },
+  {
     description: "Convert SVG path data to a Swift 3 UIBezierPath",
     name: "swiftvg",
     url: "https://swiftvg.mike-engel.com"
@@ -14,26 +19,21 @@ const projects = [
     url: "https://github.com/mike-engel/bkmrkd"
   },
   {
+    description: "A super fast CLI tool to decode and encode JWTs built in Rust.",
+    name: "jwt-cli",
+    url: "https://github.com/mike-engel/jwt-cli"
+  },
+  {
     description:
       "Is your password unique enough? Check against the million most common passwords",
     name: "passablewords",
     url: "https://passablewords.now.sh"
   },
   {
-    description: "A polyfill to understand your users' preferred languages",
-    name: "Locale",
-    url: "https://locale.now.sh"
-  },
-  {
     description:
       "Intelligent & responsive tooltips written in pure javascript.",
     name: "isotip",
     url: "https://datuhealth.github.io/isotip"
-  },
-  {
-    description: "Provide context on your forms all the time.",
-    name: "FloatingLabel.js",
-    url: "https://datuhealth.github.io/floating-label"
   }
 ];
 
