@@ -3,6 +3,7 @@ Thumbs.db
 
 .folio
 .next
+.vscode
 node_modules
 build
 

@@ -3,6 +3,11 @@ import React from "react";
 
 const projects = [
   {
+    description: "A simple menu bar app for viewing a calendar",
+    name: "Barnacal",
+    url: "https://github.com/mike-engel/barnacal"
+  },
+  {
     description: "A polyfill to understand your users' preferred languages",
     name: "Locale",
     url: "https://locale.now.sh"
@@ -19,7 +24,8 @@ const projects = [
     url: "https://github.com/mike-engel/bkmrkd"
   },
   {
-    description: "A super fast CLI tool to decode and encode JWTs built in Rust.",
+    description:
+      "A super fast CLI tool to decode and encode JWTs built in Rust.",
     name: "jwt-cli",
     url: "https://github.com/mike-engel/jwt-cli"
   },
@@ -28,20 +34,14 @@ const projects = [
       "Is your password unique enough? Check against the million most common passwords",
     name: "passablewords",
     url: "https://passablewords.now.sh"
-  },
-  {
-    description:
-      "Intelligent & responsive tooltips written in pure javascript.",
-    name: "isotip",
-    url: "https://datuhealth.github.io/isotip"
   }
 ];
 
-const Projects = () =>
+const Projects = () => (
   <dl>
-    {projects.map(({ description, name, url }, idx) =>
+    {projects.map(({ description, name, url }, idx) => (
       <Project description={description} key={idx} name={name} url={url} />
-    )}
+    ))}
     <style jsx>
       {`
         dl {
@@ -49,7 +49,8 @@ const Projects = () =>
         }
       `}
     </style>
-  </dl>;
+  </dl>
+);
 
 Projects.displayName = "Projects";
 
