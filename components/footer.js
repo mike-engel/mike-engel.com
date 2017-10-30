@@ -26,6 +26,12 @@ const Footer = () => (
         }
       `}
     </style>
+    <noscript>
+      <img
+        src="https://analytics.mike-engel.com/api/a.gif"
+        alt="backup analytics request"
+      />
+    </noscript>
     <script src="https://analytics.mike-engel.com/a.js" />
   </footer>
 );
