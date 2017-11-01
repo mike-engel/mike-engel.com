@@ -15,6 +15,12 @@ export default class MyDocument extends Document {
           <style>{`body { margin: 0 } /* custom! */`}</style>
         </Head>
         <body className="custom_class">
+          <noscript>
+            <img
+              src="https://analytics.mike-engel.com/api/a.gif"
+              alt="backup analytics request"
+            />
+          </noscript>
           {this.props.customValue}
           <Main />
           <NextScript />
