@@ -26,7 +26,6 @@ const Footer = () => (
         }
       `}
     </style>
-    <script src="https://analytics.mike-engel.com/a.js" />
   </footer>
 );
 
