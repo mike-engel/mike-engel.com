@@ -8,16 +8,6 @@ export default class MyDocument extends Document {
     return { html, head, errorHtml, chunks, styles };
   }
 
-  componentDidMount() {
-    if (!window) return;
-
-    window.addEventListener("load", () => {
-      if (window.analyticsMain) {
-        analyticsMain("d58055b3-a44a-440c-9679-b141dc90cca3");
-      }
-    });
-  }
-
   render() {
     return (
       <html lang="en">
@@ -34,7 +24,6 @@ export default class MyDocument extends Document {
           {this.props.customValue}
           <Main />
           <NextScript />
-          <script src="https://analytics.mike-engel.com/a.js" />
         </body>
       </html>
     );
