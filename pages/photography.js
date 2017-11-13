@@ -45,11 +45,11 @@ const Photo = ({
         </div>
         <div>
           <dt>Shutter speed</dt>
-          <dd>{shutterSpeed}</dd>
+          <dd>{shutterSpeed} sec</dd>
         </div>
         <div>
           <dt>Aperture</dt>
-          <dd>{aperture}</dd>
+          <dd>ƒ{aperture}</dd>
         </div>
         <div>
           <dt>ISO</dt>
