@@ -22,6 +22,7 @@ const Nav = () =>
       <ul>
         <li><Link href="/#projects"><a>projects</a></Link></li>
         <li><Link href="/#contact"><a>contact</a></Link></li>
+        <li><Link href="/photography"><a>photography</a></Link></li>
         <li><Link href="/writing" prefetch><a>writing</a></Link></li>
         <li><Link href="/resume" prefetch><a>resume</a></Link></li>
       </ul>
