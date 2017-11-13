@@ -39,11 +39,17 @@ const Nav = () =>
           vertical-align: middle;
         }
 
-        li {
-          display: inline-block;
+        nav > ul {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          margin-top: 1em;
         }
 
-        li + li { margin-left: 1em; }
+        li {
+          display: inline-block;
+          margin-right: 1em;
+        }
 
         a {
           font-size: 1rem;
@@ -58,7 +64,9 @@ const Nav = () =>
         }
 
         @media (min-width: ${bpSmall}) {
-          li { margin-left: 0.4em; }
+          li {
+            margin-right: 0;
+          }
 
           li + li { margin-left: 1.4em; }
         }
