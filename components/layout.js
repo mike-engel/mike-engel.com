@@ -31,8 +31,8 @@ class Layout extends Component {
     if (!window) return;
 
     window.addEventListener("load", () => {
-      if (window.analyticsMain) {
-        analyticsMain("d58055b3-a44a-440c-9679-b141dc90cca3");
+      if (window.analyticsSPA) {
+        analyticsSPA("d58055b3-a44a-440c-9679-b141dc90cca3");
       }
     });
   }
