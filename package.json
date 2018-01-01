@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/mike-engel/mike-engel.com#readme",
   "devDependencies": {
-    "lighthouse": "^2.5.0"
+    "lighthouse": "^2.7.0"
   },
   "now": {
     "alias": [
@@ -32,13 +32,13 @@
     "type": "npm"
   },
   "dependencies": {
-    "commonmark": "^0.27.0",
+    "commonmark": "^0.28.1",
     "floating-label-react": "^0.1.0",
-    "next": "^4.1.4",
-    "prettier": "^1.7.4",
+    "next": "^4.2.1",
+    "prettier": "^1.9.2",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-lazy-load": "^3.0.12"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-lazy-load": "^3.0.13"
   }
 }
