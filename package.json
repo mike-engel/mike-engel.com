@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "commonmark": "^0.28.1",
+    "commonmark-react-renderer": "^4.3.4",
     "floating-label-react": "^0.1.0",
     "glob": "^7.1.2",
     "next": "^4.2.1",
