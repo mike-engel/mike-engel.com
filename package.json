@@ -34,6 +34,7 @@
   "dependencies": {
     "commonmark": "^0.28.1",
     "floating-label-react": "^0.1.0",
+    "glob": "^7.1.2",
     "next": "^4.2.1",
     "prettier": "^1.9.2",
     "prop-types": "^15.6.0",
