@@ -53,6 +53,22 @@ class Layout extends Component {
             content="initial-scale=1.0,width=device-width"
           />
           <meta name="description" content={description} />
+
+          <meta itemprop="name" content="Mike Engel" />
+          <meta itemprop="description" content="Mike Engel is a designer & developer creating pleasant, user driven experiences." />
+          <meta itemprop="image" content="" />
+
+          <meta property="og:url" content="https://mike-engel.com" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Mike Engel" />
+          <meta property="og:description" content="Mike Engel is a designer & developer creating pleasant, user driven experiences." />
+          <meta property="og:image" content="" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Mike Engel" />
+          <meta name="twitter:description" content="Mike Engel is a designer & developer creating pleasant, user driven experiences." />
+          <meta name="twitter:image" content="" />
+
           <link rel="icon" type="image/png" href="/static/favicon.ico" />
           <link
             rel="stylesheet"
