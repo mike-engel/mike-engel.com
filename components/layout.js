@@ -30,12 +30,6 @@ class Layout extends Component {
   componentDidMount() {
     if (!window) return;
 
-    window.addEventListener("load", () => {
-      if (window.analyticsSPA) {
-        analyticsSPA("d58055b3-a44a-440c-9679-b141dc90cca3");
-      }
-    });
-
     hljs.initHighlighting.called = false;
     hljs.initHighlighting();
   }
@@ -55,18 +49,27 @@ class Layout extends Component {
           <meta name="description" content={description} />
 
           <meta itemprop="name" content="Mike Engel" />
-          <meta itemprop="description" content="Mike Engel is a designer & developer creating pleasant, user driven experiences." />
+          <meta
+            itemprop="description"
+            content="Mike Engel is a designer & developer creating pleasant, user driven experiences."
+          />
           <meta itemprop="image" content="" />
 
           <meta property="og:url" content="https://mike-engel.com" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Mike Engel" />
-          <meta property="og:description" content="Mike Engel is a designer & developer creating pleasant, user driven experiences." />
+          <meta
+            property="og:description"
+            content="Mike Engel is a designer & developer creating pleasant, user driven experiences."
+          />
           <meta property="og:image" content="" />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Mike Engel" />
-          <meta name="twitter:description" content="Mike Engel is a designer & developer creating pleasant, user driven experiences." />
+          <meta
+            name="twitter:description"
+            content="Mike Engel is a designer & developer creating pleasant, user driven experiences."
+          />
           <meta name="twitter:image" content="" />
 
           <link rel="icon" type="image/png" href="/static/favicon.ico" />
@@ -84,7 +87,6 @@ class Layout extends Component {
         <Footer />
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" />
         <script>hljs.initHighlightingOnLoad();</script>
-        <script src="https://analytics.mike-engel.com/a.js" />
         <style jsx global>
           {`
             * {
