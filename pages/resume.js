@@ -102,7 +102,7 @@ const Resume = () =>
       <p>Elm, Functional programming, and Rust.</p>
       <style jsx global>
         {`
-          [data-reactroot] > div > header {
+          #__next > div > header {
             display: none;
           }
         `}

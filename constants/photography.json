@@ -1,5 +1,25 @@
 [
   {
+    "url": "ranchers-eggs.jpg",
+    "name": "Rancher's Eggs",
+    "description": "My gringo creation, inspired by huevos rancheros",
+    "camera": "Sony a7r II",
+    "focalLength": "50mm",
+    "iso": "400",
+    "aperture": "2.8",
+    "shutterSpeed": "1/60"
+  },
+  {
+    "url": "junior-bed.jpg",
+    "name": "Junior's bed",
+    "description": "Junior sitting in bed",
+    "camera": "Sony a7r II",
+    "focalLength": "50mm",
+    "iso": "100",
+    "aperture": "2.0",
+    "shutterSpeed": "1/160"
+  },
+  {
     "url": "sand-dunes.jpg",
     "name": "Sand dunes",
     "description": "Watching the clouds go by over the sand dunes in Colorado",
