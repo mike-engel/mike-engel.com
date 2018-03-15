@@ -48,12 +48,12 @@ class Layout extends Component {
           />
           <meta name="description" content={description} />
 
-          <meta itemprop="name" content="Mike Engel" />
+          <meta name="name" content="Mike Engel" />
           <meta
-            itemprop="description"
+            name="description"
             content="Mike Engel is a designer & developer creating pleasant, user driven experiences."
           />
-          <meta itemprop="image" content="" />
+          <meta name="image" content="" />
 
           <meta property="og:url" content="https://mike-engel.com" />
           <meta property="og:type" content="website" />

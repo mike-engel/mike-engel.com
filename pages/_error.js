@@ -1,39 +1,27 @@
-import Layout from "../components/layout";
-import PropTypes from "prop-types";
 import React from "react";
+import Layout from "../components/layout";
 
-const parseStatusCode = (jsonPageRes, res) => {
-  res ? res.statusCode : jsonPageRes ? jsonPageRes.status : null;
-};
+export default class ErrorPage extends React.Component {
+  static displayName = "ErrorPage";
 
-const ErrorPage = ({ jsonPageRes, res }) => {
-  const statusCode = parseStatusCode(jsonPageRes, res);
+  static getInitialProps({ req, res }) {
+    const statusCode = res ? res.statusCode : err ? err.statusCode : null;
 
-  if (statusCode >= 400 && statusCode < 500) {
+    return { statusCode };
+  }
+
+  render() {
     return (
-      <h1>
-        However you got here, there's nothing here. You may want to{" "}
-        <a href="javascript:window.history.back();">go back</a> or{" "}
-        <a href="/">start over</a>.
-      </h1>
-    );
-  } else {
-    return (
-      <h1>
-        Something horrible has gone wrong. You may want to{" "}
-        <a href="javascript:window.history.back();">go back</a> or{" "}
-        <a href="/">start over</a>.
-      </h1>
+      <Layout>
+        <h1>
+          {this.props.statusCode
+            ? "However you got here, there's nothing here."
+            : "Something horrible has gone wrong. You may want to"}{" "}
+          You may want to{" "}
+          <a href="javascript:window.history.back();">go back</a> or{" "}
+          <a href="/">start over</a>.
+        </h1>
+      </Layout>
     );
   }
-};
-
-ErrorPage.displayName = "ErrorPage";
-ErrorPage.propTypes = {
-  jsonPageRes: PropTypes.shape({
-    status: PropTypes.number
-  }),
-  res: PropTypes.shape({
-    status: PropTypes.number
-  })
-};
+}
