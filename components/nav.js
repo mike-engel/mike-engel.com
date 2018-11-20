@@ -2,7 +2,7 @@ import { black, bpSmall } from "../constants/css";
 import Link from "next/link";
 import React from "react";
 
-const Nav = () =>
+const Nav = () => (
   <header>
     <nav className="site-constraint">
       <Link href="/" prefetch>
@@ -20,11 +20,31 @@ const Nav = () =>
         </a>
       </Link>
       <ul>
-        <li><Link href="/#projects"><a>projects</a></Link></li>
-        <li><Link href="/#contact"><a>contact</a></Link></li>
-        <li><Link href="/photography"><a>photography</a></Link></li>
-        <li><Link href="/writing" prefetch><a>writing</a></Link></li>
-        <li><Link href="/resume" prefetch><a>resume</a></Link></li>
+        <li>
+          <Link href="/#projects">
+            <a>projects</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/#contact">
+            <a>contact</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/photography">
+            <a>photography</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/writing" prefetch>
+            <a>writing</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/resume" prefetch>
+            <a>resume</a>
+          </Link>
+        </li>
       </ul>
     </nav>
     <style jsx>
@@ -53,6 +73,7 @@ const Nav = () =>
 
         a {
           font-size: 1rem;
+          font-weight: 600;
           line-height: 1;
         }
 
@@ -68,11 +89,14 @@ const Nav = () =>
             margin-right: 0;
           }
 
-          li + li { margin-left: 1.4em; }
+          li + li {
+            margin-left: 1.4em;
+          }
         }
       `}
     </style>
-  </header>;
+  </header>
+);
 
 Nav.displayName = "Nav";
 

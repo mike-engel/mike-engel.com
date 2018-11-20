@@ -8,32 +8,29 @@ const projects = [
     url: "https://github.com/mike-engel/barnacal"
   },
   {
-    description: "A polyfill to understand your users' preferred languages",
-    name: "Locale",
-    url: "https://locale.now.sh"
-  },
-  {
-    description: "Convert SVG path data to a Swift 3 UIBezierPath",
-    name: "swiftvg",
-    url: "https://swiftvg.mike-engel.com"
-  },
-  {
-    description:
-      "Simple self-hosted bookmarking for your travels across the web.",
-    name: "bkmrkd",
-    url: "https://github.com/mike-engel/bkmrkd"
-  },
-  {
-    description:
-      "A super fast CLI tool to decode and encode JWTs built in Rust.",
+    description: "A super fast CLI tool to decode and encode JWTs built in Rust.",
     name: "jwt-cli",
     url: "https://github.com/mike-engel/jwt-cli"
   },
   {
-    description:
-      "Is your password unique enough? Check against the million most common passwords",
-    name: "passablewords",
-    url: "https://passablewords.now.sh"
+    description: "A tiny library for parsing the Accept-Language header from browsers in Rust.",
+    name: "accept-language-rs",
+    url: "https://github.com/mike-engel/accept-language-rs"
+  },
+  {
+    description: "A polyfill to understand your users' preferred languages.",
+    name: "Locale",
+    url: "https://locale.now.sh"
+  },
+  {
+    description: "Convert SVG path data to a Swift 3 UIBezierPath.",
+    name: "swiftvg",
+    url: "https://swiftvg.mike-engel.com"
+  },
+  {
+    description: "Minimal input that uses the floating label pattern for React.",
+    name: "floating-label-react",
+    url: "https://github.com/mike-engel/floating-label-react"
   }
 ];
 

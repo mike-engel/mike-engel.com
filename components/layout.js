@@ -1,17 +1,11 @@
 import {
+  white,
   black,
-  blue,
   bpLarge,
   bpMedium,
   bpSmall,
   bpXLarge,
-  h1Size,
-  h2Size,
-  h3Size,
-  h4Size,
   helpers,
-  hoverBlue,
-  transitionTime,
   typography
 } from "../constants/css";
 import Footer from "./footer";
@@ -22,7 +16,7 @@ import React, { Component } from "react";
 
 const defaultProps = {
   description:
-    "Mike Engel is a designer & developer creating pleasant, user driven experiences.",
+    "Mike Engel is a designer & developer creating pleasant, user driven experiences and leading teams.",
   title: "Mike Engel"
 };
 
@@ -42,10 +36,7 @@ class Layout extends Component {
         <Head>
           <title>{title}</title>
           <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="initial-scale=1.0,width=device-width"
-          />
+          <meta name="viewport" content="initial-scale=1.0,width=device-width" />
           <meta name="description" content={description} />
 
           <meta name="name" content="Mike Engel" />
@@ -121,12 +112,6 @@ class Layout extends Component {
             @media (min-width: ${bpLarge}) {
               html {
                 font-size: 18px;
-              }
-
-              a:not(.hidden-link):hover,
-              a:not(.hidden-link):active {
-                color: ${hoverBlue};
-                border-color: ${hoverBlue};
               }
 
               .site-constraint {

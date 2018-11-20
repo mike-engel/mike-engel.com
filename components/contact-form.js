@@ -1,10 +1,4 @@
-import {
-  black,
-  blue,
-  lightGrey,
-  sansStack,
-  transitionTime
-} from "../constants/css";
+import { black } from "../constants/css";
 import FloatingLabel, {
   floatingStyles,
   focusStyles,
@@ -15,10 +9,10 @@ import React from "react";
 
 const inputStyle = {
   floating: Object.assign({}, floatingStyles, {
-    color: blue
+    color: black
   }),
   focus: Object.assign({}, focusStyles, {
-    borderColor: blue
+    borderColor: black
   }),
   input: Object.assign({}, inputStyles, {
     borderBottomWidth: 2,
@@ -37,7 +31,7 @@ const textareaStyle = Object.assign({}, inputStyle, {
   })
 });
 
-const ContactForm = () =>
+const ContactForm = () => (
   <form
     className="form contact-form"
     action="//formspree.io/mike@mike-engel.com"
@@ -45,12 +39,7 @@ const ContactForm = () =>
     role="form"
   >
     <fieldset>
-      <input
-        type="hidden"
-        name="_next"
-        aria-hidden="true"
-        value="//mike-engel.com/?thanks=true"
-      />
+      <input type="hidden" name="_next" aria-hidden="true" value="//mike-engel.com/?thanks=true" />
       <input type="hidden" name="_gotcha" aria-hidden="true" />
     </fieldset>
     <fieldset>
@@ -74,45 +63,58 @@ const ContactForm = () =>
         placeholder="Let loose"
         styles={textareaStyle}
       />
-      <button className="btn" type="submit">send</button>
+      <button className="btn" type="submit">
+        send
+      </button>
     </fieldset>
     <style jsx>
       {`
-      form { max-width: 40em; }
+        form {
+          max-width: 40em;
+        }
 
-      form > span,
-      form > div { position: relative; }
+        form > span,
+        form > div {
+          position: relative;
+        }
 
-      form > span + span,
-      form > div + div { margin-top: 1em; }
+        form > span + span,
+        form > div + div {
+          margin-top: 1em;
+        }
 
-      fieldset {
-        margin: 0;
-        padding: 0;
-        border: none;
-      }
+        fieldset {
+          margin: 0;
+          padding: 0;
+          border: none;
+        }
 
-      fieldset > span,
-      fieldset > div { position: relative; }
+        fieldset > span,
+        fieldset > div {
+          position: relative;
+        }
 
-      fieldset > span + span,
-      fieldset > div + div { margin-top: 1em; }
+        fieldset > span + span,
+        fieldset > div + div {
+          margin-top: 1em;
+        }
 
-      button {
-        background: transparent;
-        border: 2px solid ${black};
-        border-radius: 1px;
-        font: inherit;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 0.03em;
-        line-height: 1;
-        margin-top: 1em;
-        padding: 10px 15px;
-      }
-    `}
+        button {
+          background: transparent;
+          border: 2px solid ${black};
+          border-radius: 1px;
+          font: inherit;
+          font-size: 1rem;
+          font-weight: 700;
+          letter-spacing: 0.03em;
+          line-height: 1;
+          margin-top: 1em;
+          padding: 10px 15px;
+        }
+      `}
     </style>
-  </form>;
+  </form>
+);
 
 ContactForm.displayName = "ContactForm";
 

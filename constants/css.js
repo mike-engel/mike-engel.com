@@ -45,10 +45,16 @@ ul {
 }
 
 a {
-  color: ${blue};
+  color: ${black};
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: color ${transitionTime}, border-color ${transitionTime};
+  border-bottom: 2px solid ${black};
+  background-color: transparent;
+  padding: 0 0 1px 0;
+  transition: color ${transitionTime}, background-color ${transitionTime};
+}
+
+.hidden-link {
+  border-bottom: none;
 }
 
 h1,
@@ -131,8 +137,8 @@ code {
 
   a:not(.hidden-link):hover,
   a:not(.hidden-link):active {
-    color: ${hoverBlue};
-    border-color: ${hoverBlue};
+    color: ${white};
+    background-color: ${black};
   }
 }
 `;
