@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
+  "regions": ["sfo", "iad", "bru", "gru"],
+  "alias": ["www.mike-engel.com", "mike-engel.com"]
+}
