@@ -6,13 +6,13 @@ import { Stylable } from "../types/component.types";
 const Footer = ({ className }: Stylable) => (
   <footer className={`${className} site-constraint`}>
     <span>&copy; {new Date().getFullYear()} Mike Engel</span>
-    <a href="https://twitter.com/beardfury" target="_blank">
+    <a rel="noreferrer" href="https://twitter.com/beardfury" target="_blank">
       Twitter
     </a>
-    <a href="https://github.com/mike-engel" target="_blank">
+    <a rel="noreferrer" href="https://github.com/mike-engel" target="_blank">
       Github
     </a>
-    <a href="https://www.linkedin.com/in/beardfury" target="_blank">
+    <a rel="noreferrer" href="https://www.linkedin.com/in/beardfury" target="_blank">
       LinkedIn
     </a>
   </footer>
