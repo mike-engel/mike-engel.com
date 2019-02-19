@@ -1,4 +1,5 @@
 {
+  "name": "portfolio",
   "version": 2,
   "builds": [{ "src": "package.json", "use": "@now/next" }],
   "regions": ["sfo", "iad", "bru", "gru"],

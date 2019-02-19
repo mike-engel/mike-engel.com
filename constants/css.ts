@@ -25,7 +25,7 @@ export const helpers = `
 export const sansStack =
   "-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif";
 
-export const remType = pixels => `
+export const remType = (pixels: number) => `
   font-size: ${pixels}px;
   font-size: ${pixels / 18}rem;
 `;
@@ -119,11 +119,13 @@ pre {
   border-radius: 3px;
 }
 
-code {
+pre {
   ${remType(18)};
   padding: 3px;
   border-radius: 3px;
   background-color: #f8f8f8;
+  padding: .5em 1em;
+  overflow-x: scroll;
 }
 
 @media (min-width: ${bpMedium}) {
