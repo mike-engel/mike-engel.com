@@ -1,0 +1,16 @@
+{
+  "short_name": "Mike Engel",
+  "name": "Mike Engel",
+  "icons": [
+    {
+      "src": "/static/pwa-icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0B2940",
+  "display": "browser",
+  "scope": "/",
+  "theme_color": "#0B2940"
+}

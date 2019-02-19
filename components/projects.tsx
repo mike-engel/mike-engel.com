@@ -38,31 +38,37 @@ const projects = [
 ];
 
 const Projects = ({ className }: Stylable) => (
-  <dl className={className}>
+  <ul className={className}>
     {projects.map(({ description, name, url }, idx) => (
       <Project description={description} key={idx} name={name} url={url} />
     ))}
-  </dl>
+  </ul>
 );
 
 export default styled(Projects)`
   font-size: 0;
 
-  dt,
-  dd {
-    margin-left: 0;
-    padding-left: 0;
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
   }
 
-  dd + dt {
+  h3 {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  p {
+    margin-top: 0.5em;
+    line-height: 1.4;
+  }
+
+  p + h3 {
     margin-top: 1em;
   }
 
-  dt {
-    font-weight: 700;
-  }
-
-  div {
+  li {
     font-size: 1rem;
     display: inline-block;
     width: 100%;
@@ -71,27 +77,27 @@ export default styled(Projects)`
   }
 
   @media (min-width: ${bpMedium}) {
-    div {
+    li {
       margin-right: 2em;
       width: calc(50% - 2em);
     }
 
-    div:nth-child(2n) {
+    li:nth-child(2n) {
       margin-right: 0;
     }
   }
 
   @media (min-width: ${bpLarge}) {
-    div {
+    li {
       margin-right: 2em;
       width: calc(33.3333333333% - 2em);
     }
 
-    div:nth-child(2n) {
+    li:nth-child(2n) {
       margin-right: 2em;
     }
 
-    div:nth-child(3n) {
+    li:nth-child(3n) {
       margin-right: 0;
     }
   }

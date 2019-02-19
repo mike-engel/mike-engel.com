@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { remType } from "../constants/css";
-import writings from "../constants/writing";
+import writings from "../constants/writing.json";
 import { MetaTags } from "../components/meta_tags.component";
 import { Stylable } from "../types/component.types";
 

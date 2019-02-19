@@ -4,7 +4,7 @@ import { SimpleImg } from "react-simple-img";
 import { white, lightGrey, black } from "../constants/css";
 import { Stylable } from "../types/component.types";
 import { MetaTags } from "../components/meta_tags.component";
-import photographs from "../constants/photography";
+import photographs from "../constants/photography.json";
 
 type PhotoProps = {
   name: string;
@@ -47,31 +47,31 @@ const Photo = ({
       height={heightAt1200}
       placeholder={black}
     />
-    <h3 className="h5">{name}</h3>
+    <h2 className="h5">{name}</h2>
     <div className="meta-container">
       <figcaption>{description}</figcaption>
-      <dl>
-        <div>
-          <dt>Camera</dt>
-          <dd>{camera}</dd>
-        </div>
-        <div>
-          <dt>Focal length</dt>
-          <dd>{focalLength}</dd>
-        </div>
-        <div>
-          <dt>Shutter speed</dt>
-          <dd>{shutterSpeed} sec</dd>
-        </div>
-        <div>
-          <dt>Aperture</dt>
-          <dd>ƒ{aperture}</dd>
-        </div>
-        <div>
-          <dt>ISO</dt>
-          <dd>{iso}</dd>
-        </div>
-      </dl>
+      <ul>
+        <li>
+          <span>Camera</span>
+          <span>{camera}</span>
+        </li>
+        <li>
+          <span>Focal length</span>
+          <span>{focalLength}</span>
+        </li>
+        <li>
+          <span>Shutter speed</span>
+          <span>{shutterSpeed} sec</span>
+        </li>
+        <li>
+          <span>Aperture</span>
+          <span>ƒ{aperture}</span>
+        </li>
+        <li>
+          <span>ISO</span>
+          <span>{iso}</span>
+        </li>
+      </ul>
     </div>
   </Figure>
 );
@@ -116,8 +116,9 @@ export default styled(Photography)`
       width: 100%;
     }
 
-    h3 {
-      margin-bottom: 0.3em;
+    h2 {
+      margin-top: .75em;
+      margin-bottom: 0.1em;
     }
 
     .meta-container {
@@ -131,13 +132,13 @@ export default styled(Photography)`
       padding: 0 0 2em 0;
     }
 
-    dl {
+    ul {
       margin: 0;
       overflow: hidden;
       width: 100%;
     }
 
-    dl div {
+    ul li {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -145,11 +146,11 @@ export default styled(Photography)`
       position: relative;
     }
 
-    dl div + div {
+    ul li + li {
       margin-top: 0.75em;
     }
 
-    dl div:after {
+    ul li:after {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -162,8 +163,8 @@ export default styled(Photography)`
         ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
     }
 
-    dt,
-    dd {
+    span:first-child,
+    span:last-child {
       font-size: 0.8125rem;
       background: ${white};
       display: block;
@@ -174,12 +175,12 @@ export default styled(Photography)`
       z-index: 100;
     }
 
-    dt {
+    span:first-child {
       padding: 0 0.3em 0 0;
       font-weight: 400;
     }
 
-    dd {
+    span:last-child {
       text-align: right;
       padding: 0 0 0 0.3em;
       font-weight: 600;
@@ -195,7 +196,7 @@ export default styled(Photography)`
       }
 
       figcaption,
-      dl {
+      ul {
         flex: 1 100%;
       }
 
@@ -204,7 +205,7 @@ export default styled(Photography)`
         padding: 0 1em 0 0;
       }
 
-      dl {
+      ul {
         flex: 1 33%;
       }
     }
