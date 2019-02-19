@@ -3,12 +3,12 @@ import React from "react";
 type Props = { description: string; name: string; url: string };
 
 const Project = ({ description, name, url }: Props) => (
-  <div>
-    <dt>
+  <li>
+    <h3>
       <a href={url}>{name}</a>
-    </dt>
-    <dd>{description}</dd>
-  </div>
+    </h3>
+    <p>{description}</p>
+  </li>
 );
 
 export default Project;

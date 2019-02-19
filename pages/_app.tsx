@@ -69,7 +69,9 @@ export class PortfolioApp extends App {
     return (
       <Container>
         <Nav />
-        <Component className="site-constraint" {...pageProps} />
+        <main>
+          <Component className="site-constraint" {...pageProps} />
+        </main>
         <Footer />
         <GlobalStyles />
       </Container>

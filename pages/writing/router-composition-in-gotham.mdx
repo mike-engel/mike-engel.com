@@ -12,7 +12,7 @@ A quick note: I'm a big fan of express. If you're _not_ a big fan of how you cre
 
 Before jumping into the rust side, let’s take a quick look at how this works in express today.
 
-##### /src/index.js
+**/src/index.js**
 
 ```
 // server entrypoint
@@ -26,7 +26,7 @@ app.use("/api", apiRouter);
 app.listen(3000);
 ```
 
-##### /src/routes/api/index.js
+**/src/routes/api/index.js**
 
 ```
 const { Router } = require("express");
@@ -41,7 +41,7 @@ apiRouter.use("/users", usersRouter);
 export apiRouter;
 ```
 
-##### /src/routes/api/ping.js
+**/src/routes/api/ping.js**
 
 ```
 const { Router } = require("express");
@@ -54,7 +54,7 @@ pingRouter.route("/").get((req, res) => { res.send(204); });
 export pingRouter;
 ```
 
-##### /src/routes/api/users.js
+**/src/routes/api/users.js**
 
 ```
 const { Router } = require("express");
@@ -76,7 +76,7 @@ Now, given how express handles router composition, how can we apply that to Goth
 
 Let's take the same functionality above and create it with Gotham! The following code are snippets to keep things focused. I've set up an [example project](https://github.com/mike-engel/gotham-router-composition) where you can download and play with this implementation.
 
-##### /src/main.rs
+**/src/main.rs**
 
 ```
 mod routes;
@@ -91,7 +91,7 @@ fn main() {
 }
 ```
 
-##### /src/routes/mod.rs
+**/src/routes/mod.rs**
 
 ```
 pub mod api;
@@ -127,7 +127,7 @@ pub fn router() -> Router {
 }
 ```
 
-##### /src/routes/api/mod.rs
+**/src/routes/api/mod.rs**
 
 ```
 # this is the entry point for our API routes
@@ -144,7 +144,7 @@ pub fn router() -> NodeBuilder {
 }
 ```
 
-##### /src/routes/api/ping.rs
+**/src/routes/api/ping.rs**
 
 ```
 pub fn router() -> NodeBuilder {
@@ -162,7 +162,7 @@ pub fn get(state: State, _req: Request) -> (State, Response) {
 }
 ```
 
-##### /src/routes/api/users.rs
+**/src/routes/api/users.rs**
 
 ```
 pub fn router() -> NodeBuilder {

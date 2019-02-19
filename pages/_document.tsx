@@ -1,5 +1,6 @@
 import Document, { Head, Main, NextScript, NextDocumentContext } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import { black } from "../constants/css";
 
 export default class PortfolioDocument extends Document {
   static async getInitialProps(ctx: NextDocumentContext) {
@@ -34,7 +35,9 @@ export default class PortfolioDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+          <meta name="theme-color" content={black} />
 
+          <link rel="manifest" href="/static/manifest.json" />
           <link rel="icon" type="image/png" href="/static/favicon.ico" />
         </Head>
         <body>
