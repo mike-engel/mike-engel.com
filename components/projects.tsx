@@ -1,5 +1,8 @@
-import Project from "../components/project";
 import React from "react";
+import styled from "styled-components";
+import Project from "./project";
+import { Stylable } from "../types/component.types";
+import { bpMedium, bpLarge } from "../constants/css";
 
 const projects = [
   {
@@ -34,21 +37,62 @@ const projects = [
   }
 ];
 
-const Projects = () => (
-  <dl>
+const Projects = ({ className }: Stylable) => (
+  <dl className={className}>
     {projects.map(({ description, name, url }, idx) => (
       <Project description={description} key={idx} name={name} url={url} />
     ))}
-    <style jsx>
-      {`
-        dl {
-          font-size: 0;
-        }
-      `}
-    </style>
   </dl>
 );
 
-Projects.displayName = "Projects";
+export default styled(Projects)`
+  font-size: 0;
 
-export default Projects;
+  dt,
+  dd {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  dd + dt {
+    margin-top: 1em;
+  }
+
+  dt {
+    font-weight: 700;
+  }
+
+  div {
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5em;
+    vertical-align: top;
+  }
+
+  @media (min-width: ${bpMedium}) {
+    div {
+      margin-right: 2em;
+      width: calc(50% - 2em);
+    }
+
+    div:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: ${bpLarge}) {
+    div {
+      margin-right: 2em;
+      width: calc(33.3333333333% - 2em);
+    }
+
+    div:nth-child(2n) {
+      margin-right: 2em;
+    }
+
+    div:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+`;

@@ -1,9 +1,11 @@
-import { black, bpSmall } from "../constants/css";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import styled from "styled-components";
+import { black, bpSmall } from "../constants/css";
+import { Stylable } from "../types/component.types";
 
-const Nav = () => (
-  <header>
+const Nav = ({ className }: Stylable) => (
+  <header className={className}>
     <nav className="site-constraint">
       <Link href="/" prefetch>
         <a className="hidden-link" title="logo – click to go to the home page">
@@ -47,57 +49,52 @@ const Nav = () => (
         </li>
       </ul>
     </nav>
-    <style jsx>
-      {`
-        nav {
-          position: relative;
-          padding: 20px 0;
-        }
-
-        nav > * {
-          display: inline-block;
-          vertical-align: middle;
-        }
-
-        nav > ul {
-          display: flex;
-          justify-content: flex-start;
-          flex-wrap: wrap;
-          margin-top: 1em;
-        }
-
-        li {
-          display: inline-block;
-          margin-right: 1em;
-        }
-
-        a {
-          font-size: 1rem;
-          font-weight: 600;
-          line-height: 1;
-        }
-
-        svg {
-          width: auto;
-          height: 50px;
-          margin-right: 1.5em;
-          fill: ${black};
-        }
-
-        @media (min-width: ${bpSmall}) {
-          li {
-            margin-right: 0;
-          }
-
-          li + li {
-            margin-left: 1.4em;
-          }
-        }
-      `}
-    </style>
   </header>
 );
 
-Nav.displayName = "Nav";
+export default styled(Nav)`
+  nav {
+    position: relative;
+    padding: 20px 0;
+  }
 
-export default Nav;
+  nav > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1em;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  a {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  svg {
+    width: auto;
+    height: 50px;
+    margin-right: 1.5em;
+    fill: ${black};
+  }
+
+  @media (min-width: ${bpSmall}) {
+    li {
+      margin-right: 0;
+    }
+
+    li + li {
+      margin-left: 1.4em;
+    }
+  }
+`;

@@ -1,28 +1,41 @@
-import { black, remType } from "../constants/css";
-import Layout from "../components/layout";
 import React from "react";
+import Link from "next/link";
+import { black, remType } from "../constants/css";
+import { Stylable } from "../types/component.types";
+import styled, { createGlobalStyle } from "styled-components";
+import { MetaTags } from "../components/meta_tags.component";
 
-const Resume = () => (
-  <Layout>
+const GlobalResumeStyles = createGlobalStyle`
+  #__next > header {
+    display: none;
+  }
+`;
+
+const Resume = ({ className }: Stylable) => (
+  <div className={className}>
+    <GlobalResumeStyles />
+    <MetaTags title="Resume / Mike Engel" />
     <section>
       <header className="resume-header">
-        <a href="/" className="back-button hidden-link">
-          <svg
-            width="33px"
-            height="25px"
-            viewBox="0 0 33 25"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          >
-            <g strokeWidth="2" strokeLinecap="square">
-              <path d="M2,12.6066017 L12.6066017,2" />
-              <path d="M2,12.6066017 L12.6066017,23.2132034" />
-              <path d="M3,12.6066017 L32,12.6066017" />
-            </g>
-          </svg>
-          <span>back</span>
-        </a>
+        <Link href="/">
+          <a className="back-button hidden-link">
+            <svg
+              width="33px"
+              height="25px"
+              viewBox="0 0 33 25"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g strokeWidth="2" strokeLinecap="square">
+                <path d="M2,12.6066017 L12.6066017,2" />
+                <path d="M2,12.6066017 L12.6066017,23.2132034" />
+                <path d="M3,12.6066017 L32,12.6066017" />
+              </g>
+            </svg>
+            <span>back</span>
+          </a>
+        </Link>
         <svg
           className="logo"
           width="46px"
@@ -116,155 +129,143 @@ const Resume = () => (
         Learning
       </h3>
       <p>Kubernetes, Web Assembly, and Progressive Web Apps.</p>
-      <style jsx global>
-        {`
-          #__next > div > header {
-            display: none;
-          }
-        `}
-      </style>
-      <style jsx>
-        {`
-          .h4 {
-            margin-bottom: 0.25em;
-          }
-
-          .back-button {
-            display: block;
-            margin: 1em 0;
-          }
-
-          .back-button > * {
-            display: inline-block;
-            line-height: 1;
-            vertical-align: middle;
-          }
-
-          .back-button svg {
-            margin-right: 0.6em;
-            stroke: ${black};
-          }
-
-          .logo,
-          .resume-meta {
-            display: inline-block;
-            vertical-align: middle;
-          }
-
-          .logo {
-            width: auto;
-            height: 50px;
-            margin-right: 1.7em;
-            fill: ${black};
-          }
-
-          .resume-header {
-            padding-top: 1px;
-          }
-
-          .resume-meta li {
-            ${remType(14)}
-          }
-
-          .resume-summary {
-            margin: 1em 0 0.5em 0;
-          }
-
-          .resume-summary ~ .h3 {
-            margin: 1em 0 0.5em 0;
-          }
-
-          .resume-experience li + li,
-          .resume-education li + li {
-            margin-top: 2em;
-          }
-
-          .resume-experience .h4,
-          .resume-education .h4 {
-            margin: 0 0 0.2em 0;
-          }
-
-          .resume-experience p,
-          .resume-education p {
-            margin: 0;
-          }
-
-          @media print {
-            html,
-            body {
-              font-size: 16px;
-            }
-
-            .site-constraint {
-              width: 670px;
-            }
-
-            .site-footer {
-              display: none;
-            }
-
-            .back-button {
-              display: none;
-            }
-
-            .h3 {
-              font-size: 1.25rem;
-            }
-
-            .h4 {
-              font-size: 1rem;
-            }
-
-            .text-small + .text-small {
-              margin-top: 0.25em;
-            }
-
-            p {
-              line-height: 1.4;
-            }
-
-            p + p {
-              margin: 0.75em 0;
-            }
-
-            .h3 > * {
-              margin-bottom: 0.5em;
-            }
-
-            .h3 + .h4 {
-              margin-top: 0;
-            }
-
-            .logo {
-              height: 35px;
-              margin-right: 1em;
-            }
-
-            .resume-meta li:first-child {
-              font-weight: bold;
-              font-size: 1rem;
-            }
-
-            .resume-summary {
-              margin-top: 0.75em;
-            }
-
-            .resume-summary ~ .h3 {
-              margin-top: 0.75em;
-              margin-bottom: 0.25em;
-            }
-
-            .resume-experience li + li,
-            .resume-education li + li {
-              margin-top: 1em;
-            }
-          }
-        `}
-      </style>
     </section>
-  </Layout>
+  </div>
 );
 
-Resume.displayName = "Resume";
+export default styled(Resume)`
+  .h4 {
+    margin-bottom: 0.25em;
+  }
 
-export default Resume;
+  .back-button {
+    display: block;
+    margin: 1em 0;
+  }
+
+  .back-button > * {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  .back-button svg {
+    margin-right: 0.6em;
+    stroke: ${black};
+  }
+
+  .logo,
+  .resume-meta {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .logo {
+    width: auto;
+    height: 50px;
+    margin-right: 1.7em;
+    fill: ${black};
+  }
+
+  .resume-header {
+    padding-top: 1px;
+  }
+
+  .resume-meta li {
+    ${remType(14)}
+  }
+
+  .resume-summary {
+    margin: 1em 0 0.5em 0;
+  }
+
+  .resume-summary ~ .h3 {
+    margin: 1em 0 0.5em 0;
+  }
+
+  .resume-experience li + li,
+  .resume-education li + li {
+    margin-top: 2em;
+  }
+
+  .resume-experience .h4,
+  .resume-education .h4 {
+    margin: 0 0 0.2em 0;
+  }
+
+  .resume-experience p,
+  .resume-education p {
+    margin: 0;
+  }
+
+  @media print {
+    html,
+    body {
+      font-size: 16px;
+    }
+
+    .site-constraint {
+      width: 670px;
+    }
+
+    .site-footer {
+      display: none;
+    }
+
+    .back-button {
+      display: none;
+    }
+
+    .h3 {
+      font-size: 1.25rem;
+    }
+
+    .h4 {
+      font-size: 1rem;
+    }
+
+    .text-small + .text-small {
+      margin-top: 0.25em;
+    }
+
+    p {
+      line-height: 1.4;
+    }
+
+    p + p {
+      margin: 0.75em 0;
+    }
+
+    .h3 > * {
+      margin-bottom: 0.5em;
+    }
+
+    .h3 + .h4 {
+      margin-top: 0;
+    }
+
+    .logo {
+      height: 35px;
+      margin-right: 1em;
+    }
+
+    .resume-meta li:first-child {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .resume-summary {
+      margin-top: 0.75em;
+    }
+
+    .resume-summary ~ .h3 {
+      margin-top: 0.75em;
+      margin-bottom: 0.25em;
+    }
+
+    .resume-experience li + li,
+    .resume-education li + li {
+      margin-top: 1em;
+    }
+  }
+`;
