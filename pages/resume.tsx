@@ -9,6 +9,77 @@ const GlobalResumeStyles = createGlobalStyle`
   #__next > header {
     display: none;
   }
+
+  @media print {
+    html,
+    body {
+      font-size: 16px;
+    }
+
+    .site-constraint {
+      width: 670px;
+    }
+
+    main + footer {
+      display: none !important;
+    }
+
+    .back-button {
+      display: none !important;
+    }
+
+    .h3 {
+      font-size: 1.25rem;
+    }
+
+    .h4 {
+      font-size: 1rem;
+    }
+
+    .text-small + .text-small {
+      margin-top: 0.25em;
+    }
+
+    p {
+      line-height: 1.4;
+    }
+
+    p + p {
+      margin: 0.75em 0;
+    }
+
+    .h3 > * {
+      margin-bottom: 0.5em;
+    }
+
+    .h3 + .h4 {
+      margin-top: 0;
+    }
+
+    .logo {
+      height: 35px !important;
+      margin-right: 1em !important;
+    }
+
+    .resume-meta li:first-child {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .resume-summary {
+      margin-top: 0.75em !important;
+    }
+
+    .resume-summary ~ .h3 {
+      margin-top: 0.75em !important;
+      margin-bottom: 0.25em !important;
+    }
+
+    .resume-experience li + li,
+    .resume-education li + li {
+      margin-top: 1em !important;
+    }
+  }
 `;
 
 const Resume = ({ className }: Stylable) => (
@@ -60,9 +131,21 @@ const Resume = ({ className }: Stylable) => (
       </h2>
       <ul className="resume-experience">
         <li>
+          <h3 className="h4">Self employed</h3>
+          <p className="text-small">Founder / Owner</p>
+          <p className="text-small">January 2019 &ndash; Current</p>
+          <p>
+            Currently working on open source projects and a financial web app to give users a better
+            view into their cash flow across multiple accounts. As the sole developer I've created
+            the concept, user experience, interface design, and front / back end code. It's based
+            completely on web technologies and works on most devices from phones to desktops. More
+            information available upon request.
+          </p>
+        </li>
+        <li>
           <h3 className="h4">Unself</h3>
           <p className="text-small">Senior Developer / Engineering Manager</p>
-          <p className="text-small">July 2017 &ndash; Current</p>
+          <p className="text-small">July 2017 &ndash; December 2018</p>
           <p>
             Co-led a small team of full-stack developers to create a mobile-first web app. Helped
             promote functional programming, simpler testing, type-safety, and several technologies
@@ -116,19 +199,17 @@ const Resume = ({ className }: Stylable) => (
       <h2 className="h3" id="skills">
         Skills
       </h2>
-      <h3 className="h4" id="skills-proficient">
-        Proficient
-      </h3>
+      <h3 className="h4">Development</h3>
       <p>
-        HTML, CSS, JavaScript, Rust, Node.js, Express.js, React, Redux, Less, Sass, Git, Information
-        Achitecture, User experience design, the Adobe Creative Suite (Photoshop, Illustrator,
-        Indesign), Sketch 3, Swift, Docker, GraphQL, SQL (PostgreSQL, MySQL), NoSQL (RethinkDB,
-        MongoDB), Webpack, and Functional programming.
+        HTML, CSS, JavaScript, Rust, Node.js, Express.js, React, Redux, Vue, Next.js, Less, Sass,
+        Git, Rust, Swift, Docker, GraphQL, SQL (PostgreSQL, MySQL), NoSQL (RethinkDB, MongoDB),
+        Webpack, Functional programming, Kubernetes, Web Assembly, and Progressive Web Apps
       </p>
-      <h3 className="h4" id="skills-learning">
-        Learning
-      </h3>
-      <p>Kubernetes, Web Assembly, and Progressive Web Apps.</p>
+      <h3 className="h4">Design</h3>
+      <p>
+        Information Achitecture, User experience design, the Adobe Creative Suite (Photoshop,
+        Illustrator, Indesign), Sketch 3, Figma
+      </p>
     </section>
   </div>
 );
@@ -196,76 +277,5 @@ export default styled(Resume)`
   .resume-experience p,
   .resume-education p {
     margin: 0;
-  }
-
-  @media print {
-    html,
-    body {
-      font-size: 16px;
-    }
-
-    .site-constraint {
-      width: 670px;
-    }
-
-    .site-footer {
-      display: none;
-    }
-
-    .back-button {
-      display: none;
-    }
-
-    .h3 {
-      font-size: 1.25rem;
-    }
-
-    .h4 {
-      font-size: 1rem;
-    }
-
-    .text-small + .text-small {
-      margin-top: 0.25em;
-    }
-
-    p {
-      line-height: 1.4;
-    }
-
-    p + p {
-      margin: 0.75em 0;
-    }
-
-    .h3 > * {
-      margin-bottom: 0.5em;
-    }
-
-    .h3 + .h4 {
-      margin-top: 0;
-    }
-
-    .logo {
-      height: 35px;
-      margin-right: 1em;
-    }
-
-    .resume-meta li:first-child {
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    .resume-summary {
-      margin-top: 0.75em;
-    }
-
-    .resume-summary ~ .h3 {
-      margin-top: 0.75em;
-      margin-bottom: 0.25em;
-    }
-
-    .resume-experience li + li,
-    .resume-education li + li {
-      margin-top: 1em;
-    }
   }
 `;

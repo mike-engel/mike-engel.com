@@ -32,3 +32,5 @@ ErrorPage.getInitialProps = ({ res }: NextContext) => {
 
   return { statusCode };
 };
+
+export default ErrorPage;
