@@ -23,7 +23,7 @@ const Nav = ({ className }: Stylable) => (
       </Link>
       <ul>
         <li>
-          <Link href="/#projects">
+          <Link href="/">
             <a>projects</a>
           </Link>
         </li>

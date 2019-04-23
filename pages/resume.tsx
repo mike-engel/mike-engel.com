@@ -160,7 +160,7 @@ const Resume = ({ className }: Stylable) => (
       </h2>
       <ul className="resume-experience">
         <li>
-          <h3 className="h4">Self employed / Free time</h3>
+          <h3 className="h4">Self employed / Self development</h3>
           <p className="text-small">Current</p>
           <ul className="bulleted-list">
             <li>Creating and maintaining open source projects and managing new issues and PRs</li>
