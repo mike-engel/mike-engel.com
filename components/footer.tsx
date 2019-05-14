@@ -10,7 +10,7 @@ const Footer = ({ className }: Stylable) => (
       Twitter
     </a>
     <a rel="noreferrer" href="https://github.com/mike-engel" target="_blank">
-      Github
+      GitHub
     </a>
     <a rel="noreferrer" href="https://www.linkedin.com/in/beardfury" target="_blank">
       LinkedIn
