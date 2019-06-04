@@ -36,6 +36,7 @@ export default class PortfolioDocument extends Document {
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0,width=device-width" />
           <meta name="theme-color" content={black} />
+          <meta name="p:domain_verify" content="ac56949deddb26b9107af368eea0b43b" />
 
           <link rel="manifest" href="/static/manifest.json" />
           <link rel="icon" type="image/png" href="/static/favicon.ico" />
