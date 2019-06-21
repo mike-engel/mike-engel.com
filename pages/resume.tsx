@@ -294,20 +294,20 @@ const Resume = ({ className }: Stylable) => (
       <h2 className="h3" id="skills">
         Skills
       </h2>
-      <h3 className="h4">Client side</h3>
+      <h3 className="h4">Front end</h3>
       <p>
-        HTML, CSS, JavaScript, React, Redux, Vue, Next.js, Gatsby, Less, Sass, GraphQL, Webpack, Web
-        Assembly, Flexbox, Grid, and Progressive Web Apps
+        HTML, CSS, JavaScript, Typescript, CSS-in-JS, React, Redux, Vue, Next.js, Gatsby, Less,
+        Sass, GraphQL, Webpack, Web Assembly, Flexbox, Grid, and Progressive Web Apps
       </p>
-      <h3 className="h4">Server side</h3>
+      <h3 className="h4">Back end</h3>
       <p>
         Node.js, Express.js, Next.js, Rust, Swift, GraphQL, REST, SQL (PostgreSQL, MySQL), and NoSQL
         (RethinkDB, MongoDB)
       </p>
       <h3 className="h4">Design</h3>
       <p>
-        Information Architecture, UX design, UI design, User research, Prototyping, Figma, Sketch,
-        Photoshop, Illustrator, and Indesign
+        Information Architecture, UX design, UI design, User research, Prototyping, Typography &
+        typesetting, Figma, Sketch, Photoshop, Illustrator, and Indesign
       </p>
       <h3 className="h4">Leadership</h3>
       <p>
@@ -316,8 +316,12 @@ const Resume = ({ className }: Stylable) => (
       </p>
       <h3 className="h4">Miscellaneous</h3>
       <p>
-        Git, Docker, Testing (TDD), Pair programming, CI/CD, Automation, Agile, XP, Functional
-        programming, Kubernetes, and Authentication &amp; Authorization
+        Git, Docker, Unit & Integration testing, Pair programming, CI/CD, Automation, Agile, XP,
+        Functional programming, Kubernetes, and Authentication & Authorization
+      </p>
+      <h3 className="h4">Interested in</h3>
+      <p>
+        Elixir/Erlang, Distributed systems, Operations, Machine learning, Cyptography, Management
       </p>
       <h2 className="h3" id="education">
         Education
