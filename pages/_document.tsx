@@ -40,6 +40,7 @@ export default class PortfolioDocument extends Document {
 
           <link rel="manifest" href="/static/manifest.json" />
           <link rel="icon" type="image/png" href="/static/favicon.ico" />
+          <link rel="stylesheet" href="https://unpkg.com/a11y-css-reset/combo.css" />
         </Head>
         <body>
           <Main />

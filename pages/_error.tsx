@@ -9,7 +9,7 @@ export const ErrorPage = ({ statusCode }: Props) => {
     <div>
       <h1>
         {statusCode
-          ? "However you got here, there's nothing here."
+          ? "However you got here, there’s nothing here."
           : "Something horrible has gone wrong. You may want to"}
       </h1>
       <p>

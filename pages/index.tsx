@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { bpMedium, h1Size, h3Size } from "../constants/css";
+import { bpMedium, h1Size, h3Size, h4Size, remType } from "../constants/css";
 import ContactForm from "../components/contact-form";
 import Projects from "../components/projects";
 import { Stylable } from "../types/component.types";
@@ -10,8 +10,8 @@ const Index = ({ className }: Stylable) => (
   <div className={className}>
     <MetaTags />
     <h1 className="h2">
-      I&rsquo;m a designer &amp; developer creating pleasant, user driven experiences and leading
-      teams.
+      I’m a designer & developer leading teams and creating user-driven experiences that work for
+      everyone on all devices.
     </h1>
     <h2 className="h3" id="projects">
       Recent projects

@@ -6,29 +6,29 @@ import { bpMedium, bpLarge } from "../constants/css";
 
 const projects = [
   {
-    description: "A simple menu bar app for viewing a calendar",
-    name: "Barnacal",
-    url: "https://github.com/mike-engel/barnacal"
+    description: " Typograpy components for react and styled-components",
+    name: "Styled Typgography",
+    url: "https://github.com/mike-engel/styled-typgography"
   },
   {
     description: "A super fast CLI tool to decode and encode JWTs built in Rust.",
-    name: "jwt-cli",
+    name: "JWT cli",
     url: "https://github.com/mike-engel/jwt-cli"
   },
   {
-    description: "A tiny library for parsing the Accept-Language header from browsers in Rust.",
-    name: "accept-language-rs",
-    url: "https://github.com/mike-engel/accept-language-rs"
+    description: "Show better gist previews in twitter with a code snippet and a link to the gist",
+    name: "GistCard",
+    url: "https://github.com/mike-engel/gistcard"
   },
   {
-    description: "A polyfill to understand your users' preferred languages.",
+    description: "A small set of global rules to make things accessible and reset default styling",
+    name: "A11y CSS Reset",
+    url: "https://github.com/mike-engel/a11y-css-reset"
+  },
+  {
+    description: "A polyfill to understand your users’ preferred languages",
     name: "Locale",
     url: "https://locale.now.sh"
-  },
-  {
-    description: "Convert SVG path data to a Swift 3 UIBezierPath.",
-    name: "swiftvg",
-    url: "https://swiftvg.mike-engel.com"
   },
   {
     description: "Minimal input that uses the floating label pattern for React.",

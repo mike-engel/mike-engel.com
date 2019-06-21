@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
-import { black, bpSmall } from "../constants/css";
+import { black, bpSmall, bpMedium } from "../constants/css";
 import { Stylable } from "../types/component.types";
 
 const Nav = ({ className }: Stylable) => (
@@ -55,12 +55,9 @@ const Nav = ({ className }: Stylable) => (
 export default styled(Nav)`
   nav {
     position: relative;
+    display: flex;
+    flex-direction: column;
     padding: 20px 0;
-  }
-
-  nav > * {
-    display: inline-block;
-    vertical-align: middle;
   }
 
   nav > ul {
@@ -76,9 +73,11 @@ export default styled(Nav)`
   }
 
   a {
+    display: inline-block;
     font-size: 1rem;
     font-weight: 600;
     line-height: 1;
+    padding-bottom: 3px;
   }
 
   svg {
@@ -95,6 +94,18 @@ export default styled(Nav)`
 
     li + li {
       margin-left: 1.4em;
+    }
+  }
+
+  @media (min-width: ${bpMedium}) {
+    nav {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    nav > ul {
+      display: inline-flex;
+      margin-top: -10px;
     }
   }
 `;

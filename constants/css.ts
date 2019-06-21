@@ -2,9 +2,6 @@ export const white = "#FFF";
 export const black = "#0B2940";
 export const grey = "#355873";
 export const lightGrey = "#7B92A4";
-export const blue = "#0079d2";
-export const hoverBlue = "#0589ED";
-export const green = "#00B375";
 
 export const transitionTime = "200ms";
 
@@ -19,7 +16,7 @@ export const h3Size = "1.55555rem";
 export const h4Size = "1.16666rem";
 
 export const helpers = `
-.hidden { opacity: 0; }
+  .hidden { opacity: 0; }
 `;
 
 export const sansStack =
@@ -82,6 +79,10 @@ h4 { max-width: 25em; }
 
 p {
   line-height: 1.6;
+  max-width: 40em;
+}
+
+li {
   max-width: 40em;
 }
 

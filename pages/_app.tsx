@@ -6,18 +6,6 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 
 const GlobalStyles = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-  }
-
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
   ${helpers} ${typography} .site-constraint {
     width: 90vw;
     margin: 0 auto;
