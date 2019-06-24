@@ -142,9 +142,18 @@ const Resume = ({ className }: Stylable) => (
       </h2>
       <ul className="resume-experience">
         <li>
-          <h3 className="h4">Self employed / Self development</h3>
+          <h3 className="h4">Consulting / Self development</h3>
           <p className="text-small">Current | Boulder, CO, USA</p>
           <ul className="bulleted-list">
+            <li>
+              Designing, architecting, and developing a financial web app which gives users a better
+              view into their cash flow across multiple accounts. More information available upon
+              request.
+            </li>
+            <li>
+              Worked with several clients to plan and execute on changing customer priorities and
+              site redesigns.
+            </li>
             <li>
               Creating and maintaining open source projects (
               <a
@@ -192,20 +201,19 @@ const Resume = ({ className }: Stylable) => (
               Experimenting with new languages and technologies to evaluate the problems they solve
               and continue learning new concepts and ideas
             </li>
-            <li>
-              Created and actively developing a financial web app which gives users a better view
-              into their cash flow across multiple accounts. Responsible for all concepts, design,
-              user experience, and development. More information available upon request.
-            </li>
           </ul>
         </li>
         <li>
           <h3 className="h4">Unself</h3>
-          <p className="text-small">Senior developer / Engineering manager</p>
+          <p className="text-small">Senior developer / Acting engineering manager</p>
           <p className="text-small">July 2017 &ndash; December 2018 | Boulder, CO, USA</p>
           <ul className="bulleted-list">
             <li>
-              Led a small team of full-stack developers creating a{" "}
+              Took on the role of Engineering Manager to better manage individual team members and
+              the entire team’s interaction with the rest of the company
+            </li>
+            <li>
+              Led a small team of 5 full-stack developers creating a{" "}
               <a href="https://unself.com" target="_blank" rel="noopener noreferrer">
                 mobile-first web app
               </a>{" "}
@@ -220,10 +228,6 @@ const Resume = ({ className }: Stylable) => (
               Successfully gathered consensus and mentored the team on functional programming,
               better testing practices (simplifying tests, removing redundant tests, etc), type
               safety, and several technologies to improve quality of life
-            </li>
-            <li>
-              Took on the role of Engineering Manager to better manage individual team members and
-              the entire team’s interaction with the rest of the company
             </li>
           </ul>
         </li>
@@ -241,13 +245,13 @@ const Resume = ({ className }: Stylable) => (
               progress their careers
             </li>
             <li>
-              Worked with other senior front end engineers to research and implement better
-              documentation, testing practices, and tooling
-            </li>
-            <li>
               Co-founded the front end working group in an effort to stabilize, document, and
               standardize a front end tech stack that was outdated, complicated, and hard to develop
               with
+            </li>
+            <li>
+              Worked with other senior front end engineers to research and implement better
+              documentation, testing practices, and tooling
             </li>
           </ul>
         </li>
@@ -257,9 +261,9 @@ const Resume = ({ className }: Stylable) => (
           <p className="text-small">November 2013 &ndash; October 2015 | Boulder, CO, USA</p>
           <ul className="bulleted-list">
             <li>
-              Worked closely with design, development, and client stakeholders to create and
-              iteratively improve interactive prototypes used during product discovery, user
-              research, and implementation
+              Created and iteratively improved interactive prototypes used during product discovery,
+              user research, and implementation to improve communication between developers,
+              designers, clients, and other stakeholders
             </li>
             <li>
               Created an authenticated web site for publicly viewing and presenting fully coded
@@ -296,18 +300,19 @@ const Resume = ({ className }: Stylable) => (
       </h2>
       <h3 className="h4">Front end</h3>
       <p>
-        HTML, CSS, JavaScript, Typescript, CSS-in-JS, React, Redux, Vue, Next.js, Gatsby, Less,
-        Sass, GraphQL, Webpack, Web Assembly, Flexbox, Grid, and Progressive Web Apps
+        HTML & Semantic markup, CSS, JavaScript, Typescript, CSS-in-JS, React, Accessibility, Redux,
+        GraphQL, Progressive Web Apps, Next.js, Gatsby, Flexbox, Grid, Performance, Animation,
+        Functional programming, Vue, Less, Sass, Webpack, and Web Assembly
       </p>
       <h3 className="h4">Back end</h3>
       <p>
-        Node.js, Express.js, Next.js, Rust, Swift, GraphQL, REST, SQL (PostgreSQL, MySQL), and NoSQL
-        (RethinkDB, MongoDB)
+        Node.js, Express.js, Twelve factor app, Next.js, GraphQL, API design, REST, Schema design,
+        Rust, Swift, SQL (PostgreSQL, MySQL), and NoSQL (RethinkDB, MongoDB)
       </p>
       <h3 className="h4">Design</h3>
       <p>
-        Information Architecture, UX design, UI design, User research, Prototyping, Typography &
-        typesetting, Figma, Sketch, Photoshop, Illustrator, and Indesign
+        Information Architecture, UX design, User research, Typography & typesetting, Prototyping,
+        UI design, Figma, Sketch, Photoshop, Illustrator, and Indesign
       </p>
       <h3 className="h4">Leadership</h3>
       <p>
@@ -316,8 +321,8 @@ const Resume = ({ className }: Stylable) => (
       </p>
       <h3 className="h4">Miscellaneous</h3>
       <p>
-        Git, Docker, Unit & Integration testing, Pair programming, CI/CD, Automation, Agile, XP,
-        Functional programming, Kubernetes, and Authentication & Authorization
+        Git, Unit & Integration testing, Kubernetes, Functional programming, Docker, Pair
+        programming, CI/CD, Automation, Agile, XP, and Authentication & Authorization
       </p>
       <h3 className="h4">Interested in</h3>
       <p>
@@ -330,7 +335,7 @@ const Resume = ({ className }: Stylable) => (
         <li>
           <h3 className="h4">Rocky Mountain College of Art + Design</h3>
           <p className="text-small">August 2008 &ndash; August 2011</p>
-          <p>Bachelor of Fine Arts, Communications Design</p>
+          <p>Bachelor of Fine Arts, Communications Design, Summa Cum Laude</p>
         </li>
       </ul>
     </section>
