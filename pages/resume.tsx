@@ -12,7 +12,11 @@ const GlobalResumeStyles = createGlobalStyle`
 
     html,
     body {
-      font-size: 11pt;
+      font-size: 12pt;
+    }
+
+    body {
+      line-height: 1.3;
     }
 
     .site-constraint {
@@ -50,15 +54,28 @@ const GlobalResumeStyles = createGlobalStyle`
     }
 
     p + p {
-      margin: 0.75em 0;
+      margin: 1em 0;
+    }
+
+    a {
+      border: none;
     }
 
     .h3 > * {
-      margin-bottom: 0.5em;
+      margin-bottom: 1em;
     }
 
     .h3 + .h4 {
       margin-top: 0;
+    }
+
+    .h4 + p {
+      margin-bottom: .75em;
+    }
+
+    li, p, .resume-summary {
+      max-width: unset !important;
+      line-height: 1.3 !important;
     }
 
     .logo {
@@ -73,11 +90,12 @@ const GlobalResumeStyles = createGlobalStyle`
     }
 
     .resume-summary {
-      margin-top: 0.75em !important;
+      margin-top: 1.25em !important;
+      margin-bottom: 0 !important;
     }
 
     .resume-summary ~ .h3 {
-      margin-top: 0.75em !important;
+      margin-top: 1.5em !important;
       margin-bottom: 0.25em !important;
     }
 
@@ -90,12 +108,16 @@ const GlobalResumeStyles = createGlobalStyle`
       margin: 0.25em 0 0 1em !important;
 
       li + li {
-        margin-top: 0 !important;
+        margin-top: .25em !important;
       }
     }
 
     .hide-from-print {
       display: none;
+    }
+
+    .hide-from-screen {
+      display: initial;
     }
   }
 `;
