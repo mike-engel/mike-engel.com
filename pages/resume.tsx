@@ -12,7 +12,7 @@ const GlobalResumeStyles = createGlobalStyle`
 
     html,
     body {
-      font-size: 12pt;
+      font-size: 10pt;
     }
 
     body {
@@ -90,22 +90,22 @@ const GlobalResumeStyles = createGlobalStyle`
     }
 
     .resume-summary {
-      margin-top: 1.25em !important;
+      margin-top: 1.5em !important;
       margin-bottom: 0 !important;
     }
 
     .resume-summary ~ .h3 {
-      margin-top: 1.5em !important;
-      margin-bottom: 0.25em !important;
+      margin-top: 1.75em !important;
+      margin-bottom: 0.5em !important;
     }
 
     .resume-experience li + li,
     .resume-education li + li {
-      margin-top: 1em !important;
+      margin-top: 1.25em !important;
     }
 
     .bulleted-list {
-      margin: 0.25em 0 0 1em !important;
+      margin: 0.5em 0 0 1em !important;
 
       li + li {
         margin-top: .25em !important;
