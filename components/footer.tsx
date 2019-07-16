@@ -4,32 +4,36 @@ import { grey } from "../constants/css";
 import { Stylable } from "../types/component.types";
 
 const Footer = ({ className }: Stylable) => (
-  <footer className={`${className} site-constraint`}>
-    <span>&copy; {new Date().getFullYear()} Mike Engel</span>
-    <a rel="noreferrer" href="https://twitter.com/beardfury" target="_blank">
-      Twitter
-    </a>
-    <a rel="noreferrer" href="https://github.com/mike-engel" target="_blank">
-      GitHub
-    </a>
-    <a rel="noreferrer" href="https://www.linkedin.com/in/beardfury" target="_blank">
-      LinkedIn
-    </a>
-  </footer>
+	<footer className={`${className} site-constraint`}>
+		<span>&copy; {new Date().getFullYear()} Mike Engel</span>
+		<a rel="noreferrer" href="https://twitter.com/beardfury" target="_blank">
+			Twitter
+		</a>
+		<a rel="noreferrer" href="https://github.com/mike-engel" target="_blank">
+			GitHub
+		</a>
+		<a
+			rel="noreferrer"
+			href="https://www.linkedin.com/in/beardfury"
+			target="_blank"
+		>
+			LinkedIn
+		</a>
+	</footer>
 );
 
 export default styled(Footer)`
-  padding: 2em 0 1em 0;
+	padding: 2em 0 1em 0;
 
-  & > * {
-    font-size: 0.66666rem;
-  }
+	& > * {
+		font-size: 0.66666rem;
+	}
 
-  span {
-    color: ${grey};
-  }
+	span {
+		color: ${grey};
+	}
 
-  a {
-    margin-left: 1em;
-  }
+	a {
+		margin-left: 1em;
+	}
 `;

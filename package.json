@@ -8,7 +8,8 @@
     "deploy": "now deploy",
     "dev": "next",
     "now-build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -23,25 +24,31 @@
   "dependencies": {
     "@zeit/next-mdx": "^1.2.0",
     "floating-label-react": "^1.0.0",
-    "next": "^8.1.0",
+    "next": "^9.0.2",
     "next-offline": "^4.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-simple-img": "^2.3.1",
-    "styled-components": "^4.3.1"
+    "react-simple-img": "^2.3.3",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@types/next": "^8.0.5",
-    "@types/react": "^16.8.19",
+    "@types/next": "^8.0.6",
+    "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
-    "@types/styled-components": "^4.1.16",
+    "@types/styled-components": "^4.1.18",
     "@zeit/next-typescript": "^1.1.1",
-    "babel-plugin-styled-components": "^1.10.0",
-    "husky": "^2.4.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "husky": "^3.0.0",
     "lighthouse": "^5.1.0",
-    "lint-staged": "^8.2.0",
+    "lint-staged": "^9.2.0",
     "prettier": "^1.18.2",
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.3"
+  },
+  "prettier": {
+    "useTabs": true
+  },
+  "husky": {
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.tsx?": [

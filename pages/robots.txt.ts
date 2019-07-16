@@ -1,12 +1,17 @@
 import { Component } from "react";
-import { NextContext } from "next";
+import { NextPageContext } from "next";
 
 export default class RobotsTxt extends Component {
-  static async getInitialProps({ res }: NextContext) {
-    if (!res) return;
+	static async getInitialProps({ res }: NextPageContext) {
+		if (!res) return;
 
-    res.write(`User-agent: *
-Disallow:`);
-    res.end();
-  }
+		if (!!res.write) {
+			res.write(`User-agent: *
+  Disallow:`);
+		}
+
+		if (res.end) {
+			res.end();
+		}
+	}
 }

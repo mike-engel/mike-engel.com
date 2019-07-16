@@ -1,7 +1,14 @@
 import React from "react";
-import App, { Container, NextAppContext } from "next/app";
+import App, { Container, AppContext } from "next/app";
 import { createGlobalStyle } from "styled-components";
-import { helpers, typography, bpSmall, bpMedium, bpLarge, bpXLarge } from "../constants/css";
+import {
+	helpers,
+	typography,
+	bpSmall,
+	bpMedium,
+	bpLarge,
+	bpXLarge
+} from "../constants/css";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 
@@ -41,30 +48,30 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export class PortfolioApp extends App {
-  static async getInitialProps({ Component, ctx }: NextAppContext) {
-    let pageProps = {};
+	static async getInitialProps({ Component, ctx }: AppContext) {
+		let pageProps = {};
 
-    if (Component && Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
+		if (Component && Component.getInitialProps) {
+			pageProps = await Component.getInitialProps(ctx);
+		}
 
-    return { pageProps };
-  }
+		return { pageProps };
+	}
 
-  render() {
-    const { Component, pageProps } = this.props;
+	render() {
+		const { Component, pageProps } = this.props;
 
-    return (
-      <Container>
-        <Nav />
-        <main>
-          <Component className="site-constraint" {...pageProps} />
-        </main>
-        <Footer />
-        <GlobalStyles />
-      </Container>
-    );
-  }
+		return (
+			<Container>
+				<Nav />
+				<main>
+					<Component className="site-constraint" {...pageProps} />
+				</main>
+				<Footer />
+				<GlobalStyles />
+			</Container>
+		);
+	}
 }
 
 export default PortfolioApp;

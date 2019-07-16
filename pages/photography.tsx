@@ -7,90 +7,93 @@ import { MetaTags } from "../components/meta_tags.component";
 import photographs from "../constants/photography.json";
 
 type PhotoProps = {
-  name: string;
-  description: string;
-  url: string;
-  camera: string;
-  focalLength: string;
-  shutterSpeed: string;
-  aperture: string;
-  iso: string;
-  heightAt1200: number;
+	name: string;
+	description: string;
+	url: string;
+	camera: string;
+	focalLength: string;
+	shutterSpeed: string;
+	aperture: string;
+	iso: string;
+	heightAt1200: number;
 };
 
 const urlPrefix = (size: number, fileName: string) =>
-  `https://res.cloudinary.com/beardfury/image/upload/fl_progressive,fl_force_strip,q_70,c_scale,w_${size}/v1444865801/${fileName}`;
+	`https://res.cloudinary.com/beardfury/image/upload/fl_progressive,fl_force_strip,q_70,c_scale,w_${size}/v1444865801/${fileName}`;
 
 const Figure = styled("figure")``;
 
 const Photo = ({
-  name,
-  description,
-  url,
-  camera,
-  focalLength,
-  shutterSpeed,
-  aperture,
-  iso,
-  heightAt1200
+	name,
+	description,
+	url,
+	camera,
+	focalLength,
+	shutterSpeed,
+	aperture,
+	iso,
+	heightAt1200
 }: PhotoProps) => (
-  <Figure>
-    <SimpleImg
-      src={urlPrefix(1200, url)}
-      srcSet={`${urlPrefix(1200, url)} 1200w, ${urlPrefix(1024, url)} 1024w, ${urlPrefix(
-        768,
-        url
-      )} 768w, ${urlPrefix(500, url)} 500w, ${urlPrefix(420, url)} 420w`}
-      alt={description}
-      applyAspectRatio
-      width={1200}
-      height={heightAt1200}
-      placeholder={black}
-    />
-    <h2 className="h5">{name}</h2>
-    <div className="meta-container">
-      <figcaption>{description}</figcaption>
-      <ul>
-        <li>
-          <span>Camera</span>
-          <span>{camera}</span>
-        </li>
-        <li>
-          <span>Focal length</span>
-          <span>{focalLength}</span>
-        </li>
-        <li>
-          <span>Shutter speed</span>
-          <span>{shutterSpeed} sec</span>
-        </li>
-        <li>
-          <span>Aperture</span>
-          <span>ƒ{aperture}</span>
-        </li>
-        <li>
-          <span>ISO</span>
-          <span>{iso}</span>
-        </li>
-      </ul>
-    </div>
-  </Figure>
+	<Figure>
+		<SimpleImg
+			src={urlPrefix(1200, url)}
+			srcSet={`${urlPrefix(1200, url)} 1200w, ${urlPrefix(
+				1024,
+				url
+			)} 1024w, ${urlPrefix(768, url)} 768w, ${urlPrefix(
+				500,
+				url
+			)} 500w, ${urlPrefix(420, url)} 420w`}
+			alt={description}
+			applyAspectRatio
+			width={1200}
+			height={heightAt1200}
+			placeholder={black}
+		/>
+		<h2 className="h5">{name}</h2>
+		<div className="meta-container">
+			<figcaption>{description}</figcaption>
+			<ul>
+				<li>
+					<span>Camera</span>
+					<span>{camera}</span>
+				</li>
+				<li>
+					<span>Focal length</span>
+					<span>{focalLength}</span>
+				</li>
+				<li>
+					<span>Shutter speed</span>
+					<span>{shutterSpeed} sec</span>
+				</li>
+				<li>
+					<span>Aperture</span>
+					<span>ƒ{aperture}</span>
+				</li>
+				<li>
+					<span>ISO</span>
+					<span>{iso}</span>
+				</li>
+			</ul>
+		</div>
+	</Figure>
 );
 
 const Photography = ({ className }: Stylable) => (
-  <div className={className}>
-    <MetaTags
-      title="Photography / Mike Engel"
-      description="Mike Engel’s personal photography portfolio"
-    />
-    <h1 className="h2">Photography</h1>
-    <p>
-      These are select moments in time from my travel and every day life. If you would like to use a
-      photo please contact me first.
-    </p>
-    {photographs.map((photo: PhotoProps) => (
-      <Photo key={photo.name} {...photo} />
-    ))}
-  </div>
+	<div className={className}>
+		<MetaTags
+			title="Photography / Mike Engel"
+			description="Mike Engel’s personal photography portfolio"
+		/>
+		<h1 className="h2">Photography</h1>
+		<p>
+			These are select moments in time from my travel and every day life. If you
+			would like to use a photo please contact me first.
+		</p>
+		{photographs.map((photo: PhotoProps) => (
+			<Photo key={photo.name} {...photo} />
+		))}
+	</div>
 );
 
 export default styled(Photography)`

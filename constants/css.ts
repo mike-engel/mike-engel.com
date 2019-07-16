@@ -20,7 +20,7 @@ export const helpers = `
 `;
 
 export const sansStack =
-  "-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif";
+	"-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif";
 
 export const remType = (pixels: number) => `
   font-size: ${pixels}px;
