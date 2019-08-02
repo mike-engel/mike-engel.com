@@ -1,10 +1,10 @@
-import React from "react";
-import Link from "next/link";
+import React, { Fragment } from "react";
+import NextLink from "next/link";
 import styled from "styled-components";
-import { remType } from "../constants/css";
 import writings from "../constants/writing.json";
 import { MetaTags } from "../components/meta_tags.component";
 import { Stylable } from "../types/component.types";
+import { Heading, Link, Text } from "styled-typography";
 
 const Writing = ({ className }: Stylable) => (
 	<div className={className}>
@@ -12,36 +12,36 @@ const Writing = ({ className }: Stylable) => (
 			title="Writing / Mike Engel"
 			description="Mike Engel’s personal blog"
 		/>
-		<h1 className="h2">Writing</h1>
+		<Heading level={1}>Writing</Heading>
 		{writings.map(({ title, summary }, idx) => {
 			return (
-				<div key={idx}>
-					<h2 className="h3">
-						<Link
+				<Fragment key={idx}>
+					<Heading level={2}>
+						<NextLink
 							href={`/writing/${title.toLowerCase().replace(/ /g, "-")}`}
 							prefetch
+							passHref
 						>
-							<a>{title}</a>
-						</Link>
-					</h2>
-					<p className="writing-summary">{summary}</p>
-				</div>
+							<Link>{title}</Link>
+						</NextLink>
+					</Heading>
+					<Text level={3}>{summary}</Text>
+				</Fragment>
 			);
 		})}
 	</div>
 );
 
 export default styled(Writing)`
-	h1,
-	h2 {
-		margin-top: 0;
+	[aria-level="1"] {
+		margin-bottom: 0.75em;
 	}
 
-	p {
-		font-size: ${remType(21)};
+	${Text} {
+		margin: 0.5em 0 2em 0;
 	}
 
-	div + div h2 {
+	div + div [aria-level="2"] {
 		margin-top: 1em;
 	}
 `;

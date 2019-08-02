@@ -1,7 +1,8 @@
 import React from "react";
-import { black, remType } from "../constants/css";
-import { Stylable } from "../types/component.types";
 import styled, { createGlobalStyle } from "styled-components";
+import { Link, Heading, Text } from "styled-typography";
+import { black, grey } from "../components/colors";
+import { Stylable } from "../types/component.types";
 import { MetaTags } from "../components/meta_tags.component";
 
 const GlobalResumeStyles = createGlobalStyle`
@@ -31,49 +32,45 @@ const GlobalResumeStyles = createGlobalStyle`
       display: none !important;
     }
 
-    .h3,
-    .h4 {
+    [aria-level="2"],
+    [aria-level="3"] {
       padding: 0 !important;
     }
 
-    .h3 {
+    [aria-level="2"] {
       font-size: 1.25rem;
     }
 
-    .h4 {
+    [aria-level="3"] {
       font-size: 1rem;
       margin-top: .25em !important;
     }
 
-    .text-small + .text-small {
-      margin-top: 0.25em;
-    }
-
-    p {
+    ${Text} {
       line-height: 1.4;
     }
 
-    p + p {
+    ${Text} + ${Text} {
       margin: 1em 0;
     }
 
-    a {
+    ${Link} {
       border: none;
     }
 
-    .h3 > * {
+    [aria-level="2"] > * {
       margin-bottom: 1em;
     }
 
-    .h3 + .h4 {
+    [aria-level="2"] + [aria-level="3"] {
       margin-top: 0;
     }
 
-    .h4 + p {
+    [aria-level="3"] + ${Text} {
       margin-bottom: .75em;
     }
 
-    li, p, .resume-summary {
+    li, ${Text}, .resume-summary {
       max-width: unset !important;
       line-height: 1.3 !important;
     }
@@ -94,7 +91,7 @@ const GlobalResumeStyles = createGlobalStyle`
       margin-bottom: 0 !important;
     }
 
-    .resume-summary ~ .h3 {
+    .resume-summary ~ [aria-level="2"] {
       margin-top: 1.75em !important;
       margin-bottom: 0.5em !important;
     }
@@ -104,7 +101,7 @@ const GlobalResumeStyles = createGlobalStyle`
       margin-top: 1.25em !important;
     }
 
-    .bulleted-list {
+    ul:not(.plain-list) {
       margin: 0.5em 0 0 1em !important;
 
       li + li {
@@ -139,20 +136,22 @@ const Resume = ({ className }: Stylable) => (
 				>
 					<path d="M0,9.26966292 L0,50 L12,44.9438202 L12,0 L0,9.26966292 Z M46,9.26966292 L46,50 L34,44.9438202 L34,0 L46,9.26966292 Z M12,0 L12,19.1964286 L23,33.59375 L23,14.9619223 L12,0 Z M34,0 L34,19.1964286 L23,33.59375 L23,14.9619223 L34,0 Z" />
 				</svg>
-				<ul className="resume-meta">
+				<ul className="plain-list resume-meta">
 					<li>Mike Engel</li>
 					<li>mike@mike-engel.com</li>
 					<li>United States</li>
 					<li>English (Native), German (A2)</li>
 					<li className="hide-from-screen">
-						<a href="https://mike-engel.com">mike-engel.com</a>
+						<Link href="https://mike-engel.com">mike-engel.com</Link>
 					</li>
 					<li>
-						<a href="https://github.com/mike-engel">github.com/mike-engel</a>
+						<Link href="https://github.com/mike-engel">
+							github.com/mike-engel
+						</Link>
 					</li>
 				</ul>
 			</header>
-			<h1 className="h4 resume-summary">
+			<Heading displayLevel={3} className="resume-summary">
 				Developer and designer with over 7 years of experience designing,
 				developing, and shipping websites and web apps to production. Passionate
 				and focused on creating experiences informed by user research and
@@ -160,15 +159,17 @@ const Resume = ({ className }: Stylable) => (
 				Successfully leading teams to create new products and update existing
 				ones in collaboration with design, operations, project management, and
 				other stakeholders.
-			</h1>
-			<h2 className="h3" id="experience">
+			</Heading>
+			<Heading level={2} id="experience">
 				Experience
-			</h2>
-			<ul className="resume-experience">
+			</Heading>
+			<ul className="plain-list resume-experience">
 				<li>
-					<h3 className="h4">Consulting / Self development</h3>
-					<p className="text-small">Current | Boulder, CO, USA</p>
-					<ul className="bulleted-list">
+					<Heading level={3}>Consulting / Self development</Heading>
+					<Text level={5} color={grey}>
+						Current | Boulder, CO, USA
+					</Text>
+					<ul>
 						<li>
 							Designing, architecting, and developing a financial web app which
 							gives users a better view into their cash flow across multiple
@@ -180,45 +181,45 @@ const Resume = ({ className }: Stylable) => (
 						</li>
 						<li>
 							Creating and maintaining open source projects (
-							<a
+							<Link
 								href="https://github.com/mike-engel/styled-typography"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								styled-typography
-							</a>
+							</Link>
 							,{" "}
-							<a
+							<Link
 								href="https://github.com/mike-engel/a11y-css-reset"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								a11y-css-reset
-							</a>
+							</Link>
 							,{" "}
-							<a
+							<Link
 								href="https://github.com/mike-engel/now-importer"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								now-importer
-							</a>
+							</Link>
 							,{" "}
-							<a
+							<Link
 								href="https://github.com/mike-engel/gistcard"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								gistcard
-							</a>
+							</Link>
 							,{" "}
-							<a
+							<Link
 								href="https://github.com/mike-engel/jwt-cli"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								jwt-cli
-							</a>
+							</Link>
 							), and managing new issues and PRs
 						</li>
 						<li>
@@ -228,14 +229,12 @@ const Resume = ({ className }: Stylable) => (
 					</ul>
 				</li>
 				<li>
-					<h3 className="h4">Unself</h3>
-					<p className="text-small">
-						Senior developer / Acting engineering manager
-					</p>
-					<p className="text-small">
+					<Heading level={3}>Unself</Heading>
+					<Text level={5}>Senior developer / Acting engineering manager</Text>
+					<Text level={5} color={grey}>
 						July 2017 &ndash; December 2018 | Boulder, CO, USA
-					</p>
-					<ul className="bulleted-list">
+					</Text>
+					<ul>
 						<li>
 							Took on the role of Engineering Manager to better manage
 							individual team members and the entire team’s interaction with the
@@ -243,13 +242,13 @@ const Resume = ({ className }: Stylable) => (
 						</li>
 						<li>
 							Led a small team of 5 full-stack developers creating a{" "}
-							<a
+							<Link
 								href="https://unself.com"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								mobile-first web app
-							</a>{" "}
+							</Link>{" "}
 							for volunteers to track their hours and organizations to track who
 							volunteers and how much to receive grants and other support
 						</li>
@@ -266,12 +265,12 @@ const Resume = ({ className }: Stylable) => (
 					</ul>
 				</li>
 				<li>
-					<h3 className="h4">Welltok</h3>
-					<p className="text-small">Lead software engineer / Team lead</p>
-					<p className="text-small">
+					<Heading level={3}>Welltok</Heading>
+					<Text level={5}>Lead software engineer / Team lead</Text>
+					<Text level={5} color={grey}>
 						November 2015 &ndash; July 2017 | Denver, CO, USA
-					</p>
-					<ul className="bulleted-list">
+					</Text>
+					<ul>
 						<li>
 							Led a team of 8 developers responsible for creating a new
 							lightweight, node.js service with functional programming in mind
@@ -292,12 +291,12 @@ const Resume = ({ className }: Stylable) => (
 					</ul>
 				</li>
 				<li>
-					<h3 className="h4">Datu Health</h3>
-					<p className="text-small">UX engineer</p>
-					<p className="text-small">
+					<Heading level={3}>Datu Health</Heading>
+					<Text level={5}>UX engineer</Text>
+					<Text level={5} color={grey}>
 						November 2013 &ndash; October 2015 | Boulder, CO, USA
-					</p>
-					<ul className="bulleted-list">
+					</Text>
+					<ul>
 						<li>
 							Created and iteratively improved interactive prototypes used
 							during product discovery, user research, and implementation to
@@ -316,12 +315,12 @@ const Resume = ({ className }: Stylable) => (
 					</ul>
 				</li>
 				<li>
-					<h3 className="h4">IHS Markit (prev. Markit on Demand)</h3>
-					<p className="text-small">Interface designer</p>
-					<p className="text-small">
+					<Heading level={3}>IHS Markit (prev. Markit on Demand)</Heading>
+					<Text level={5}>Interface designer</Text>
+					<Text level={5} color={grey}>
 						May 2011 &ndash; November 2013, Boulder, CO, USA
-					</p>
-					<ul className="bulleted-list">
+					</Text>
+					<ul>
 						<li>
 							Worked with large international financial and energy companies to
 							design financial portfolios, social communities, games, and
@@ -339,52 +338,56 @@ const Resume = ({ className }: Stylable) => (
 					</ul>
 				</li>
 			</ul>
-			<h2 className="h3" id="skills">
+			<Heading level={2} id="skills">
 				Skills
-			</h2>
-			<h3 className="h4">Front end</h3>
-			<p>
+			</Heading>
+			<Heading level={3}>Front end</Heading>
+			<Text>
 				HTML & Semantic markup, CSS, JavaScript, Typescript, CSS-in-JS, React,
 				Accessibility, Redux, GraphQL, Progressive Web Apps, Next.js, Gatsby,
 				Flexbox, Grid, Performance, Animation, Functional programming, Vue,
 				Less, Sass, Webpack, and Web Assembly
-			</p>
-			<h3 className="h4">Back end</h3>
-			<p>
+			</Text>
+			<Heading level={3}>Back end</Heading>
+			<Text>
 				Node.js, Express.js, Twelve factor app, Next.js, GraphQL, API design,
 				REST, Schema design, Rust, Swift, SQL (PostgreSQL, MySQL), and NoSQL
 				(RethinkDB, MongoDB)
-			</p>
-			<h3 className="h4">Design</h3>
-			<p>
+			</Text>
+			<Heading level={3}>Design</Heading>
+			<Text>
 				Information Architecture, UX design, User research, Typography &
 				typesetting, Prototyping, UI design, Figma, Sketch, Photoshop,
 				Illustrator, and Indesign
-			</p>
-			<h3 className="h4">Leadership</h3>
-			<p>
+			</Text>
+			<Heading level={3}>Leadership</Heading>
+			<Text>
 				Technical guidance, Mentoring, One on ones, Inter-team collaboration,
 				Workload management, Career growth, and Work-life balance
-			</p>
-			<h3 className="h4">Miscellaneous</h3>
-			<p>
+			</Text>
+			<Heading level={3}>Miscellaneous</Heading>
+			<Text>
 				Git, Unit & Integration testing, Kubernetes, Functional programming,
 				Docker, Pair programming, CI/CD, Automation, Agile, XP, and
 				Authentication & Authorization
-			</p>
-			<h3 className="h4">Interested in</h3>
-			<p>
+			</Text>
+			<Heading level={3}>Interested in</Heading>
+			<Text>
 				Elixir/Erlang, Distributed systems, Operations, Machine learning,
 				Cyptography, Management
-			</p>
-			<h2 className="h3" id="education">
+			</Text>
+			<Heading level={2} id="education">
 				Education
-			</h2>
-			<ul className="resume-education">
+			</Heading>
+			<ul className="plain-list resume-education">
 				<li>
-					<h3 className="h4">Rocky Mountain College of Art + Design</h3>
-					<p className="text-small">August 2008 &ndash; August 2011</p>
-					<p>Bachelor of Fine Arts, Communications Design, Summa Cum Laude</p>
+					<Heading level={3}>Rocky Mountain College of Art + Design</Heading>
+					<Text level={5} color={grey}>
+						August 2008 &ndash; August 2011
+					</Text>
+					<Text>
+						Bachelor of Fine Arts, Communications Design, Summa Cum Laude
+					</Text>
 				</li>
 			</ul>
 		</section>
@@ -392,7 +395,11 @@ const Resume = ({ className }: Stylable) => (
 );
 
 export default styled(Resume)`
-	.h4 {
+	ul:not(.plain-list) {
+		list-style: disc;
+	}
+
+	[aria-level="3"] {
 		margin-bottom: 0.25em;
 	}
 
@@ -414,8 +421,13 @@ export default styled(Resume)`
 		padding-top: 1px;
 	}
 
-	.resume-meta li {
-		${remType(14)}
+	.resume-meta {
+		margin: 0;
+
+		li {
+			font-size: 0.777778rem;
+			line-height: 1.4;
+		}
 	}
 
 	.resume-summary {
@@ -425,7 +437,7 @@ export default styled(Resume)`
 		line-height: 1.4;
 	}
 
-	.resume-summary ~ .h3 {
+	.resume-summary ~ [aria-level="2"] {
 		margin: 1em 0 0.5em 0;
 	}
 
@@ -434,32 +446,21 @@ export default styled(Resume)`
 		margin-top: 2em;
 	}
 
-	.resume-experience .h4,
-	.resume-education .h4 {
+	.resume-experience [aria-level="3"],
+	.resume-education [aria-level="3"] {
 		margin: 0 0 0.2em 0;
 	}
 
-	.resume-experience p,
-	.resume-education p {
+	.resume-experience ${Text}, .resume-education ${Text} {
 		margin: 0;
-	}
-
-	.bulleted-list {
-		margin: 1em 0 0 1em;
-		padding-left: initial;
-		list-style-type: disc;
-
-		li + li {
-			margin-top: 0.5em;
-		}
-	}
-
-	.bold {
-		font-weight: 600;
 	}
 
 	.links {
 		margin-top: 1em;
+	}
+
+	[aria-level="3"] + ${Text} {
+		margin-top: 0;
 	}
 
 	.hide-from-screen {

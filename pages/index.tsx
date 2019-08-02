@@ -1,51 +1,50 @@
 import React from "react";
 import styled from "styled-components";
-import { bpMedium, h1Size, h3Size, h4Size, remType } from "../constants/css";
+import { Heading } from "styled-typography";
 import ContactForm from "../components/contact-form";
 import Projects from "../components/projects";
 import { Stylable } from "../types/component.types";
 import { MetaTags } from "../components/meta_tags.component";
+import { Breakpoints } from "../utils/spacing.util";
 
 const Index = ({ className }: Stylable) => (
 	<div className={className}>
 		<MetaTags />
-		<h1 className="h2">
+		<Heading>
 			I’m a designer & developer leading teams and creating user-driven
 			experiences that work for everyone on all devices.
-		</h1>
-		<h2 className="h3" id="projects">
+		</Heading>
+		<Heading level={2} id="projects">
 			Recent projects
-		</h2>
+		</Heading>
 		<Projects />
-		<h2 className="h3" id="contact">
+		<Heading level={2} id="contact">
 			Contact
-		</h2>
+		</Heading>
 		<ContactForm />
 	</div>
 );
 
 export default styled(Index)`
-	h1,
-	h2 {
+	[aria-level="1"],
+	[aria-level="2"] {
 		padding-top: 0.5em;
 	}
 
-	h1 {
+	[aria-level="1"] {
 		margin: 0.5em 0;
 	}
 
-	h2 {
+	[aria-level="2"] {
 		margin-top: 1.5em;
 	}
 
-	@media (min-width: ${bpMedium}) {
-		h1 {
-			font-size: ${h1Size};
+	@media (min-width: ${Breakpoints.Medium}px) {
+		[aria-level="1"] {
 			margin: 1em 0;
 		}
 
-		h2 {
-			font-size: ${h3Size};
+		[aria-level="2"] {
 			margin-top: 3em;
 		}
 	}

@@ -5,7 +5,7 @@ import Document, {
 	DocumentContext
 } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import { black } from "../constants/css";
+import { black } from "../components/colors";
 
 export default class PortfolioDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext) {
@@ -53,7 +53,7 @@ export default class PortfolioDocument extends Document {
 					<link rel="icon" type="image/png" href="/static/favicon.ico" />
 					<link
 						rel="stylesheet"
-						href="https://unpkg.com/a11y-css-reset/combo.css"
+						href="https://unpkg.com/a11y-css-reset/combo.min.css"
 					/>
 				</Head>
 				<body>

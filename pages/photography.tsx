@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { SimpleImg } from "react-simple-img";
-import { white, lightGrey, black } from "../constants/css";
+import { Heading, Span, Text } from "styled-typography";
+import { white, lightGrey, black } from "../components/colors";
 import { Stylable } from "../types/component.types";
 import { MetaTags } from "../components/meta_tags.component";
 import photographs from "../constants/photography.json";
@@ -50,29 +51,31 @@ const Photo = ({
 			height={heightAt1200}
 			placeholder={black}
 		/>
-		<h2 className="h5">{name}</h2>
+		<Heading level={2} displayLevel={1}>
+			{name}
+		</Heading>
 		<div className="meta-container">
 			<figcaption>{description}</figcaption>
-			<ul>
+			<ul className="plain-list">
 				<li>
-					<span>Camera</span>
-					<span>{camera}</span>
+					<Span>Camera</Span>
+					<Span>{camera}</Span>
 				</li>
 				<li>
-					<span>Focal length</span>
-					<span>{focalLength}</span>
+					<Span>Focal length</Span>
+					<Span>{focalLength}</Span>
 				</li>
 				<li>
-					<span>Shutter speed</span>
-					<span>{shutterSpeed} sec</span>
+					<Span>Shutter speed</Span>
+					<Span>{shutterSpeed} sec</Span>
 				</li>
 				<li>
-					<span>Aperture</span>
-					<span>ƒ{aperture}</span>
+					<Span>Aperture</Span>
+					<Span>ƒ{aperture}</Span>
 				</li>
 				<li>
-					<span>ISO</span>
-					<span>{iso}</span>
+					<Span>ISO</Span>
+					<Span>{iso}</Span>
 				</li>
 			</ul>
 		</div>
@@ -85,11 +88,11 @@ const Photography = ({ className }: Stylable) => (
 			title="Photography / Mike Engel"
 			description="Mike Engel’s personal photography portfolio"
 		/>
-		<h1 className="h2">Photography</h1>
-		<p>
+		<Heading>Photography</Heading>
+		<Text>
 			These are select moments in time from my travel and every day life. If you
 			would like to use a photo please contact me first.
-		</p>
+		</Text>
 		{photographs.map((photo: PhotoProps) => (
 			<Photo key={photo.name} {...photo} />
 		))}
@@ -97,13 +100,13 @@ const Photography = ({ className }: Stylable) => (
 );
 
 export default styled(Photography)`
-  h1,
-  h2 {
+  [aria-level="1"],
+  [aria-level="2"] {
     margin-top: 0;
     padding: 0;
   }
 
-  h1 {
+  [aria-level="1"] {
     margin-bottom: 0.3em;
   }
 
@@ -119,7 +122,7 @@ export default styled(Photography)`
       width: 100%;
     }
 
-    h2 {
+    [aria-level="2"] {
       margin-top: .75em;
       margin-bottom: 0.1em;
     }

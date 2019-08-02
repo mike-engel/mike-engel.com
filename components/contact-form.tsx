@@ -1,7 +1,7 @@
 import React, { useState, SyntheticEvent } from "react";
 import styled from "styled-components";
 import FloatingLabel from "floating-label-react";
-import { black } from "../constants/css";
+import { black } from "./colors";
 import { Stylable } from "../types/component.types";
 
 const updateFormState = (cb: (value: any) => void) => (

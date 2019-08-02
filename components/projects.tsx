@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { Text, Heading } from "styled-typography";
 import Project from "./project";
 import { Stylable } from "../types/component.types";
-import { bpMedium, bpLarge } from "../constants/css";
+import { Breakpoints } from "../utils/spacing.util";
 
 const projects = [
 	{
@@ -42,7 +43,7 @@ const projects = [
 ];
 
 const Projects = ({ className }: Stylable) => (
-	<ul className={className}>
+	<ul className={`plain-list ${className}`}>
 		{projects.map(({ description, name, url }, idx) => (
 			<Project description={description} key={idx} name={name} url={url} />
 		))}
@@ -50,37 +51,28 @@ const Projects = ({ className }: Stylable) => (
 );
 
 export default styled(Projects)`
-	font-size: 0;
-
-	h3,
-	p {
+	${Heading},
+	${Text} {
 		margin: 0;
 		padding: 0;
 	}
 
-	h3 {
-		font-weight: 700;
-		font-size: 1rem;
-	}
-
-	p {
+	${Text} {
 		margin-top: 0.5em;
-		line-height: 1.4;
 	}
 
-	p + h3 {
+	${Text} + ${Heading} {
 		margin-top: 1em;
 	}
 
 	li {
-		font-size: 1rem;
 		display: inline-block;
 		width: 100%;
 		margin-bottom: 1.5em;
 		vertical-align: top;
 	}
 
-	@media (min-width: ${bpMedium}) {
+	@media (min-width: ${Breakpoints.Medium}px) {
 		li {
 			margin-right: 2em;
 			width: calc(50% - 2em);
@@ -91,7 +83,7 @@ export default styled(Projects)`
 		}
 	}
 
-	@media (min-width: ${bpLarge}) {
+	@media (min-width: ${Breakpoints.Large}px) {
 		li {
 			margin-right: 2em;
 			width: calc(33.3333333333% - 2em);
