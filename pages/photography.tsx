@@ -100,124 +100,124 @@ const Photography = ({ className }: Stylable) => (
 );
 
 export default styled(Photography)`
-  [aria-level="1"],
-  [aria-level="2"] {
-    margin-top: 0;
-    padding: 0;
-  }
+	[aria-level="1"],
+	[aria-level="2"] {
+		margin-top: 0;
+		padding: 0;
+	}
 
-  [aria-level="1"] {
-    margin-bottom: 0.3em;
-  }
+	[aria-level="1"] {
+		margin-bottom: 0.3em;
+	}
 
-  p {
-    margin-bottom: 3em;
-  }
+	p {
+		margin-bottom: 3em;
+	}
 
-  ${Figure} {
-    margin: 0;
+	${Figure} {
+		margin: 0;
 
-    img {
-      display: block;
-      width: 100%;
-    }
+		img {
+			display: block;
+			width: 100%;
+		}
 
-    [aria-level="2"] {
-      margin-top: .75em;
-      margin-bottom: 0.1em;
-    }
+		[aria-level="2"] {
+			margin-top: .75em;
+			margin-bottom: 0.1em;
+		}
 
-    .meta-container {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
+		.meta-container {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+		}
 
-    figcaption {
-      max-width: 40em;
-      padding: 0 0 2em 0;
-    }
+		figcaption {
+			max-width: 40em;
+			padding: 0 0 2em 0;
+		}
 
-    ul {
-      margin: 0;
-      overflow: hidden;
-      width: 100%;
-    }
+		ul {
+			margin: 0;
+			overflow: hidden;
+			width: 100%;
+		}
 
-    ul li {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-      position: relative;
-    }
+		ul li {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row;
+			position: relative;
+		}
 
-    ul li + li {
-      margin-top: 0.75em;
-    }
+		ul li + li {
+			margin-top: 0.75em;
+		}
 
-    ul li:after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      white-space: nowrap;
-      font-weight: 300;
-      line-height: 1;
-      color: ${lightGrey};
-      content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "
-        ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
-    }
+		ul li:after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			white-space: nowrap;
+			font-weight: 300;
+			line-height: 1;
+			color: ${lightGrey};
+			content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "
+				". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+		}
 
-    span:first-child,
-    span:last-child {
-      font-size: 0.8125rem;
-      background: ${white};
-      display: block;
-      margin: 0;
-      padding: 0;
-      line-height: 1;
-      position: relative;
-      z-index: 100;
-    }
+		span:first-child,
+		span:last-child {
+			font-size: 0.8125rem;
+			background: ${white};
+			display: block;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+			position: relative;
+			z-index: 100;
+		}
 
-    span:first-child {
-      padding: 0 0.3em 0 0;
-      font-weight: 400;
-    }
+		span:first-child {
+			padding: 0 0.3em 0 0;
+			font-weight: 400;
+		}
 
-    span:last-child {
-      text-align: right;
-      padding: 0 0 0 0.3em;
-      font-weight: 600;
-    }
+		span:last-child {
+			text-align: right;
+			padding: 0 0 0 0.3em;
+			font-weight: 600;
+		}
 
-    @media (min-width: 767px) {
-      figure + figure {
-        margin-top: 5em;
-      }
+		@media (min-width: 767px) {
+			figure + figure {
+				margin-top: 5em;
+			}
 
-      .meta-container {
-        flex-direction: row;
-      }
+			.meta-container {
+				flex-direction: row;
+			}
 
-      figcaption,
-      ul {
-        flex: 1 100%;
-      }
+			figcaption,
+			ul {
+				flex: 1 100%;
+			}
 
-      figcaption {
-        flex: 1 66%;
-        padding: 0 1em 0 0;
-      }
+			figcaption {
+				flex: 1 66%;
+				padding: 0 1em 0 0;
+			}
 
-      ul {
-        flex: 1 33%;
-      }
-    }
-  }
+			ul {
+				flex: 1 33%;
+			}
+		}
+	}
 
-  ${Figure} + ${Figure} {
-    margin-top: 4em;
-  }
+	${Figure} + ${Figure} {
+		margin-top: 4em;
+	}
 `;
