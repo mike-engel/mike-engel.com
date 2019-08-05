@@ -2,7 +2,7 @@
   {
     "aperture": "4.0",
     "camera": "Sony a7r II",
-    "createdAt": "",
+    "createdAt": "2018-08-05T00:07:00-06:00",
     "description": "A view of Old Town Dubrovnik early in the morning during golden hour",
     "focalLength": "50.0 mm",
     "heightAt1200": 857,
@@ -23,7 +23,7 @@
   {
     "aperture": "3.5",
     "camera": "Sony a7r II",
-    "createdAt": "Flowers collected inside a bike frame.",
+    "createdAt": "2018-06-30T14:19:00-06:00",
     "description": "Flowers collected inside a bike frame.",
     "focalLength": "50.0 mm",
     "heightAt1200": 960,
@@ -47,7 +47,7 @@
   {
     "aperture": "4.0",
     "camera": "Sony a7r II",
-    "createdAt": "Munich, 2018",
+    "createdAt": "2018-08-14T06:12:00-06:00",
     "description": "Munich, 2018",
     "focalLength": "50.0 mm",
     "heightAt1200": 857,
@@ -86,18 +86,6 @@
       "upload"
     ],
     "url": "cuties.jpg"
-  },
-  {
-    "createdAt": "2018-03-08T18:44:00-06:00",
-    "url": "ranchers-eggs.jpg",
-    "name": "Rancher’s Eggs",
-    "description": "My gringo creation, inspired by huevos rancheros",
-    "camera": "Sony a7r II",
-    "focalLength": "50mm",
-    "iso": "400",
-    "aperture": "2.8",
-    "shutterSpeed": "1/60",
-    "heightAt1200": 927
   },
   {
     "createdAt": "2018-02-18T21:17:00-06:00",
@@ -232,7 +220,7 @@
     "heightAt1200": 800
   },
   {
-    "createdAt": "2016-09-18T0917:53:00-06:00",
+    "createdAt": "2016-09-18T17:53:00-06:00",
     "url": "beach-grass.jpg",
     "name": "Beach grass",
     "description": "Looking out into a field of grass on a sunny afternoon in South Carolina",
