@@ -1,5 +1,20 @@
 [
   {
+    "aperture": "4.0",
+    "camera": "Sony a7r II",
+    "createdAt": "Munich, 2018",
+    "description": "Munich, 2018",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 857,
+    "iso": "80",
+    "name": "Arches",
+    "shutterSpeed": "1/2000",
+    "tags": [
+      "upload"
+    ],
+    "url": "Arches.jpg"
+  },
+  {
     "aperture": "4.5",
     "camera": "Sony a7r II",
     "createdAt": "2019-06-14T10:41:00-06:00",
