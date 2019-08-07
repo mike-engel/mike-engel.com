@@ -46,7 +46,7 @@ export const withMdx = (options: Record<string, any>) => ({
 }) => (
 	<Article className="site-constraint">
 		<Pixelytics
-			page={`/writing/${options.title.toLowerCase().replace(" ", "-")}`}
+			page={`/writing/${options.title.replace(/ /gi, "-").toLowerCase()}`}
 		/>
 		<MetaTags title={options.title} description={options.description} />
 		<MDXProvider components={components}>{children}</MDXProvider>
