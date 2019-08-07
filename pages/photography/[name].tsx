@@ -7,6 +7,7 @@ import { Stylable } from "../../types/component.types";
 import { MetaTags } from "../../components/meta_tags.component";
 import photographs from "../../constants/photography.json";
 import { PhotoProps } from "../../types/photo.types";
+import { Pixelytics } from "../../components/pixelytics.component";
 
 type Props = Stylable & { photo: PhotoProps };
 
@@ -32,6 +33,7 @@ const Photo = ({ photo, className }: Props) => {
 
 	return (
 		<section className={className}>
+			<Pixelytics page={`/photography/${encodeURIComponent(name)}`} />
 			<MetaTags title={name} description={description} />
 			<Figure>
 				<img

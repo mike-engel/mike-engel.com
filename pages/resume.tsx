@@ -4,6 +4,7 @@ import { Link, Heading, Text } from "styled-typography";
 import { black, grey } from "../components/colors";
 import { Stylable } from "../types/component.types";
 import { MetaTags } from "../components/meta_tags.component";
+import { Pixelytics } from "../components/pixelytics.component";
 
 const GlobalResumeStyles = createGlobalStyle`
   @media print {
@@ -121,6 +122,7 @@ const GlobalResumeStyles = createGlobalStyle`
 
 const Resume = ({ className }: Stylable) => (
 	<div className={className}>
+		<Pixelytics page="/resume" />
 		<GlobalResumeStyles />
 		<MetaTags title="Resume / Mike Engel" />
 		<section>

@@ -3,9 +3,11 @@ import styled from "styled-components";
 import { Stylable } from "../types/component.types";
 import { MetaTags } from "../components/meta_tags.component";
 import { Heading, Text, Link } from "styled-typography";
+import { Pixelytics } from "../components/pixelytics.component";
 
 const Uses = ({ className }: Stylable) => (
 	<div className={className}>
+		<Pixelytics page="/uses" />
 		<MetaTags />
 		<Heading>What I use</Heading>
 		<Text>

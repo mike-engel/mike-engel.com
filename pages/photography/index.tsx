@@ -6,6 +6,7 @@ import { MetaTags } from "../../components/meta_tags.component";
 import photographs from "../../constants/photography.json";
 import { PhotoProps } from "../../types/photo.types";
 import { PhotoYear } from "../../components/photo_year.component";
+import { Pixelytics } from "../../components/pixelytics.component";
 
 const sortedPhotos = (): [string, PhotoProps[]][] => {
 	const sorted = photographs.sort((a, b) => {
@@ -34,6 +35,7 @@ const sortedPhotos = (): [string, PhotoProps[]][] => {
 
 const Photography = ({ className }: Stylable) => (
 	<div className={className}>
+		<Pixelytics page="/photography" />
 		<MetaTags
 			title="Photography / Mike Engel"
 			description="Mike Engel’s personal photography portfolio"

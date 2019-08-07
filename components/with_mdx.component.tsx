@@ -4,6 +4,7 @@ import { MDXProvider } from "@mdx-js/react";
 import { Text, Span, Link, Heading } from "styled-typography";
 import { MetaTags } from "./meta_tags.component";
 import { Breakpoints } from "../utils/spacing.util";
+import { Pixelytics } from "./pixelytics.component";
 
 const Article = styled("article")`
 	[aria-level="1"] {
@@ -44,6 +45,9 @@ export const withMdx = (options: Record<string, any>) => ({
 	children: ReactNode;
 }) => (
 	<Article className="site-constraint">
+		<Pixelytics
+			page={`/writing/${options.title.toLowerCase().replace(" ", "-")}`}
+		/>
 		<MetaTags title={options.title} description={options.description} />
 		<MDXProvider components={components}>{children}</MDXProvider>
 	</Article>

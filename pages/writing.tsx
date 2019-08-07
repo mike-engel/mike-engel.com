@@ -5,9 +5,11 @@ import writings from "../constants/writing.json";
 import { MetaTags } from "../components/meta_tags.component";
 import { Stylable } from "../types/component.types";
 import { Heading, Link, Text } from "styled-typography";
+import { Pixelytics } from "../components/pixelytics.component";
 
 const Writing = ({ className }: Stylable) => (
 	<div className={className}>
+		<Pixelytics page="/writing" />
 		<MetaTags
 			title="Writing / Mike Engel"
 			description="Mike Engel’s personal blog"

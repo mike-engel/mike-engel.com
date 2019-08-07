@@ -6,9 +6,11 @@ import Projects from "../components/projects";
 import { Stylable } from "../types/component.types";
 import { MetaTags } from "../components/meta_tags.component";
 import { Breakpoints } from "../utils/spacing.util";
+import { Pixelytics } from "../components/pixelytics.component";
 
 const Index = ({ className }: Stylable) => (
 	<div className={className}>
+		<Pixelytics page="/" />
 		<MetaTags />
 		<Heading>
 			I’m a designer & developer leading teams and creating user-driven
