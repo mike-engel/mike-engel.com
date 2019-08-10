@@ -1,5 +1,20 @@
 [
   {
+    "aperture": "11.0",
+    "camera": "Sony a7r II",
+    "createdAt": "2018-07-23T08:00:52-0600",
+    "description": "Buena Vista, CO, 2018",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 1679,
+    "iso": "100",
+    "name": "Still",
+    "shutterSpeed": "1/500",
+    "tags": [
+      "upload"
+    ],
+    "url": "Still.jpg"
+  },
+  {
     "aperture": "5.0",
     "camera": "Sony a7r II",
     "createdAt": "2018-07-16T10:12:49-0600",
