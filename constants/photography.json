@@ -1,5 +1,34 @@
 [
   {
+    "aperture": "4.0",
+    "camera": "Sony a7r II",
+    "createdAt": "2019-03-13T17:15:11-0600",
+    "description": "Junior on a walk after a snow storm",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 1499,
+    "iso": "100",
+    "name": "Snow Dog",
+    "shutterSpeed": "1/320",
+    "tags": [
+      "animal",
+      "black lab",
+      "blue",
+      "cold",
+      "dog",
+      "lab",
+      "outdoor",
+      "outdoors",
+      "outside",
+      "pet",
+      "snow",
+      "snow storm",
+      "urban",
+      "winter",
+      "upload"
+    ],
+    "url": "Snow-Dog.jpg"
+  },
+  {
     "aperture": "3.2",
     "camera": "Sony a7r II",
     "createdAt": "2018-03-31T16:22:14-0600",
