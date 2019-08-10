@@ -1,5 +1,20 @@
 [
   {
+    "aperture": "2.0",
+    "camera": "Sony a7r II",
+    "createdAt": "2018-03-31T11:14:47-0600",
+    "description": "A portal to another world",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 1679,
+    "iso": "6400",
+    "name": "Portal",
+    "shutterSpeed": "1/640",
+    "tags": [
+      "upload"
+    ],
+    "url": "Portal.jpg"
+  },
+  {
     "aperture": "4.0",
     "camera": "Sony a7r II",
     "createdAt": "2018-08-25T03:29:45-0600",
