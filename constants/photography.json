@@ -2,6 +2,33 @@
   {
     "aperture": "4.0",
     "camera": "Sony a7r II",
+    "createdAt": "2019-01-29T14:32:13-0700",
+    "description": "",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 959,
+    "iso": "100",
+    "name": "Furry Lizard",
+    "shutterSpeed": "1/1600",
+    "tags": [
+      "cat",
+      "fur",
+      "golden hour",
+      "green",
+      "indoors",
+      "lazy",
+      "plant",
+      "pot",
+      "relaxing",
+      "sun",
+      "sun bathing",
+      "tanning",
+      "upload"
+    ],
+    "url": "Furry-Lizard.jpg"
+  },
+  {
+    "aperture": "4.0",
+    "camera": "Sony a7r II",
     "createdAt": "2019-03-28T18:20:54-0600",
     "description": "A view of part of Fisher Towers at sunset",
     "focalLength": "50.0 mm",
