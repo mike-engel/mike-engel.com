@@ -2,6 +2,21 @@
   {
     "aperture": "4.0",
     "camera": "Sony a7r II",
+    "createdAt": "2018-01-20T11:36:14-0700",
+    "description": "Womens March, Denver, 2018",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 857,
+    "iso": "100",
+    "name": "Witches",
+    "shutterSpeed": "1/3200",
+    "tags": [
+      "upload"
+    ],
+    "url": "Witches.jpg"
+  },
+  {
+    "aperture": "4.0",
+    "camera": "Sony a7r II",
     "createdAt": "2019-02-26T15:52:16-0700",
     "description": "",
     "focalLength": "50.0 mm",
