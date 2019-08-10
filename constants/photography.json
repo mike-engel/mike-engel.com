@@ -1,5 +1,35 @@
 [
   {
+    "aperture": "11.0",
+    "camera": "Sony a7r II",
+    "createdAt": "2018-08-14T06:10:17-0600",
+    "description": "Munich, 2018",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 1500,
+    "iso": "80",
+    "name": "Munich House",
+    "shutterSpeed": "1/250",
+    "tags": [
+      "blue",
+      "clouds",
+      "germany",
+      "grass",
+      "green",
+      "house",
+      "munich",
+      "natural light",
+      "outdoors",
+      "red",
+      "red roof",
+      "roof",
+      "sky",
+      "travel",
+      "trees",
+      "upload"
+    ],
+    "url": "Munich-House.jpg"
+  },
+  {
     "aperture": "4.0",
     "camera": "Sony a7r II",
     "createdAt": "2018-08-18T22:33:39-0600",
