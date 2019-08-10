@@ -2,7 +2,7 @@
   {
     "aperture": "4.0",
     "camera": "Sony a7r II",
-    "createdAt": "2019:03:29 11:48:55",
+    "createdAt": "2019-03-29T11:48:55-06:00",
     "description": "A weird rock formation found while hiking near Moab, Utah, USA",
     "focalLength": "50.0 mm",
     "heightAt1200": 960,
@@ -28,7 +28,7 @@
   {
     "aperture": "4.0",
     "camera": "Sony a7r II",
-    "createdAt": "London, 2018",
+    "createdAt": "2018-08-12T06:19-06:00",
     "description": "London, 2018",
     "focalLength": "50.0 mm",
     "heightAt1200": 1500,
@@ -51,8 +51,8 @@
   {
     "aperture": "4.0",
     "camera": "Sony a7r II",
-    "createdAt": "",
-    "description": "",
+    "createdAt": "2019-03-28T10:01:00-06:00",
+    "description": "A look up at a mesa near Moab, Utah",
     "focalLength": "50.0 mm",
     "heightAt1200": 960,
     "iso": "400",
