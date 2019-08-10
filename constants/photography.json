@@ -2,6 +2,28 @@
   {
     "aperture": "4.0",
     "camera": "Sony a7r II",
+    "createdAt": "2019-03-28T18:20:54-0600",
+    "description": "A view of part of Fisher Towers at sunset",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 1500,
+    "iso": "800",
+    "name": "Fisher Towers",
+    "shutterSpeed": "1/1600",
+    "tags": [
+      "camping",
+      "golden hour",
+      "mountains",
+      "natural formation",
+      "natural light",
+      "outdoors",
+      "rocks",
+      "upload"
+    ],
+    "url": "Fisher-Towers.jpg"
+  },
+  {
+    "aperture": "4.0",
+    "camera": "Sony a7r II",
     "createdAt": "2019-03-29T11:48:55-06:00",
     "description": "A weird rock formation found while hiking near Moab, Utah, USA",
     "focalLength": "50.0 mm",
