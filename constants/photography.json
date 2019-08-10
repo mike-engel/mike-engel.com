@@ -1,5 +1,20 @@
 [
   {
+    "aperture": "4.0",
+    "camera": "Sony a7r II",
+    "createdAt": "2018-08-18T23:32:30-0600",
+    "description": "A secret door / Croatia, 2018",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 1679,
+    "iso": "100",
+    "name": "Secret Door",
+    "shutterSpeed": "1/5000",
+    "tags": [
+      "upload"
+    ],
+    "url": "Secret-Door.jpg"
+  },
+  {
     "aperture": "2.0",
     "camera": "Sony a7r II",
     "createdAt": "2018-03-31T11:14:47-0600",
