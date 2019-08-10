@@ -1,5 +1,20 @@
 [
   {
+    "aperture": "3.2",
+    "camera": "Sony a7r II",
+    "createdAt": "2018-03-31T15:51:10-0600",
+    "description": "Some cat looking for its next prey",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 960,
+    "iso": "50",
+    "name": "Next Prey",
+    "shutterSpeed": "1/2000",
+    "tags": [
+      "upload"
+    ],
+    "url": "Next-Prey.jpg"
+  },
+  {
     "aperture": "4.0",
     "camera": "Sony a7r II",
     "createdAt": "2018-06-30T15:00:43-0600",
