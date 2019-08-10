@@ -1,5 +1,20 @@
 [
   {
+    "aperture": "4.0",
+    "camera": "Sony a7r II",
+    "createdAt": "2018-06-30T15:00:43-0600",
+    "description": "Despite the forces, nature finds a way to thrive.",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 1500,
+    "iso": "64",
+    "name": "Nature Finds A Way",
+    "shutterSpeed": "1/250",
+    "tags": [
+      "upload"
+    ],
+    "url": "Nature-Finds-A-Way.jpg"
+  },
+  {
     "aperture": "11.0",
     "camera": "Sony a7r II",
     "createdAt": "2018-08-14T06:10:17-0600",
