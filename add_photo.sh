@@ -8,6 +8,6 @@ git checkout master
 git fetch --all
 git rebase origin/master
 git add ./constants/photography.json
-git commit -S -m "Add new photo"
+git commit -S -m "feat: Add new photo"
 git push origin master
 git checkout -
