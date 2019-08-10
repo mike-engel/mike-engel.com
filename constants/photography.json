@@ -2,6 +2,32 @@
   {
     "aperture": "4.0",
     "camera": "Sony a7r II",
+    "createdAt": "2019:03:29 11:48:55",
+    "description": "A weird rock formation found while hiking near Moab, Utah, USA",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 960,
+    "iso": "400",
+    "name": "Eye Rocks",
+    "shutterSpeed": "1/3200",
+    "tags": [
+      "camping",
+      "clouds",
+      "daylight",
+      "desert",
+      "hiking",
+      "mountains",
+      "national park",
+      "natural formation",
+      "outdoor",
+      "outdoors",
+      "rocks",
+      "upload"
+    ],
+    "url": "Eye-Rocks.jpg"
+  },
+  {
+    "aperture": "4.0",
+    "camera": "Sony a7r II",
     "createdAt": "London, 2018",
     "description": "London, 2018",
     "focalLength": "50.0 mm",
