@@ -1,5 +1,20 @@
 [
   {
+    "aperture": "2.0",
+    "camera": "Sony a7r II",
+    "createdAt": "2018-06-30T21:17:13-0600",
+    "description": "A short moment in the colorado mountains as the sun sets.",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 800,
+    "iso": "400",
+    "name": "Night Sky",
+    "shutterSpeed": "30",
+    "tags": [
+      "upload"
+    ],
+    "url": "Night-Sky.jpg"
+  },
+  {
     "aperture": "3.2",
     "camera": "Sony a7r II",
     "createdAt": "2018-03-31T15:51:10-0600",
