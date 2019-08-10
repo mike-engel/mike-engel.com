@@ -2,6 +2,31 @@
   {
     "aperture": "2.0",
     "camera": "Sony a7r II",
+    "createdAt": "2019-03-28T19:54:38-0600",
+    "description": "A view of the night sky a little after sunset near Moab, UT.",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 800,
+    "iso": "3200",
+    "name": "Night Sky 2",
+    "shutterSpeed": "8",
+    "tags": [
+      "camping",
+      "dark skies",
+      "dark sky",
+      "meteor",
+      "mountains",
+      "natural light",
+      "night",
+      "outdoors",
+      "star trails",
+      "stars",
+      "upload"
+    ],
+    "url": "Night-Sky-2.jpg"
+  },
+  {
+    "aperture": "2.0",
+    "camera": "Sony a7r II",
     "createdAt": "2018-06-30T21:17:13-0600",
     "description": "A short moment in the colorado mountains as the sun sets.",
     "focalLength": "50.0 mm",
