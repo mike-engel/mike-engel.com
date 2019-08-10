@@ -1,5 +1,20 @@
 [
   {
+    "aperture": "4.0",
+    "camera": "Sony a7r II",
+    "createdAt": "2018-08-25T03:29:45-0600",
+    "description": "A walkway in the Plitvice Lakes National Park in Croatia",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 1200,
+    "iso": "1600",
+    "name": "Plitvice Lakes National Park",
+    "shutterSpeed": "1/640",
+    "tags": [
+      "upload"
+    ],
+    "url": "Plitvice-Lakes-National-Park.jpg"
+  },
+  {
     "aperture": "2.0",
     "camera": "Sony a7r II",
     "createdAt": "2019-03-28T19:54:38-0600",
