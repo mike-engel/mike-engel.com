@@ -66,6 +66,12 @@ export default styled(Nav)`
 
 	.hidden-link {
 		border: none;
+
+		@media (hover) {
+			&:hover {
+				background-color: transparent;
+			}
+		}
 	}
 
 	ul {
