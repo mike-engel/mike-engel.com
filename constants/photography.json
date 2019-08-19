@@ -2,6 +2,26 @@
   {
     "aperture": "2.4",
     "camera": "Apple iPhone XS",
+    "createdAt": "2019-05-31T18:00:26-0600",
+    "description": "A box finds itself unexpectedly being thrown out.",
+    "focalLength": "6.0 mm",
+    "heightAt1200": 1498,
+    "iso": "16",
+    "name": "Shocked Box",
+    "shutterSpeed": "1/169",
+    "tags": [
+      "humor",
+      "box",
+      "trash",
+      "found objects",
+      "surprise",
+      "upload"
+    ],
+    "url": "Shocked-Box.jpg"
+  },
+  {
+    "aperture": "2.4",
+    "camera": "Apple iPhone XS",
     "createdAt": "2019-06-08T12:10:09-0600",
     "description": "A cat tries and fails to hide in a patch of grass.",
     "focalLength": "6.0 mm",
