@@ -1,5 +1,26 @@
 [
   {
+    "aperture": "1.8",
+    "camera": "Apple iPhone 7",
+    "createdAt": "2017-05-16T03:54:02-0600",
+    "description": "Looking up at one of the great houses at Guell park in Barcelona.",
+    "focalLength": "4.0 mm",
+    "heightAt1200": 900,
+    "iso": "20",
+    "name": "Guell Park",
+    "shutterSpeed": "1/2591",
+    "tags": [
+      "outdoors",
+      "architecture",
+      "barcelona",
+      "travel",
+      "Guell park",
+      "Guell",
+      "upload"
+    ],
+    "url": "Guell-Park.jpg"
+  },
+  {
     "aperture": "2.5",
     "camera": "Sony a7r II",
     "createdAt": "2018-04-28T12:16:23-0600",
