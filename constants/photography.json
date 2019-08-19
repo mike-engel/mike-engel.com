@@ -1,5 +1,28 @@
 [
   {
+    "aperture": "3.5",
+    "camera": "Nikon D5300",
+    "createdAt": "2017-04-01T13:32:40-0600",
+    "description": "The Flatirons in Boulder after some fresh snow in the early morning",
+    "focalLength": "35.0 mm",
+    "heightAt1200": 708,
+    "iso": "200",
+    "name": "Misty Mountains",
+    "shutterSpeed": "1/2000",
+    "tags": [
+      "outdoor",
+      "outdoors",
+      "mountain",
+      "mountains",
+      "mist",
+      "snow",
+      "fog",
+      "black a",
+      "upload"
+    ],
+    "url": "Misty-Mountains.jpg"
+  },
+  {
     "aperture": "4.5",
     "camera": "Sony a7r II",
     "createdAt": "2019-06-14T10:58:21-0600",
