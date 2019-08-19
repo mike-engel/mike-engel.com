@@ -2,6 +2,28 @@
   {
     "aperture": "2.4",
     "camera": "Apple iPhone XS",
+    "createdAt": "2019-03-17T17:04:00-0600",
+    "description": "A scene near Boulder, CO, USA worthy of a wallpaper.",
+    "focalLength": "6.0 mm",
+    "heightAt1200": 959,
+    "iso": "16",
+    "name": "Colorado Wallpaper",
+    "shutterSpeed": "1/1453",
+    "tags": [
+      "outdoors",
+      "meadow",
+      "grass",
+      "winter",
+      "grassy",
+      "nature",
+      "hiking",
+      "upload"
+    ],
+    "url": "Colorado-Wallpaper.jpg"
+  },
+  {
+    "aperture": "2.4",
+    "camera": "Apple iPhone XS",
     "createdAt": "2019-03-29T13:39:45-0600",
     "description": "Looking up into one of the cavernous arches in Moab, UT, USA.",
     "focalLength": "6.0 mm",
