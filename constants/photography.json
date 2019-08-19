@@ -2,6 +2,29 @@
   {
     "aperture": "2.4",
     "camera": "Apple iPhone XS",
+    "createdAt": "2019-06-08T12:12:10-0600",
+    "description": "A weird dog wriggles around on the grass into a weird pose.",
+    "focalLength": "6.0 mm",
+    "heightAt1200": 1498,
+    "iso": "16",
+    "name": "Alien Dog",
+    "shutterSpeed": "1/494",
+    "tags": [
+      "animals",
+      "dog",
+      "outside",
+      "outdoors",
+      "grass",
+      "building",
+      "lab",
+      "black lab",
+      "upload"
+    ],
+    "url": "Alien-Dog.jpg"
+  },
+  {
+    "aperture": "2.4",
+    "camera": "Apple iPhone XS",
     "createdAt": "2018-11-15T11:54:36-0700",
     "description": "Ducks hanging out in Lake Geneva.",
     "focalLength": "6.0 mm",
