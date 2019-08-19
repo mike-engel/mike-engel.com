@@ -2,6 +2,27 @@
   {
     "aperture": "2.4",
     "camera": "Apple iPhone XS",
+    "createdAt": "2018-11-15T11:54:36-0700",
+    "description": "Ducks hanging out in Lake Geneva.",
+    "focalLength": "6.0 mm",
+    "heightAt1200": 939,
+    "iso": "16",
+    "name": "Swiss Duck",
+    "shutterSpeed": "1/207",
+    "tags": [
+      "animals",
+      "ducks",
+      "geese",
+      "water",
+      "lake",
+      "multiples",
+      "upload"
+    ],
+    "url": "Swiss-Duck.jpg"
+  },
+  {
+    "aperture": "2.4",
+    "camera": "Apple iPhone XS",
     "createdAt": "2019-06-14T12:29:32-0600",
     "description": "Incoming clouds cast shadows on the sand dunes at the Great Sand Dunes National Park.",
     "focalLength": "6.0 mm",
