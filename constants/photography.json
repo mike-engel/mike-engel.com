@@ -1,5 +1,29 @@
 [
   {
+    "aperture": "2.5",
+    "camera": "Sony a7r II",
+    "createdAt": "2018-04-28T12:16:23-0600",
+    "description": "Junior has just seen something out of this world",
+    "focalLength": "50.0 mm",
+    "heightAt1200": 857,
+    "iso": "100",
+    "name": "Shocked",
+    "shutterSpeed": "1/1000",
+    "tags": [
+      "dog",
+      "yawn",
+      "yawning",
+      "tired",
+      "sun",
+      "afternoon",
+      "lab",
+      "labrador",
+      "animal",
+      "upload"
+    ],
+    "url": "Shocked.jpg"
+  },
+  {
     "aperture": "4.0",
     "camera": "Sony a7r II",
     "createdAt": "2019-01-29T14:30:39-0700",
