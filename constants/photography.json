@@ -1,5 +1,26 @@
 [
   {
+    "aperture": "1.8",
+    "camera": "Spectre ",
+    "createdAt": "2019-06-14T11:40:00-0600",
+    "description": "The footprints of people come and gone hiking on the sand dunes at the Great Sand Dunes National Park.",
+    "focalLength": "4.2 mm",
+    "heightAt1200": 1497,
+    "iso": "25",
+    "name": "Footprints",
+    "shutterSpeed": "1/4274",
+    "tags": [
+      "travel",
+      "hiking",
+      "sand dunes",
+      "dunes",
+      "footprints",
+      "people",
+      "upload"
+    ],
+    "url": "Footprints.jpg"
+  },
+  {
     "aperture": "2.4",
     "camera": "Apple iPhone XS",
     "createdAt": "2019-03-17T17:04:00-0600",
