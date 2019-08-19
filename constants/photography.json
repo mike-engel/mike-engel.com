@@ -1,5 +1,28 @@
 [
   {
+    "aperture": "2.4",
+    "camera": "Apple iPhone XS",
+    "createdAt": "2019-06-08T12:10:09-0600",
+    "description": "A cat tries and fails to hide in a patch of grass.",
+    "focalLength": "6.0 mm",
+    "heightAt1200": 1498,
+    "iso": "16",
+    "name": "Hidden Cat",
+    "shutterSpeed": "1/131",
+    "tags": [
+      "animals",
+      "cat",
+      "cats",
+      "hiding",
+      "sneaking",
+      "outside",
+      "outdoors",
+      "grass",
+      "upload"
+    ],
+    "url": "Hidden-Cat.jpg"
+  },
+  {
     "aperture": "1.8",
     "camera": "Spectre ",
     "createdAt": "2019-06-14T11:40:00-0600",
