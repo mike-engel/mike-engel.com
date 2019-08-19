@@ -2,6 +2,28 @@
   {
     "aperture": "2.4",
     "camera": "Apple iPhone XS",
+    "createdAt": "2019-06-14T12:29:32-0600",
+    "description": "Incoming clouds cast shadows on the sand dunes at the Great Sand Dunes National Park.",
+    "focalLength": "6.0 mm",
+    "heightAt1200": 959,
+    "iso": "16",
+    "name": "Shadow Dunes",
+    "shutterSpeed": "1/2660",
+    "tags": [
+      "shadow",
+      "light",
+      "light and shadow",
+      "clouds",
+      "cloudy",
+      "sand",
+      "sand dune",
+      "upload"
+    ],
+    "url": "Shadow-Dunes.jpg"
+  },
+  {
+    "aperture": "2.4",
+    "camera": "Apple iPhone XS",
     "createdAt": "2019-05-31T18:00:26-0600",
     "description": "A box finds itself unexpectedly being thrown out.",
     "focalLength": "6.0 mm",
