@@ -1,0 +1,84 @@
+.contact-form {
+	max-width: 40em;
+
+	& > span,
+	& > div {
+		position: relative;
+	}
+
+	& > span + span,
+	& > div + div {
+		margin-top: 1em;
+	}
+
+	fieldset {
+		margin: 0;
+		padding: 0;
+		border: none;
+
+		& > span,
+		& > div {
+			position: relative;
+		}
+
+		& > span + span,
+		& > div + div {
+			margin-top: 1em;
+		}
+	}
+
+	button {
+		background: transparent;
+		border: 2px solid var(--foreground);
+		border-radius: 1px;
+		font: inherit;
+		font-size: 1rem;
+		font-weight: 700;
+		letter-spacing: 0.03em;
+		line-height: 1;
+		margin-top: 1em;
+		padding: 10px 15px;
+	}
+
+	label {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+			Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+		padding-top: 5px;
+		position: relative;
+	}
+
+	label + label {
+		margin-top: 0.5em;
+	}
+
+	input,
+	textarea {
+		border: none;
+		border-bottom: 2px solid var(--foreground);
+		box-sizing: border-box;
+		font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+			Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+		font-size: 1rem;
+		padding: 12px 0 8px 0;
+		width: 100%;
+	}
+
+	textarea {
+		min-height: 150px;
+	}
+
+	label span {
+		box-sizing: border-box;
+		font-size: 0.625rem;
+		left: 0;
+		padding: 0;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		transition: font-size 200ms, padding 200ms;
+		z-index: 1;
+	}
+}

@@ -1,0 +1,31 @@
+<header class="header">
+  <nav class="site-constraint">
+    <a href="/" class="hidden-link" aria-label="click to go to the home page">
+      <svg
+        width="46px"
+        height="50px"
+        viewBox="0 0 46 50"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <path
+          d="M0,9.26966292 L0,50 L12,44.9438202 L12,0 L0,9.26966292 Z M46,9.26966292 L46,50 L34,44.9438202 L34,0 L46,9.26966292 Z M12,0 L12,19.1964286 L23,33.59375 L23,14.9619223 L12,0 Z M34,0 L34,19.1964286 L23,33.59375 L23,14.9619223 L34,0 Z"
+        ></path>
+      </svg>
+    </a>
+    <ul class="plain-list">
+      <li>
+        <a class="text--semibold" href="/#recent-projects">projects</a>
+      </li>
+      <li>
+        <a class="text--semibold" href="/#contact">contact</a>
+      </li>
+      {{ range .Site.Menus.main }}
+        <li>
+          <a class="text--semibold" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

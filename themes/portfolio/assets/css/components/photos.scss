@@ -1,0 +1,116 @@
+.single-photo {
+	margin-top: 2em;
+
+	h1 {
+		margin-top: 0;
+		margin-bottom: 0.3em;
+		padding: 0;
+	}
+
+	p {
+		margin-bottom: 3em;
+	}
+
+	figure {
+		position: relative;
+		margin: 0;
+
+		img {
+			display: block;
+			width: 100%;
+			height: calc(attr(data-height-at-1200) * 100% / 1200);
+			margin-bottom: 2em;
+		}
+
+		.meta-container {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+		}
+
+		figcaption {
+			max-width: 40em;
+			padding: 0 0 2em 0;
+		}
+
+		ul {
+			margin: 0;
+			overflow: hidden;
+			width: 100%;
+		}
+
+		ul li {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row;
+			position: relative;
+		}
+
+		ul li + li {
+			margin-top: 0.75em;
+		}
+
+		ul li:after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			white-space: nowrap;
+			font-weight: 300;
+			line-height: 1;
+			color: var(--lighter);
+			content: ". . . . . . . . . . . . . . . . . . . . "
+				". . . . . . . . . . . . . . . . . . . . "
+				". . . . . . . . . . . . . . . . . . . . "
+				". . . . . . . . . . . . . . . . . . . . ";
+		}
+
+		span:first-child,
+		span:last-child {
+			font-size: 0.8125rem;
+			background: var(--background);
+			display: block;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+			position: relative;
+			z-index: 100;
+		}
+
+		span:first-child {
+			padding: 0 0.3em 0 0;
+			font-weight: 400;
+		}
+
+		span:last-child {
+			text-align: right;
+			padding: 0 0 0 0.3em;
+			font-weight: 600;
+		}
+
+		@media (min-width: #{breakpoint("medium")}) {
+			figure + figure {
+				margin-top: 5em;
+			}
+
+			.meta-container {
+				flex-direction: row;
+			}
+
+			figcaption,
+			ul {
+				flex: 1 100%;
+			}
+
+			figcaption {
+				flex: 1 66%;
+				padding: 0 1em 0 0;
+			}
+
+			ul {
+				flex: 1 33%;
+			}
+		}
+	}
+}

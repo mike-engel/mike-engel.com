@@ -1,0 +1,41 @@
+{{ define "title" }}
+	{{ .Title }} / Photography / Mike Engel
+{{ end }}
+{{ define "main" }}
+	<main class="site-constraint single-photo">
+		<figure>
+			<img
+				src="https://res.cloudinary.com/beardfury/image/upload/fl_progressive,fl_force_strip,q_70,c_scale,w_1200/v1444865801/{{ $.Params.cloudinary_url }}"
+				srcSet="https://res.cloudinary.com/beardfury/image/upload/fl_progressive,fl_force_strip,q_70,c_scale,w_1200/v1444865801/{{ $.Params.cloudinary_url }} 1200w, https://res.cloudinary.com/beardfury/image/upload/fl_progressive,fl_force_strip,q_70,c_scale,w_1024/v1444865801/{{ $.Params.cloudinary_url }} 1024w, https://res.cloudinary.com/beardfury/image/upload/fl_progressive,fl_force_strip,q_70,c_scale,w_768/v1444865801/{{ $.Params.cloudinary_url }} 768w, https://res.cloudinary.com/beardfury/image/upload/fl_progressive,fl_force_strip,q_70,c_scale,w_500/v1444865801/{{ $.Params.cloudinary_url }} 500w, https://res.cloudinary.com/beardfury/image/upload/fl_progressive,fl_force_strip,q_70,c_scale,w_420/v1444865801/{{ $.Params.cloudinary_url }} 420w"
+				alt="{{ $.Params.description }}"
+				data-height-at-1200="{{ $.Params.height_at_1200 }}"
+			/>
+			<h1>{{ .Title }}</h1>
+			<div class="meta-container">
+				<figcaption>{{ $.Params.description }}</figcaption>
+				<ul class="plain-list">
+					<li>
+						<span>Camera</span>
+						<span>{{ $.Params.camera }}</span>
+					</li>
+					<li>
+						<span>Focal length</span>
+						<span>{{ $.Params.focal_length }}</span>
+					</li>
+					<li>
+						<span>Shutter speed</span>
+						<span>{{ $.Params.shutter_speed }} sec</span>
+					</li>
+					<li>
+						<span>Aperture</span>
+						<span>ƒ{{ $.Params.aperture }}</span>
+					</li>
+					<li>
+						<span>ISO</span>
+						<span>{{ $.Params.iso }}</span>
+					</li>
+				</ul>
+			</div>
+		</figure>
+	</main>
+{{ end }}

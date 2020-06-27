@@ -1,0 +1,20 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,width=device-width">
+	<meta name="theme-color" content="#0B2940">
+	<meta name="p:domain_verify" content="ac56949deddb26b9107af368eea0b43b">
+	<meta name="description" content="{{ .Description }}">
+	<meta name="keywords" content="{{ .Keywords }}">
+
+	<title>
+		{{ block "title" . }}
+			{{ .Title }}
+		{{ end }}
+	</title>
+
+	<link rel="manifest" href="/manifest.json">
+	<link rel="icon" type="image/png" href="/favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/a11y-css-reset/combo.min.css">
+	{{ $style := resources.Get "css/site.scss" | resources.ToCSS | resources.Fingerprint }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>

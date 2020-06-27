@@ -1,0 +1,77 @@
+body {
+	color: var(--foreground);
+	background-color: var(--background);
+	font-family: $font-family;
+	font-size: 16px;
+	font-weight: fontWeight("normal");
+	font-style: fontStyle("normal");
+	line-height: 1.6;
+}
+
+.site-constraint {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+ul:not(.plain-list) {
+	margin: 1em 0 0 1em;
+	padding-left: initial;
+
+	li + li {
+		margin-top: 0.5em;
+	}
+}
+
+li {
+	max-width: 40em;
+}
+
+dt,
+dd {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+dd + dt { margin-top: 1em; }
+
+dt { font-weight: fontWeight("bold"); }
+
+pre {
+	padding: 3px;
+	border-radius: 3px;
+	background-color: #f8f8f8;
+	padding: .5em 1em;
+	overflow-x: scroll;
+}
+
+@media (min-width: #{breakpoint("small")}) {
+	.site-constraint {
+		width: calc(#{breakpoint("small")} - 7vw);
+	}
+}
+
+@media (min-width: #{breakpoint("medium")}) {
+	.site-constraint {
+		width: calc(#{breakpoint("medium")} - 7vw);
+	}
+}
+
+@media (min-width: #{breakpoint("large")}) {
+	body {
+		font-size: 18px;
+	}
+
+	html {
+		font-size: 1.125rem;
+	}
+
+	.site-constraint {
+		width: calc(#{breakpoint("large")} - 7vw);
+	}
+}
+
+@media (min-width: #{breakpoint("xlarge")}) {
+	.site-constraint {
+		width: calc(#{breakpoint("xlarge")} - 7vw);
+	}
+}

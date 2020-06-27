@@ -1,0 +1,166 @@
+$font-sizes: (
+	2.05555rem,
+	1.55555rem,
+	1.16666rem,
+	1rem,
+	.875rem,
+	12px
+);
+
+$font-weights: (
+	"hairline": 100,
+	"extralight": 200,
+	"light": 300,
+	"normal": 400,
+	"medium": 500,
+	"semibold": 600,
+	"bold": 700,
+	"extrabold": 800,
+	"heavy": 900,
+	"inherit": inherit
+);
+
+$font-styles: (
+	"italic": "italic",
+	"oblique": "oblique",
+	"regular": "normal",
+	"inherit": "inherit"
+);
+
+@function fontSize($level) {
+	@return nth($font-sizes, $level);
+}
+
+@function fontWeight($weight) {
+	@return map-get($font-weights, $weight);
+}
+
+@function fontStyle($style) {
+	@return map-get($font-styles, $style);
+}
+
+$font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+/* TEXT COLOR */
+.text--fg {
+	color: var(--foreground) !important;
+}
+
+.text--bg {
+	color: var(--background) !important;
+}
+
+.text--lighter {
+	color: var(--lighter) !important;
+}
+
+.text--darker {
+	color: var(--darker) !important;
+}
+
+/* TEXT SIZES */
+.text--xxl {
+	font-size: fontSize(1) !important;
+}
+
+.text--xl {
+	font-size: fontSize(2) !important;
+}
+
+.text--lg {
+	font-size: fontSize(3) !important;
+}
+
+.text--md {
+	font-size: fontSize(4) !important;
+}
+
+.text--sm {
+	font-size: fontSize(5) !important;
+}
+
+.text--xs {
+	font-size: fontSize(6) !important;
+}
+
+/* TEXT WEIGHTS */
+@each $k, $v in $font-weights {
+	.text--#{$k} {
+		font-weight: $v !important;
+	}
+}
+
+/* TEXT STYLES */
+@each $k, $v in $font-weights {
+	.text--#{$k} {
+		font-style: $v !important;
+	}
+}
+
+/* GLOBAL OVERRIDES */
+a {
+	display: inline-block;
+	color: var(--foreground);
+	text-decoration: none;
+	line-height: 1.4;
+	border-bottom: 2px solid var(--foreground);
+	transition: color 250ms, background-color 250ms;
+
+	&:not(.hidden-link):hover,
+	&:not(.hidden-link):active {
+		color: var(--background);
+		background-color: var(--foreground);
+	}
+
+	&.hidden-link {
+		border: none;
+		transition: none;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2;
+}
+
+h1,
+.h1 {
+	font-size: fontSize(1);
+}
+
+h2,
+.h2 {
+	font-size: fontSize(2);
+}
+
+h3,
+.h3 {
+	font-size: fontSize(3);
+}
+
+h4,
+.h4 {
+	font-size: fontSize(4);
+}
+
+h5,
+.h5 {
+	font-size: fontSize(5);
+}
+
+h6,
+.h6 {
+	font-size: fontSize(6);
+}
+
+p {
+	max-width: 40em;
+}
+
+article {
+	font-size: 1.16rem;
+}

@@ -1,0 +1,59 @@
+$breakpoints: (
+	"small": 528,
+	"medium": 768,
+	"large": 1024,
+	"xlarge": 1200
+);
+
+$sizes: (
+	"none": 0,
+	"xxs": 2,
+	"xs": 4,
+	"sm": 8,
+	"md": 12,
+	"lg": 24,
+	"xl": 36,
+	"xxl": 48,
+);
+
+@function breakpoint($size) {
+	@return #{map-get($breakpoints, $size)}px;
+}
+
+@function size($size) {
+	@return #{map-get($sizes, $size)}px;
+}
+
+@each $size, $size-value in $sizes {
+	@each $type, $type-value in ("mrg": margin, "pad": padding) {
+		.#{$type}-#{$size} {
+			#{$type-value}: size($size);
+		}
+
+		.#{$type}-t-#{$size} {
+			#{$type-value}-top: size($size);
+		}
+
+		.#{$type}-r-#{$size} {
+			#{$type-value}-right: size($size);
+		}
+
+		.#{$type}-b-#{$size} {
+			#{$type-value}-bottom: size($size);
+		}
+
+		.#{$type}-l-#{$size} {
+			#{$type-value}-left: size($size);
+		}
+
+		.#{$type}-v-#{$size} {
+			#{$type-value}-top: size($size);
+			#{$type-value}-bottom: size($size);
+		}
+
+		.#{$type}-h-#{$size} {
+			#{$type-value}-right: size($size);
+			#{$type-value}-left: size($size);
+		}
+	}
+}

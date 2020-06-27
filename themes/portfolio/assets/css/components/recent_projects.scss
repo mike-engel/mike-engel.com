@@ -1,0 +1,48 @@
+.recent-projects {
+	h3,
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		margin-top: 0.5em;
+	}
+
+	p + h3 {
+		margin-top: 1em;
+	}
+
+	li {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 1.5em;
+		vertical-align: top;
+	}
+
+	@media (min-width: #{breakpoint("medium")}) {
+		li {
+			margin-right: 2em;
+			width: calc(50% - 2em);
+		}
+
+		li:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+
+	@media (min-width: #{breakpoint("large")}) {
+		li {
+			margin-right: 2em;
+			width: calc(33.3333333333% - 2em);
+		}
+
+		li:nth-child(2n) {
+			margin-right: 2em;
+		}
+
+		li:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+}

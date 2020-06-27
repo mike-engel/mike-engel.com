@@ -1,0 +1,10 @@
+baseURL = "https://mike-engel.com"
+languageCode = "en-us"
+title = "Mike Engel"
+theme = "portfolio"
+
+[minify]
+minifyOutput = true
+
+[markup.goldmark.renderer]
+unsafe = false

@@ -1,0 +1,39 @@
+.header {
+	nav {
+		display: flex;
+		flex-direction: column;
+		padding: 20px 0;
+	}
+
+	ul {
+		margin: 0.5em 0 0 0;
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 1em;
+		text-transform: lowercase;
+	}
+
+	svg {
+		width: auto;
+		height: 50px;
+		margin-right: 1.5em;
+		fill: var(--foreground);
+	}
+
+	@media (min-width: #{breakpoint("medium")}) {
+		nav {
+			flex-direction: row;
+			align-items: center;
+		}
+
+		li {
+			margin-right: 1.5em;
+		}
+
+		ul {
+			margin: -10px 0 0 0;
+		}
+	}
+}
