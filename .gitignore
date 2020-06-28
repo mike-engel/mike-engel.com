@@ -6,6 +6,7 @@ Thumbs.db
 .vscode
 node_modules
 build
+public
 
 *.orig
 *.log

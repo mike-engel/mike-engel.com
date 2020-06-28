@@ -14,6 +14,7 @@
 
 	<link rel="manifest" href="/manifest.json">
 	<link rel="icon" type="image/png" href="/favicon.ico">
+	<link rel="alternate" type="application/rss+xml" href="https://mike-engel.com/index.xml" title="Mike Engel">
 	<link rel="stylesheet" href="https://unpkg.com/a11y-css-reset/combo.min.css">
 	{{ $style := resources.Get "css/site.scss" | resources.ToCSS | resources.Fingerprint }}
 	<link rel="stylesheet" href="{{ $style.Permalink }}">
