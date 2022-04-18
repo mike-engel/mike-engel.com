@@ -10,5 +10,6 @@ public
 
 *.orig
 *.log
+*.lock
 
 .vercel

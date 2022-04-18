@@ -8,3 +8,6 @@ minifyOutput = true
 
 [markup.goldmark.renderer]
 unsafe = false
+
+[minify.tdewolff.html]
+keepQuotes = true
