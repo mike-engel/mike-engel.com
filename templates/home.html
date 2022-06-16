@@ -1,0 +1,65 @@
+{% extends "section.html" %}
+{% block main_content %}
+<h1 style="margin-top: 1.5em;">
+	{{ section.content | safe }}
+</h1>
+
+<h2 id="recent-projects" class="mrg-b-none" style="margin-top: 3.5em;">Recent projects</h2>
+<ul class="plain-list recent-projects">
+	{% set recent_projects = load_data(path="@/recent_projects.json") %}
+	{% for project in recent_projects %}
+		<li>
+			<h3 class="h4"><a href="{{ project.url }}" rel="noreferrer" target="_blank">{{ project.name }}</a></h3>
+			<p>{{ project.description }}</p>
+		</li>
+	{% endfor %}
+</ul>
+
+<h2 id="contact" style="margin-top: 3.5em;">Contact</h2>
+<form
+	class="form contact-form"
+	action="https://formspree.io/mike@mike-engel.com"
+	method="POST"
+>
+	<fieldset>
+		<input
+			type="hidden"
+			name="_next"
+			aria-hidden="true"
+			value="https://mike-engel.com/?thanks=true"
+		/>
+		<input type="hidden" name="_gotcha" aria-hidden="true" />
+	</fieldset>
+	<fieldset>
+		<label>
+			<span>Your email</span>
+			<input
+				id="email"
+				name="email"
+				placeholder="who@are.you"
+				type="email"
+			/>
+		</label>
+		<label>
+			<span>What's this about?</span>
+			<input
+				id="subject"
+				name="_subject"
+				placeholder="A quick summary"
+			/>
+		</label>
+		<label>
+			<span>Let loose</span>
+			<textarea
+				id="body"
+				component="textarea"
+				name="body"
+				placeholder="Yada yada yada"
+			></textarea>
+		</label>
+		<button class="btn" type="submit">
+			send
+		</button>
+	</fieldset>
+</form>
+{% endblock main_content %}

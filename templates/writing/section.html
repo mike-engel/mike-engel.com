@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+	{{ section.title }} / Mike Engel
+{% endblock title %}
+{% block content %}
+<main class="site-constraint">
+	{{ section.content | safe }}
+	<ul class="plain-list">
+		{% for page in section.pages %}
+			<li class="mrg-t-xxl">
+				<h2 class="mrg-b-none">
+					<a href="{{ page.permalink }}">{{ page.title }}</a>
+				</h2>
+				<p class="mrg-t-md">{{ page.description }}</p>
+			</li>
+		{% endfor %}
+	</ul>
+</main>
+{% endblock content %}

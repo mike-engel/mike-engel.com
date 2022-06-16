@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<main class="site-constraint">
+	{{ super() }}
+	{% block main_content %}
+	{{ section.content | safe }}
+	{% endblock main_content %}
+</main>
+{% endblock content %}
