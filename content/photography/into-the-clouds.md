@@ -1,9 +1,12 @@
----
-title: "Into the Clouds"
-layout: photo
-date: "2020-06-21T04:22:59+0200"
-cloudinary_url: "Into-The-Clouds.jpg"
-tags: [
++++
+title = "Into the Clouds"
+description = "A hiking trail near the top of a mountain heads up into the clouds above"
+date = "2020-06-21T04:22:59+02:00"
+draft = false
+
+[extra]
+cloudinary_url = "Into-The-Clouds.jpg"
+tags = [
   "clouds",
   "cloudy",
   "cold",
@@ -30,12 +33,10 @@ tags: [
   "path",
   "upload"
 ]
-aperture: "5.6"
-shutter_speed: "1/640"
-iso: "200"
-camera: "Sony a7r II"
-description: "A hiking trail near the top of a mountain heads up into the clouds above"
-focal_length: "55.0 mm"
-height_at_1200: 960
-draft: false
----
+aperture = "5.6"
+shutter_speed = "1/640"
+iso = "200"
+camera = "Sony a7r II"
+focal_length = "55.0 mm"
+height_at_1200 = 960
++++

@@ -1,9 +1,12 @@
----
-title: "Munich House"
-layout: photo
-date: "2018-08-14T06:10:17-0600"
-cloudinary_url: "Munich-House.jpg"
-tags: [
++++
+title = "Munich House"
+description = "Munich, Germany, 2018"
+date = "2018-08-14T06:10:17-06:00"
+draft = false
+
+[extra]
+cloudinary_url = "Munich-House.jpg"
+tags = [
   "blue",
   "clouds",
   "germany",
@@ -21,12 +24,10 @@ tags: [
   "trees",
   "upload"
 ]
-aperture: "11.0"
-shutter_speed: "1/250"
-iso: "80"
-camera: "Sony a7r II"
-description: "Munich, Germany, 2018"
-focal_length: "50.0 mm"
-height_at_1200: 1500
-draft: false
----
+aperture = "11.0"
+shutter_speed = "1/250"
+iso = "80"
+camera = "Sony a7r II"
+focal_length = "50.0 mm"
+height_at_1200 = 1500
++++

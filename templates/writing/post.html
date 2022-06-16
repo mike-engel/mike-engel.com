@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}
+	{{ page.title }} / Writing / Mike Engel
+{% endblock title %}
+{% block content %}
+	<main class="site-constraint">
+		<article>
+			{{ page.content | safe }}
+		</article>
+	</main>
+{% endblock content %}

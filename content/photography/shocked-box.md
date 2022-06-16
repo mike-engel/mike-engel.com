@@ -1,9 +1,12 @@
----
-title: "Shocked Box"
-layout: photo
-date: "2019-05-31T18:00:26-0600"
-cloudinary_url: "Shocked-Box.jpg"
-tags: [
++++
+title = "Shocked Box"
+description = "A box finds itself unexpectedly being thrown out."
+date = "2019-05-31T18:00:26-06:00"
+draft = false
+
+[extra]
+cloudinary_url = "Shocked-Box.jpg"
+tags = [
   "humor",
   "box",
   "trash",
@@ -11,12 +14,10 @@ tags: [
   "surprise",
   "upload"
 ]
-aperture: "2.4"
-shutter_speed: "1/169"
-iso: "16"
-camera: "Apple iPhone XS"
-description: "A box finds itself unexpectedly being thrown out."
-focal_length: "6.0 mm"
-height_at_1200: 1498
-draft: false
----
+aperture = "2.4"
+shutter_speed = "1/169"
+iso = "16"
+camera = "Apple iPhone XS"
+focal_length = "6.0 mm"
+height_at_1200 = 1498
++++

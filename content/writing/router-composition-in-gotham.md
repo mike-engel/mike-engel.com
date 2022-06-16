@@ -1,10 +1,9 @@
----
-title: "Router Composition in Gotham"
-description: As a web developer interested in Rust, I’m always excited when new web frameworks come out for Rust. Over time I’ve tried Hyper and Rocket, both of which are great projects but for various reasons don’t resonate with how I like to write web servers. Near the end of 2017, however, a new framework called Gotham came out that I’m increasingly excited about.
-layout: post
-date: 2018-01-01T01:23:00+02:00
-draft: false
----
++++
+title = "Router Composition in Gotham"
+description = "As a web developer interested in Rust, I’m always excited when new web frameworks come out for Rust. Over time I’ve tried Hyper and Rocket, both of which are great projects but for various reasons don’t resonate with how I like to write web servers. Near the end of 2017, however, a new framework called Gotham came out that I’m increasingly excited about."
+date = "2018-01-01T01:23:00+02:00"
+draft = false
++++
 
 # Router composition in Gotham
 

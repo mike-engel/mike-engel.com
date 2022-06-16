@@ -1,0 +1,37 @@
+{% block head %}
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width">
+<meta name="theme-color" content="#0B2940">
+<meta name="p:domain_verify" content="ac56949deddb26b9107af368eea0b43b">
+{% if page is defined %}
+<meta name="description" content="{{ page.description }}">
+{% elif section is defined %}
+<meta name="description" content="{{ section.description }}">
+{% else %}
+<meta name="description" content="{{ config.description }}">
+{% endif %}
+{% if page is defined and page.keywords is defined %}
+<meta name="keywords" content="{{ page.keywords }}">
+{% elif section is defined and section.keywords is defined %}
+<meta name="keywords" content="{{ section.keywords }}">
+{% elif config.keywords is defined %}
+<meta name="keywords" content="{{ config.keywords }}">
+{% endif %}
+
+<title>
+	{% block title %}
+	{% if page is defined %}
+	{{ page.title }}
+	{% elif section is defined %}
+	{{ section.title }}
+	{% else %}
+	{{ config.title }}
+	{% endif %}
+	{% endblock title %}
+</title>
+
+<link rel="manifest" href="{{ get_url(path="manifest.json") }}">
+<link rel="icon" type="image/png" href="{{ get_url(path="favicon.ico") }}">
+<link rel="alternate" type="application/rss+xml" href="https://mike-engel.com/index.xml" title="{{ config.title }}">
+<link rel="stylesheet" href="{{ get_url(path="site.css") }}">
+{% endblock head %}

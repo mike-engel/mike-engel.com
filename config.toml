@@ -1,13 +1,46 @@
-baseURL = "https://mike-engel.com"
-languageCode = "en-us"
+# The URL the site will be built for
+base_url = "https://mike-engel.com"
+
 title = "Mike Engel"
-theme = "portfolio"
+description = "Personal portfolio of Mike Engel"
 
-[minify]
-minifyOutput = true
+# The default language; used in feeds.
+default_language = "en"
 
-[markup.goldmark.renderer]
-unsafe = false
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
 
-[minify.tdewolff.html]
-keepQuotes = true
+# When set to "true", the generated HTML files are minified.
+minify_html = true
+
+# When set to "true", a feed is automatically generated.
+generate_feed = true
+
+# The filename to use for the feed. Used as the template filename, too.
+# Defaults to "atom.xml", which has a built-in template that renders an Atom 1.0 feed.
+# There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
+feed_filename = "rss.xml"
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+# The theme to use for code highlighting.
+highlight_theme = "nord"
+
+# Whether to set rel="nofollow" for all external links
+external_links_no_follow = true
+
+# Whether to set rel="noreferrer" for all external links
+external_links_no_referrer = true
+
+# Whether smart punctuation is enabled (changing quotes, dashes, dots in their typographic form)
+# For example, `...` into `…`, `"quote"` into `“curly”` etc
+smart_punctuation = true
+
+[extra]
+# Put all your custom variables here

@@ -1,10 +1,9 @@
----
-title: Introducing Locale
-description: Introducing Locale, a polyfill to understand your users’ preferred languages.
-layout: post
-date: 2017-06-20T07:40:00+02:00
-draft: false
----
++++
+title = "Introducing Locale"
+description = "Introducing Locale, a polyfill to understand your users’ preferred languages."
+date = "2017-06-20T07:40:00+02:00"
+draft = false
++++
 
 # Introducing Locale
 

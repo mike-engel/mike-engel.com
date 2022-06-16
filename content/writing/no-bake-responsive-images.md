@@ -1,10 +1,9 @@
----
-title: No Bake Responsive Images
-description: So you want to use images on your site. You’re also concerned about performance and bandwidth. You’ve heard about this new thing called “responsive images”. They sound pretty great. You can use different sized images for different sized screens. You can even show one image on mobile, and another on desktop. Then it dawns on you. You have 20 photos on your site. You have four breakpoints in your CSS. That could be up to 80 photos you have to manage. Fret not. We’re going to use the internet.
-layout: post
-date: 2016-02-28T08:15:00+02:00
-draft: false
----
++++
+title = "No Bake Responsive Images"
+description = "So you want to use images on your site. You’re also concerned about performance and bandwidth. You’ve heard about this new thing called “responsive images”. They sound pretty great. You can use different sized images for different sized screens. You can even show one image on mobile, and another on desktop. Then it dawns on you. You have 20 photos on your site. You have four breakpoints in your CSS. That could be up to 80 photos you have to manage. Fret not. We’re going to use the internet."
+date = "2016-02-28T08:15:00+02:00"
+draft = false
++++
 
 # No-bake responsive images
 

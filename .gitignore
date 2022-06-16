@@ -2,7 +2,6 @@
 Thumbs.db
 
 .folio
-.next
 .vscode
 node_modules
 build
@@ -11,5 +10,3 @@ public
 *.orig
 *.log
 *.lock
-
-.vercel
