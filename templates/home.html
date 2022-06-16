@@ -6,7 +6,7 @@
 
 <h2 id="recent-projects" class="mrg-b-none" style="margin-top: 3.5em;">Recent projects</h2>
 <ul class="plain-list recent-projects">
-	{% set recent_projects = load_data(path="@/recent_projects.json") %}
+	{% set recent_projects = load_data(path="content/recent_projects.json") %}
 	{% for project in recent_projects %}
 		<li>
 			<h3 class="h4"><a href="{{ project.url }}" rel="noreferrer" target="_blank">{{ project.name }}</a></h3>
