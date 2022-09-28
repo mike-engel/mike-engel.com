@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mike Engel</title>
+        <link>https://mike-engel.com</link>
+        <description>Personal portfolio of Mike Engel</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://mike-engel.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sat, 10 Oct 2020 00:59:54 +0200</lastBuildDate>
+        <item>
+            <title>Morning Mountains</title>
+            <pubDate>Sat, 10 Oct 2020 00:59:54 +0200</pubDate>
+            <link>https://mike-engel.com/photography/morning-mountains/</link>
+            <guid>https://mike-engel.com/photography/morning-mountains/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Lifeboat</title>
+            <pubDate>Tue, 04 Aug 2020 01:19:47 +0200</pubDate>
+            <link>https://mike-engel.com/photography/lifeboat/</link>
+            <guid>https://mike-engel.com/photography/lifeboat/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>A Path Forward</title>
+            <pubDate>Sun, 12 Jul 2020 11:51:31 +0200</pubDate>
+            <link>https://mike-engel.com/photography/a-path-forward/</link>
+            <guid>https://mike-engel.com/photography/a-path-forward/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Into the Clouds</title>
+            <pubDate>Sun, 21 Jun 2020 04:22:59 +0200</pubDate>
+            <link>https://mike-engel.com/photography/into-the-clouds/</link>
+            <guid>https://mike-engel.com/photography/into-the-clouds/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Wild Horses</title>
+            <pubDate>Wed, 03 Jul 2019 11:27:37 -0600</pubDate>
+            <link>https://mike-engel.com/photography/wild-horses/</link>
+            <guid>https://mike-engel.com/photography/wild-horses/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Shadow Dunes</title>
+            <pubDate>Fri, 14 Jun 2019 12:29:32 -0600</pubDate>
+            <link>https://mike-engel.com/photography/shadow-dunes/</link>
+            <guid>https://mike-engel.com/photography/shadow-dunes/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Footprints</title>
+            <pubDate>Fri, 14 Jun 2019 11:40:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/footprints/</link>
+            <guid>https://mike-engel.com/photography/footprints/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Sky Dunes</title>
+            <pubDate>Fri, 14 Jun 2019 10:58:21 -0600</pubDate>
+            <link>https://mike-engel.com/photography/sky-dunes/</link>
+            <guid>https://mike-engel.com/photography/sky-dunes/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Cuties</title>
+            <pubDate>Fri, 14 Jun 2019 10:41:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/cuties/</link>
+            <guid>https://mike-engel.com/photography/cuties/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Alien Dog</title>
+            <pubDate>Sat, 08 Jun 2019 12:12:10 -0600</pubDate>
+            <link>https://mike-engel.com/photography/alien-dog/</link>
+            <guid>https://mike-engel.com/photography/alien-dog/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Hidden Cat</title>
+            <pubDate>Sat, 08 Jun 2019 12:10:09 -0600</pubDate>
+            <link>https://mike-engel.com/photography/hidden-cat/</link>
+            <guid>https://mike-engel.com/photography/hidden-cat/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Shocked Box</title>
+            <pubDate>Fri, 31 May 2019 18:00:26 -0600</pubDate>
+            <link>https://mike-engel.com/photography/shocked-box/</link>
+            <guid>https://mike-engel.com/photography/shocked-box/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Cavern</title>
+            <pubDate>Fri, 29 Mar 2019 13:39:45 -0600</pubDate>
+            <link>https://mike-engel.com/photography/cavern/</link>
+            <guid>https://mike-engel.com/photography/cavern/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Eye Rocks</title>
+            <pubDate>Fri, 29 Mar 2019 11:48:55 -0600</pubDate>
+            <link>https://mike-engel.com/photography/eye-rocks/</link>
+            <guid>https://mike-engel.com/photography/eye-rocks/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Night Sky 2</title>
+            <pubDate>Thu, 28 Mar 2019 19:54:38 -0600</pubDate>
+            <link>https://mike-engel.com/photography/night-sky-2/</link>
+            <guid>https://mike-engel.com/photography/night-sky-2/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Fisher Towers</title>
+            <pubDate>Thu, 28 Mar 2019 18:20:54 -0600</pubDate>
+            <link>https://mike-engel.com/photography/fisher-towers/</link>
+            <guid>https://mike-engel.com/photography/fisher-towers/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Cloudy Rock</title>
+            <pubDate>Thu, 28 Mar 2019 10:01:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/cloudy-rock/</link>
+            <guid>https://mike-engel.com/photography/cloudy-rock/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Colorado Wallpaper</title>
+            <pubDate>Sun, 17 Mar 2019 17:04:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/colorado-wallpaper/</link>
+            <guid>https://mike-engel.com/photography/colorado-wallpaper/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Snow Dog</title>
+            <pubDate>Wed, 13 Mar 2019 17:15:11 -0600</pubDate>
+            <link>https://mike-engel.com/photography/snow-dog/</link>
+            <guid>https://mike-engel.com/photography/snow-dog/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Winter Sun</title>
+            <pubDate>Tue, 26 Feb 2019 15:52:16 -0700</pubDate>
+            <link>https://mike-engel.com/photography/winter-sun/</link>
+            <guid>https://mike-engel.com/photography/winter-sun/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Furry Lizard</title>
+            <pubDate>Tue, 29 Jan 2019 14:32:13 -0700</pubDate>
+            <link>https://mike-engel.com/photography/furry-lizard/</link>
+            <guid>https://mike-engel.com/photography/furry-lizard/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Old Guy in Bed</title>
+            <pubDate>Tue, 29 Jan 2019 14:30:39 -0700</pubDate>
+            <link>https://mike-engel.com/photography/old-guy-in-bed/</link>
+            <guid>https://mike-engel.com/photography/old-guy-in-bed/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Swiss Duck</title>
+            <pubDate>Thu, 15 Nov 2018 11:54:36 -0700</pubDate>
+            <link>https://mike-engel.com/photography/swiss-duck/</link>
+            <guid>https://mike-engel.com/photography/swiss-duck/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Plitvice Lakes National Park</title>
+            <pubDate>Sat, 25 Aug 2018 03:29:45 -0600</pubDate>
+            <link>https://mike-engel.com/photography/plitvice-lakes-national-park/</link>
+            <guid>https://mike-engel.com/photography/plitvice-lakes-national-park/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Basketball Court</title>
+            <pubDate>Sun, 19 Aug 2018 08:17:02 -0600</pubDate>
+            <link>https://mike-engel.com/photography/basketball-court/</link>
+            <guid>https://mike-engel.com/photography/basketball-court/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Secret Door</title>
+            <pubDate>Sat, 18 Aug 2018 23:32:30 -0600</pubDate>
+            <link>https://mike-engel.com/photography/secret-door/</link>
+            <guid>https://mike-engel.com/photography/secret-door/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Morning Birds</title>
+            <pubDate>Sat, 18 Aug 2018 22:33:39 -0600</pubDate>
+            <link>https://mike-engel.com/photography/morning-birds/</link>
+            <guid>https://mike-engel.com/photography/morning-birds/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>God Help Us</title>
+            <pubDate>Sat, 18 Aug 2018 22:27:02 -0600</pubDate>
+            <link>https://mike-engel.com/photography/god-help-us/</link>
+            <guid>https://mike-engel.com/photography/god-help-us/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Arches</title>
+            <pubDate>Tue, 14 Aug 2018 06:12:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/arches/</link>
+            <guid>https://mike-engel.com/photography/arches/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Munich House</title>
+            <pubDate>Tue, 14 Aug 2018 06:10:17 -0600</pubDate>
+            <link>https://mike-engel.com/photography/munich-house/</link>
+            <guid>https://mike-engel.com/photography/munich-house/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Death</title>
+            <pubDate>Sun, 12 Aug 2018 06:19:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/death/</link>
+            <guid>https://mike-engel.com/photography/death/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Dubrovnik</title>
+            <pubDate>Sun, 05 Aug 2018 00:07:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/dubrovnik/</link>
+            <guid>https://mike-engel.com/photography/dubrovnik/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Still</title>
+            <pubDate>Mon, 23 Jul 2018 08:00:52 -0600</pubDate>
+            <link>https://mike-engel.com/photography/still/</link>
+            <guid>https://mike-engel.com/photography/still/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Springfield Light</title>
+            <pubDate>Mon, 16 Jul 2018 10:12:49 -0600</pubDate>
+            <link>https://mike-engel.com/photography/springfield-light/</link>
+            <guid>https://mike-engel.com/photography/springfield-light/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Night Sky</title>
+            <pubDate>Sat, 30 Jun 2018 21:17:13 -0600</pubDate>
+            <link>https://mike-engel.com/photography/night-sky/</link>
+            <guid>https://mike-engel.com/photography/night-sky/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Nature Finds a Way</title>
+            <pubDate>Sat, 30 Jun 2018 15:00:43 -0600</pubDate>
+            <link>https://mike-engel.com/photography/nature-finds-a-way/</link>
+            <guid>https://mike-engel.com/photography/nature-finds-a-way/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Bike Flowers</title>
+            <pubDate>Sat, 30 Jun 2018 14:19:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/bike-flowers/</link>
+            <guid>https://mike-engel.com/photography/bike-flowers/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Jean Luc</title>
+            <pubDate>Sat, 28 Apr 2018 12:18:19 -0600</pubDate>
+            <link>https://mike-engel.com/photography/jean-luc/</link>
+            <guid>https://mike-engel.com/photography/jean-luc/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Shocked</title>
+            <pubDate>Sat, 28 Apr 2018 12:16:23 -0600</pubDate>
+            <link>https://mike-engel.com/photography/shocked/</link>
+            <guid>https://mike-engel.com/photography/shocked/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Santa Fe Mood</title>
+            <pubDate>Sat, 31 Mar 2018 16:22:14 -0600</pubDate>
+            <link>https://mike-engel.com/photography/santa-fe-mood/</link>
+            <guid>https://mike-engel.com/photography/santa-fe-mood/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Next Prey</title>
+            <pubDate>Sat, 31 Mar 2018 15:51:10 -0600</pubDate>
+            <link>https://mike-engel.com/photography/next-prey/</link>
+            <guid>https://mike-engel.com/photography/next-prey/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Lasers</title>
+            <pubDate>Sat, 31 Mar 2018 11:36:18 -0600</pubDate>
+            <link>https://mike-engel.com/photography/lasers/</link>
+            <guid>https://mike-engel.com/photography/lasers/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Portal</title>
+            <pubDate>Sat, 31 Mar 2018 11:14:47 -0600</pubDate>
+            <link>https://mike-engel.com/photography/portal/</link>
+            <guid>https://mike-engel.com/photography/portal/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Junior’s Bed</title>
+            <pubDate>Sun, 18 Feb 2018 21:17:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/junior-s-bed/</link>
+            <guid>https://mike-engel.com/photography/junior-s-bed/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Witches</title>
+            <pubDate>Sat, 20 Jan 2018 11:36:14 -0700</pubDate>
+            <link>https://mike-engel.com/photography/witches/</link>
+            <guid>https://mike-engel.com/photography/witches/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Router Composition in Gotham</title>
+            <pubDate>Mon, 01 Jan 2018 01:23:00 +0200</pubDate>
+            <link>https://mike-engel.com/writing/router-composition-in-gotham/</link>
+            <guid>https://mike-engel.com/writing/router-composition-in-gotham/</guid>
+            <description>&lt;h1 id=&quot;router-composition-in-gotham&quot;&gt;Router composition in Gotham&lt;&#x2F;h1&gt;
+&lt;p&gt;As a web developer interested in &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt;, I’m always excited when a new web frameworks comes out for Rust. Over time I’ve tried &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;hyper.rs&quot;&gt;Hyper&lt;&#x2F;a&gt; and &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;rocket.rs&quot;&gt;Rocket&lt;&#x2F;a&gt;, both of which are great projects but for various reasons don’t resonate with how I like to write web servers. Near the end of 2017, however, a new framework called &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;gotham.rs&quot;&gt;Gotham&lt;&#x2F;a&gt; came out that I’m increasingly excited about.&lt;&#x2F;p&gt;
+&lt;p&gt;As of this writing Gotham is at &lt;code&gt;0.1.2&lt;&#x2F;code&gt;, so it’s still young and could change a lot. Despite that, I feel like it has a lot of promise based on what’s out there now and where they’re planning on going. Reading through their example projects, however, I could never really get behind the way they set up routing. For small projects where all of your functions are in the same file, it works great. As your app starts to grow, however, the cognitive overhead increases and it feels frustrating to continue jumping back and forth between contexts.&lt;&#x2F;p&gt;
+&lt;p&gt;If you come from a &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;nodejs.org&quot;&gt;Node.js&lt;&#x2F;a&gt; background like me, you’ve almost certainly used &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;expressjs.com&quot;&gt;express&lt;&#x2F;a&gt; as a webserver. It’s a really great framework and what I tend to compare all others to. One of it’s cooler features is router composition. With that you could create many sub routers and then combine them all at the top level of your app, usually in or near the entry point of your code. Generally, these sub routers are defined in the same file that your handlers are defined, keeping related concepts together in files&#x2F;modules.&lt;&#x2F;p&gt;
+&lt;p&gt;A quick note: I’m a big fan of express. If you’re &lt;em&gt;not&lt;&#x2F;em&gt; a big fan of how you create servers with it, you may not like what I’m about to show. Everyone’s different!&lt;&#x2F;p&gt;
+&lt;p&gt;Before jumping into the rust side, let’s take a quick look at how this works in express today.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&#x2F;src&#x2F;index.js&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;&#x2F;&#x2F; server entrypoint
+&lt;&#x2F;span&gt;&lt;span&gt;const express = require(&amp;quot;express&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;const { apiRouter } = require(&amp;quot;.&#x2F;routes&#x2F;api&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;const app = express();
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;app.use(&amp;quot;&#x2F;api&amp;quot;, apiRouter);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;app.listen(3000);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;&#x2F;src&#x2F;routes&#x2F;api&#x2F;index.js&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;const { Router } = require(&amp;quot;express&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;const { pingRouter } = require(&amp;quot;.&#x2F;ping&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;const { usersRouter } = require(&amp;quot;.&#x2F;users&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;const apiRouter = Router();
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;apiRouter.use(&amp;quot;&#x2F;ping&amp;quot;, pingRouter);
+&lt;&#x2F;span&gt;&lt;span&gt;apiRouter.use(&amp;quot;&#x2F;users&amp;quot;, usersRouter);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;export apiRouter;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;&#x2F;src&#x2F;routes&#x2F;api&#x2F;ping.js&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;const { Router } = require(&amp;quot;express&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;const pingRouter = Router();
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;&#x2F; this will resolve to `&#x2F;api&#x2F;ping`
+&lt;&#x2F;span&gt;&lt;span&gt;pingRouter.route(&amp;quot;&#x2F;&amp;quot;).get((req, res) =&amp;gt; { res.send(204); });
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;export pingRouter;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;&#x2F;src&#x2F;routes&#x2F;api&#x2F;users.js&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;const { Router } = require(&amp;quot;express&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;const usersRouter = Router();
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;&#x2F; this will resolve to `&#x2F;api&#x2F;users`
+&lt;&#x2F;span&gt;&lt;span&gt;usersRouter.route(&amp;quot;&#x2F;&amp;quot;).get((req, res) =&amp;gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;    console.log(&amp;quot;Return some information about your users&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;    res.send(200, &amp;quot;&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;});
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;export usersRouter;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;That’s a very brief example that hopefully demonstrates the potential of router composition. It may seem a little verbose to have the &lt;code&gt;ping&lt;&#x2F;code&gt; and &lt;code&gt;users&lt;&#x2F;code&gt; routers in separate files, but as your app grows it makes things much easier in my experience.&lt;&#x2F;p&gt;
+&lt;p&gt;Now, given how express handles router composition, how can we apply that to Gotham? It’s not going to have the exact same implementation due to the way Rust works, but we can get pretty close!&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s take the same functionality above and create it with Gotham! The following code are snippets to keep things focused. I’ve set up an &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mike-engel&#x2F;gotham-router-composition&quot;&gt;example project&lt;&#x2F;a&gt; where you can download and play with this implementation.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&#x2F;src&#x2F;main.rs&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;mod routes;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;fn main() {
+&lt;&#x2F;span&gt;&lt;span&gt;    let addr = &amp;quot;0.0.0.0:7878&amp;quot;.parse().unwrap();
+&lt;&#x2F;span&gt;&lt;span&gt;    let server = Http::new()
+&lt;&#x2F;span&gt;&lt;span&gt;        .bind(&amp;amp;addr, NewHandlerService::new(routes::router()))
+&lt;&#x2F;span&gt;&lt;span&gt;        .unwrap();
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    server.run().unwrap();
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;&#x2F;src&#x2F;routes&#x2F;mod.rs&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;pub mod api;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;# this is a helper function to setup a handler for a route from the gotham examples
+&lt;&#x2F;span&gt;&lt;span&gt;pub fn static_route&amp;lt;NH&amp;gt;(methods: Vec&amp;lt;Method&amp;gt;, new_handler: NH) -&amp;gt; Box&amp;lt;Route + Send + Sync&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;where
+&lt;&#x2F;span&gt;&lt;span&gt;    NH: NewHandler + &amp;#39;static,
+&lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;    let matcher = MethodOnlyRouteMatcher::new(methods);
+&lt;&#x2F;span&gt;&lt;span&gt;    let pipeline_set = finalize_pipeline_set(new_pipeline_set());
+&lt;&#x2F;span&gt;&lt;span&gt;    let extractors: Extractors&amp;lt;NoopPathExtractor, NoopQueryStringExtractor&amp;gt; = Extractors::new();
+&lt;&#x2F;span&gt;&lt;span&gt;    let dispatcher = DispatcherImpl::new(new_handler, (), pipeline_set);
+&lt;&#x2F;span&gt;&lt;span&gt;    let route = RouteImpl::new(matcher, Box::new(dispatcher), extractors, Delegation::Internal);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    Box::new(route)
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;pub fn router() -&amp;gt; Router {
+&lt;&#x2F;span&gt;&lt;span&gt;    # this is the root of the router, a &amp;quot;Tree&amp;quot; in Gotham terms
+&lt;&#x2F;span&gt;&lt;span&gt;    let mut tree_builder = TreeBuilder::new();
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    # this server only has routes under `&#x2F;api`, but you could
+&lt;&#x2F;span&gt;&lt;span&gt;    # add more children!
+&lt;&#x2F;span&gt;&lt;span&gt;    tree_builder.add_child(api::router());
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    let tree = tree_builder.finalize();
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    let response_finalizer_builder = ResponseFinalizerBuilder::new();
+&lt;&#x2F;span&gt;&lt;span&gt;    let response_finalizer = response_finalizer_builder.finalize();
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    Router::new(tree, response_finalizer)
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;&#x2F;src&#x2F;routes&#x2F;api&#x2F;mod.rs&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;# this is the entry point for our API routes
+&lt;&#x2F;span&gt;&lt;span&gt;pub mod ping;
+&lt;&#x2F;span&gt;&lt;span&gt;pub mod users;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;pub fn router() -&amp;gt; NodeBuilder {
+&lt;&#x2F;span&gt;&lt;span&gt;  let mut node = NodeBuilder::new(&amp;quot;api&amp;quot;, SegmentType::Static);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  node.add_child(ping::router());
+&lt;&#x2F;span&gt;&lt;span&gt;  node.add_child(users::router());
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  node
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;&#x2F;src&#x2F;routes&#x2F;api&#x2F;ping.rs&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;pub fn router() -&amp;gt; NodeBuilder {
+&lt;&#x2F;span&gt;&lt;span&gt;    let mut node = NodeBuilder::new(&amp;quot;ping&amp;quot;, SegmentType::Static);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    node.add_route(static_route(vec![Method::Get], || Ok(get)));
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    node
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;pub fn get(state: State, _req: Request) -&amp;gt; (State, Response) {
+&lt;&#x2F;span&gt;&lt;span&gt;    let res = create_response(&amp;amp;state, StatusCode::NoContent, None);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    (state, res)
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;&#x2F;src&#x2F;routes&#x2F;api&#x2F;users.rs&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;pub fn router() -&amp;gt; NodeBuilder {
+&lt;&#x2F;span&gt;&lt;span&gt;    let mut node = NodeBuilder::new(&amp;quot;users&amp;quot;, SegmentType::Static);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    node.add_route(static_route(vec![Method::Get], || Ok(get)));
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    node
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;pub fn get(state: State, _req: Request) -&amp;gt; (State, Response) {
+&lt;&#x2F;span&gt;&lt;span&gt;    let res = create_response(&amp;amp;state, StatusCode::Ok, Some(&amp;quot;&amp;quot;.to_owned().as_bytes, mime::TEXT_PLAIN);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    (state, res)
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;With that, we almost have the same structure as the express app. Rather than having all of our routes declared in a single place that you need to keep going back to, we now have them included in every file. This makes maintenance and refactoring easier. I also think it makes development easier since you don’t need to jump between contexts to add or remove functionality.&lt;&#x2F;p&gt;
+&lt;p&gt;If you have even better ideas or found a typo&#x2F;bug I would love to hear about them! The Rust web space is just starting, but it’s incredibly exciting to see where it’s going.&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Sand Dunes</title>
+            <pubDate>Sat, 21 Oct 2017 11:15:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/sand-dunes/</link>
+            <guid>https://mike-engel.com/photography/sand-dunes/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Early Riser</title>
+            <pubDate>Sat, 07 Oct 2017 11:25:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/early-riser/</link>
+            <guid>https://mike-engel.com/photography/early-riser/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Guggenheim</title>
+            <pubDate>Mon, 04 Sep 2017 09:54:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/guggenheim/</link>
+            <guid>https://mike-engel.com/photography/guggenheim/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Drinking Coffee</title>
+            <pubDate>Mon, 04 Sep 2017 08:31:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/drinking-coffee/</link>
+            <guid>https://mike-engel.com/photography/drinking-coffee/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Highline</title>
+            <pubDate>Sun, 03 Sep 2017 12:05:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/highline/</link>
+            <guid>https://mike-engel.com/photography/highline/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Nyc Corner</title>
+            <pubDate>Sun, 03 Sep 2017 09:51:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/nyc-corner/</link>
+            <guid>https://mike-engel.com/photography/nyc-corner/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Introducing Locale</title>
+            <pubDate>Tue, 20 Jun 2017 07:40:00 +0200</pubDate>
+            <link>https://mike-engel.com/writing/introducing-locale/</link>
+            <guid>https://mike-engel.com/writing/introducing-locale/</guid>
+            <description>&lt;h1 id=&quot;introducing-locale&quot;&gt;Introducing Locale&lt;&#x2F;h1&gt;
+&lt;p&gt;Today, I’m publishing a tiny api called &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;locale.now.sh&quot;&gt;Locale&lt;&#x2F;a&gt; which is meant to polyfill &lt;code&gt;window.navigator.languages&lt;&#x2F;code&gt; for internationalized apps.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-better-internationalization-experience&quot;&gt;A better internationalization experience&lt;&#x2F;h2&gt;
+&lt;p&gt;At the moment, it’s pretty common for internationalized apps to either serve the primary language for the user, or serve the language the owner uses most and provide a drop down to change the language. On server-rendered applications, the &lt;code&gt;Accept-Language&lt;&#x2F;code&gt; header is available to get a list of the user’s preferred languages. This way, you can serve their primary language (if you support it), and prioritize alternatives based on their other system languages.&lt;&#x2F;p&gt;
+&lt;p&gt;There’s a gap, however, for single page applications. As of this writing, only Chrome and Firefox support &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;NavigatorLanguage&#x2F;languages&quot;&gt;&lt;code&gt;window.navigator.languages&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;. This means that there’s no consistent way to know which languages a user speaks, and in which order, on the front end. Enter Locale, a public API to consistently get that list.&lt;&#x2F;p&gt;
+&lt;p&gt;With this list, you can immediately present the site in a language the user understands (providing you support those languages), and prioritize alternatives if they want to switch. This provides a much better initial experience for users of your app or site.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting started&lt;&#x2F;h2&gt;
+&lt;p&gt;The API is meant to be small and fast for the least amount of work on your end. You can view the “docs” at &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;locale.now.sh&quot;&gt;locale.now.sh&lt;&#x2F;a&gt;, and view your list of languages by viewing that site or going to &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;locale.now.sh&#x2F;api&quot;&gt;locale.now.sh&#x2F;api&lt;&#x2F;a&gt; in your browser.&lt;&#x2F;p&gt;
+&lt;p&gt;To use it within your app (front or back end!), make a &lt;code&gt;GET&lt;&#x2F;code&gt; request to &lt;code&gt;https:&#x2F;&#x2F;locale.now.sh&#x2F;api&lt;&#x2F;code&gt;. You can expect a JSON array as the response to do whatever you want with. That’s it!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;locale-s-architecture&quot;&gt;Locale’s architecture&lt;&#x2F;h2&gt;
+&lt;p&gt;Locale is written entirely in &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; using &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;rocket.rs&quot;&gt;Rocket&lt;&#x2F;a&gt; as the webserver and hosted on Zeit’s &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;now.sh&quot;&gt;now.sh&lt;&#x2F;a&gt;. I created a crate called &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;accept-language&quot;&gt;accept-language&lt;&#x2F;a&gt; which is being used to parse the &lt;code&gt;Accept-Language&lt;&#x2F;code&gt; header. If you’re using Rust, feel free to use it within your own webserver!&lt;&#x2F;p&gt;
+&lt;p&gt;The overview page is built in plain HTML and JavaScript, and uses &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;tachyons.io&quot;&gt;tachyons&lt;&#x2F;a&gt; for that sweet functional CSS.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;call-for-contributors&quot;&gt;Call for contributors&lt;&#x2F;h2&gt;
+&lt;p&gt;As this library is a polyfill for internationalization, it would be a shame not to provide various languages for the Locale docs. Unfortunately like most Americans, I only speak English and can’t add any other languages myself. If you speak multiple languages, I would love to have your help in translating the page! You can submit an &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mike-engel&#x2F;locale&#x2F;issues&#x2F;new&quot;&gt;issue&lt;&#x2F;a&gt; or &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mike-engel&#x2F;locale&#x2F;pulls&#x2F;new&quot;&gt;pull request&lt;&#x2F;a&gt; through github.&lt;&#x2F;p&gt;
+&lt;p&gt;The code is fully &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mike-engel&#x2F;locale&quot;&gt;open source&lt;&#x2F;a&gt; and open to any and all issues and pull requests beyond internationalization.&lt;&#x2F;p&gt;
+&lt;p&gt;Thanks for reading, and I hope you find Locale useful in whatever you build!&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Barcelonan Morning</title>
+            <pubDate>Tue, 06 Jun 2017 22:56:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/barcelonan-morning/</link>
+            <guid>https://mike-engel.com/photography/barcelonan-morning/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Vines</title>
+            <pubDate>Tue, 16 May 2017 09:52:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/vines/</link>
+            <guid>https://mike-engel.com/photography/vines/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Corner Building I</title>
+            <pubDate>Tue, 16 May 2017 09:28:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/corner-building-i/</link>
+            <guid>https://mike-engel.com/photography/corner-building-i/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Guell Park</title>
+            <pubDate>Tue, 16 May 2017 03:54:02 -0600</pubDate>
+            <link>https://mike-engel.com/photography/guell-park/</link>
+            <guid>https://mike-engel.com/photography/guell-park/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Belgian Forest</title>
+            <pubDate>Sat, 06 May 2017 03:01:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/belgian-forest/</link>
+            <guid>https://mike-engel.com/photography/belgian-forest/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Misty Mountains</title>
+            <pubDate>Sat, 01 Apr 2017 13:32:40 -0600</pubDate>
+            <link>https://mike-engel.com/photography/misty-mountains/</link>
+            <guid>https://mike-engel.com/photography/misty-mountains/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Corner Building Ii</title>
+            <pubDate>Wed, 22 Feb 2017 09:52:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/corner-building-ii/</link>
+            <guid>https://mike-engel.com/photography/corner-building-ii/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Hiding</title>
+            <pubDate>Tue, 10 Jan 2017 11:36:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/hiding/</link>
+            <guid>https://mike-engel.com/photography/hiding/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Tired Cat</title>
+            <pubDate>Tue, 10 Jan 2017 11:18:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/tired-cat/</link>
+            <guid>https://mike-engel.com/photography/tired-cat/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Kyoto Temple</title>
+            <pubDate>Sun, 06 Nov 2016 16:29:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/kyoto-temple/</link>
+            <guid>https://mike-engel.com/photography/kyoto-temple/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Kyoto Protectors</title>
+            <pubDate>Sun, 06 Nov 2016 15:34:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/kyoto-protectors/</link>
+            <guid>https://mike-engel.com/photography/kyoto-protectors/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Kyoto Street</title>
+            <pubDate>Sun, 06 Nov 2016 03:32:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/kyoto-street/</link>
+            <guid>https://mike-engel.com/photography/kyoto-street/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Osaka Housing</title>
+            <pubDate>Thu, 03 Nov 2016 04:36:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/osaka-housing/</link>
+            <guid>https://mike-engel.com/photography/osaka-housing/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Tokyo Alley</title>
+            <pubDate>Tue, 01 Nov 2016 09:22:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/tokyo-alley/</link>
+            <guid>https://mike-engel.com/photography/tokyo-alley/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Tokyo Street</title>
+            <pubDate>Sun, 30 Oct 2016 17:07:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/tokyo-street/</link>
+            <guid>https://mike-engel.com/photography/tokyo-street/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Shelf Road</title>
+            <pubDate>Sat, 08 Oct 2016 13:22:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/shelf-road/</link>
+            <guid>https://mike-engel.com/photography/shelf-road/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Beach Grass</title>
+            <pubDate>Sun, 18 Sep 2016 17:53:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/beach-grass/</link>
+            <guid>https://mike-engel.com/photography/beach-grass/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>No Bake Responsive Images</title>
+            <pubDate>Sun, 28 Feb 2016 08:15:00 +0200</pubDate>
+            <link>https://mike-engel.com/writing/no-bake-responsive-images/</link>
+            <guid>https://mike-engel.com/writing/no-bake-responsive-images/</guid>
+            <description>&lt;h1 id=&quot;no-bake-responsive-images&quot;&gt;No-bake responsive images&lt;&#x2F;h1&gt;
+&lt;p&gt;So you want to use images on your site. You’re also concerned about performance and bandwidth. You’ve heard about this new thing called “responsive images”. They sound pretty great. You can use different sized images for different sized screens. You can even show one image on mobile, and another on desktop. Then it dawns on you. You have 20 photos on your site. You have four breakpoints in your CSS. That could be up to 80 photos you have to manage. Fret not. We’re going to use the internet.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-preamble&quot;&gt;A preamble&lt;&#x2F;h2&gt;
+&lt;p&gt;So, you’re reading this and maybe you haven’t used responsive images before. Maybe you’ve heard of responsive web design, but not responsive images. Let me briefly explain what they are and why they exist.&lt;&#x2F;p&gt;
+&lt;p&gt;Since the dawn of the &lt;code&gt;&amp;lt;img&amp;gt;&lt;&#x2F;code&gt; tag, images have become really easy to add to a webpage. That comes at a cost though. As we got into the age of 27“ monitors, retina screens, smartphones, and now 5K displays, we’ve found ourselves delivering megabytes of data to all screens on all connections. A group of people knew it could be better and formed the &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;http:&#x2F;&#x2F;ricg.io&quot;&gt;Responsive Issues Community Group&lt;&#x2F;a&gt; to solve this problem (and more like it as time goes on). Out comes &lt;strong&gt;srcset&lt;&#x2F;strong&gt;, &lt;strong&gt;sizes&lt;&#x2F;strong&gt;, and &lt;strong&gt;picture&lt;&#x2F;strong&gt;. This is supposed to be a brief tour, so instead I’m going to point you to Eric Portis’ excellent post, &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;http:&#x2F;&#x2F;ericportis.com&#x2F;posts&#x2F;2014&#x2F;srcset-sizes&#x2F;&quot;&gt;Srcset &amp;amp; Sizes&lt;&#x2F;a&gt;. You should also read the &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;scottjehl.github.com&#x2F;picturefill&quot;&gt;Picturefill demo site&lt;&#x2F;a&gt;, which contains a bunch of examples on srcset, sizes, and picture.&lt;&#x2F;p&gt;
+&lt;p&gt;If you want a single image’s content on all screen sizes, but want to serve the minimum number of pixels needed for the screen, the markup looks a little like this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;img
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;src&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;fallback.jpg&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;srcset&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;small.jpg 320w, medium.jpg 768w, large.jpg 1024w, superHuge.jpg 5000w&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;sizes&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;(min-width: 1024px) 50vw, 100vw&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Want to show one image optimized for mobile, and another for desktop? Picture’s got you covered.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;picture&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;source &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;srcset&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;desktop-1024.jpg 1024w, desktop-5000.jpg 5000w&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;media&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;(min-width: 1024px)&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;  &amp;lt;source srcset=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;mobile-320.jpg 320w, mobile-768.jpg 768w&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#bf616a;color:#d8dee9;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;media&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;(min-width: 320px)&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;  &amp;lt;img src=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;fallback.jpg&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#bf616a;color:#d8dee9;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;&#x2F;picture&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This is great — we’ve now got the ability to save user’s bandwidth and serve different photos on different screen sizes. But if you’re looking at those srcset attributes and thinking, “wow, that’s a lot of images to create and maintain.” I feel you. Sure there are tools for gulp and grunt and some other build tool I’m sure, but you still have to create and maintain a config file, manage all those images on your server, recompile all of them if the image changes, yadda yadda yadda.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cloud-processing-cloud-processing&quot;&gt;Cloud processing? Cloud processing.&lt;&#x2F;h2&gt;
+&lt;p&gt;If you’re tired of hearing about the cloud, I’m sorry. But hear me out because the cloud may just make implementing responsive images as easy as an &lt;code&gt;&amp;lt;img&amp;gt;&lt;&#x2F;code&gt; tag.&lt;&#x2F;p&gt;
+&lt;p&gt;The two services I know of (there are probably more) are &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;http:&#x2F;&#x2F;www.imgix.com&#x2F;&quot;&gt;Imgix&lt;&#x2F;a&gt; and &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;http:&#x2F;&#x2F;cloudinary.com&#x2F;&quot;&gt;Cloudinary&lt;&#x2F;a&gt;. If you’ve never heard of them, they allow you to customize and change images using query parameters in your URL. They can do a lot of really cool things, but I’m only going to touch on one feature here: &lt;em&gt;scaling&lt;&#x2F;em&gt;. You’ve probably guessed where this is going by now.&lt;&#x2F;p&gt;
+&lt;p&gt;We’re going to upload &lt;em&gt;one&lt;&#x2F;em&gt; really big master image and let the cloud handle the different sizes we need. Let’s get to an example. Remember the simple img example we had before? Here’s what it looks like with &lt;em&gt;the cloud&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;img
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;src&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_1000&#x2F;v1444865801&#x2F;forest.jpg&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;srcset&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;    https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_320&#x2F;v1444865801&#x2F;forest.jpg   320w,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;    https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_768&#x2F;v1444865801&#x2F;forest.jpg   768w,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;    https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_1024&#x2F;v1444865801&#x2F;forest.jpg 1024w,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;    https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_5000&#x2F;v1444865801&#x2F;forest.jpg 5000w
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;  &amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;sizes&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;(min-width: 1024px) 50vw, 100vw&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Want those different images on mobile and desktop? Well, you have to upload &lt;em&gt;two&lt;&#x2F;em&gt; photos now, but it’s still better than 5.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;picture&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;source
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;srcset&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;      https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_1024&#x2F;v1444865801&#x2F;forest.jpg 1024w,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;      https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_5000&#x2F;v1444865801&#x2F;forest.jpg 5000w
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;    &amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;media&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;(min-width: 1024px)&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;source
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;srcset&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;      https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_320&#x2F;v1444865801&#x2F;forest.jpg 320w,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;      https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_768&#x2F;v1444865801&#x2F;forest.jpg 768w
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;    &amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;media&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;(min-width: 320px)&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;img
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;src&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_1000&#x2F;v1444865801&#x2F;forest.jpg&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;alt&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;Green forest scene&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;&#x2F;picture&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Image management? Piece of cake. It’s like it used to be again. You know, the good old days of &lt;code&gt;&amp;lt;img&amp;gt;&lt;&#x2F;code&gt; before all this responsive stuff came about. The days where we used one &lt;em&gt;huge&lt;&#x2F;em&gt; image to cover all bases and forced the user to wait 30 seconds for that 24 megapixel picture of a cat to download.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;one-up&quot;&gt;One up&lt;&#x2F;h2&gt;
+&lt;p&gt;You might be thinking this is cool, but you’ve still got to manage all those pesky urls in your markup. I mean, it’s still way easier, but yeah, it can be better. If you’re using a templating system like Handlebars or EJS, &lt;em&gt;it’s time to get crazy&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Because I prefer EJS, these examples are going to be written with EJS. First, let’s write a function to create &lt;strong&gt;src&lt;&#x2F;strong&gt; and &lt;strong&gt;srcset&lt;&#x2F;strong&gt; strings for us.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;jsx&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-jsx &quot;&gt;&lt;code class=&quot;language-jsx&quot; data-lang=&quot;jsx&quot;&gt;&lt;span&gt;function generateResponsiveString(filename, widths, isFallback) {
+&lt;&#x2F;span&gt;&lt;span&gt;  &amp;quot;use strict&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  const urlPrefix = &amp;quot;https:&#x2F;&#x2F;res.cloudinary.com&#x2F;beardfury&#x2F;image&#x2F;upload&#x2F;c_scale,w_&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  let fullString = &amp;quot;&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  if (isFallback) {
+&lt;&#x2F;span&gt;&lt;span&gt;    return urlPrefix + widths + filename;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  widths.forEach(function(width) {
+&lt;&#x2F;span&gt;&lt;span&gt;    fullString += urlPrefix + width + filename + &amp;quot; &amp;quot; + width + &amp;quot;w, &amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;  });
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &#x2F;&#x2F; strip the trailing comma and space
+&lt;&#x2F;span&gt;&lt;span&gt;  return fullString.substr(0, fullString.length - 2);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Ok, cool. Now let’s use it in a template.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;div &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;portfolio-item-1&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;img &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;src&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;&amp;lt;%= responsiveImageString(&amp;#39;v1444865801&#x2F;forest.jpg&amp;#39;, 1000, true) %&amp;gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;srcset&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;&amp;lt;%=
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;  responsiveImageString(&amp;#39;v1444865801&#x2F;forest.jpg&amp;#39;, [320, 768, 1024, 5000]) %&amp;gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;sizes&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eceff4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;(min-width:
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;  1024px) 50vw, 100vw) alt=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbcbb;&quot;&gt;Green forest scene&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#bf616a;color:#d8dee9;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#81a1c1;&quot;&gt;&amp;lt;&#x2F;div&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Responsive images. Using the cloud. Without much typing. Barely any typing at all.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;use-it-right-now&quot;&gt;Use it right now&lt;&#x2F;h2&gt;
+&lt;p&gt;Go on, try it. &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;http:&#x2F;&#x2F;cloudinary.com&#x2F;&quot;&gt;Cloudinary&lt;&#x2F;a&gt; is free to start and then starts pricing in tiers and plugins. &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;www.imgix.com&#x2F;&quot;&gt;Imgix&lt;&#x2F;a&gt; charges a couple bucks for a bunch of photos, with bandwidth on top of that. I’ll let you choose which you like best. If you want a self-hosted solution, a quick search on github produced two options written in Go: &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ReshNesh&#x2F;pixlserv&quot;&gt;pixlserv&lt;&#x2F;a&gt; and &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;h2non&#x2F;imaginary&quot;&gt;imaginary&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;You’re also going to want to use &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;scottjehl&#x2F;picturefill&quot;&gt;Picturefill&lt;&#x2F;a&gt;, the responsive image polyfill. Why? Unfortunately, not all browsers support &lt;strong&gt;picture&lt;&#x2F;strong&gt;, and older ones don’t even support &lt;strong&gt;srcset&lt;&#x2F;strong&gt; or &lt;strong&gt;sizes&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Want to play around with this or see it in action? Here’s a &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;http:&#x2F;&#x2F;codepen.io&#x2F;mike-engel&#x2F;pen&#x2F;avLVvW&quot;&gt;codepen&lt;&#x2F;a&gt; for you.&lt;&#x2F;p&gt;
+&lt;p&gt;Client hints are something to keep an eye on, as they’re going to make this process &lt;em&gt;even easier&lt;&#x2F;em&gt;. For more info, check out this post by &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;blog.imgix.com&#x2F;2015&#x2F;10&#x2F;13&#x2F;next-generation-responsive-images-with-client.html&quot;&gt;imgix&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Use your new spare time to learn something cool.&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Forest Floor</title>
+            <pubDate>Wed, 23 Sep 2015 16:29:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/forest-floor/</link>
+            <guid>https://mike-engel.com/photography/forest-floor/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Forest</title>
+            <pubDate>Wed, 23 Sep 2015 16:00:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/forest/</link>
+            <guid>https://mike-engel.com/photography/forest/</guid>
+            <description></description>
+        </item>
+        <item>
+            <title>Waves</title>
+            <pubDate>Tue, 22 Sep 2015 15:13:00 -0600</pubDate>
+            <link>https://mike-engel.com/photography/waves/</link>
+            <guid>https://mike-engel.com/photography/waves/</guid>
+            <description></description>
+        </item>
+    </channel>
+</rss>

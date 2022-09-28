@@ -1,0 +1,118 @@
+<!doctype html><html lang=en><meta charset=utf-8><meta content="initial-scale=1.0,width=device-width" name=viewport><meta content=#0B2940 name=theme-color><meta content=ac56949deddb26b9107af368eea0b43b name=p:domain_verify><meta content="As a web developer interested in Rust, I’m always excited when new web frameworks come out for Rust. Over time I’ve tried Hyper and Rocket, both of which are great projects but for various reasons don’t resonate with how I like to write web servers. Near the end of 2017, however, a new framework called Gotham came out that I’m increasingly excited about." name=description><title> Router Composition in Gotham </title><link href=https://mike-engel.com/manifest.json rel=manifest><link href=https://mike-engel.com/favicon.ico rel=icon type=image/png><link title="Mike Engel" href=https://mike-engel.com/index.xml rel=alternate type=application/rss+xml><link href=https://mike-engel.com/site.css rel=stylesheet><body><header class=header><nav class=site-constraint><a aria-label="click to go to the home page" class=hidden-link href=/> <svg viewbox="0 0 46 50" height=50px version=1.1 width=46px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><path d="M0,9.26966292 L0,50 L12,44.9438202 L12,0 L0,9.26966292 Z M46,9.26966292 L46,50 L34,44.9438202 L34,0 L46,9.26966292 Z M12,0 L12,19.1964286 L23,33.59375 L23,14.9619223 L12,0 Z M34,0 L34,19.1964286 L23,33.59375 L23,14.9619223 L34,0 Z"></path></svg> </a><ul class=plain-list><li><a class=text--semibold href=/#recent-projects>projects</a><li><a class=text--semibold href=/#contact>contact</a><li><a class=text--semibold href=/photography/>Photography</a><li><a class=text--semibold href=/writing/>Writing</a><li><a class=text--semibold href=/resume/>Resume</a></ul></nav></header><div id=content><main class=site-constraint><article><h1 id=router-composition-in-gotham>Router composition in Gotham</h1><p>As a web developer interested in <a rel="nofollow noreferrer" href=https://rust-lang.org>Rust</a>, I’m always excited when a new web frameworks comes out for Rust. Over time I’ve tried <a rel="nofollow noreferrer" href=https://hyper.rs>Hyper</a> and <a rel="nofollow noreferrer" href=https://rocket.rs>Rocket</a>, both of which are great projects but for various reasons don’t resonate with how I like to write web servers. Near the end of 2017, however, a new framework called <a rel="nofollow noreferrer" href=https://gotham.rs>Gotham</a> came out that I’m increasingly excited about.<p>As of this writing Gotham is at <code>0.1.2</code>, so it’s still young and could change a lot. Despite that, I feel like it has a lot of promise based on what’s out there now and where they’re planning on going. Reading through their example projects, however, I could never really get behind the way they set up routing. For small projects where all of your functions are in the same file, it works great. As your app starts to grow, however, the cognitive overhead increases and it feels frustrating to continue jumping back and forth between contexts.<p>If you come from a <a rel="nofollow noreferrer" href=https://nodejs.org>Node.js</a> background like me, you’ve almost certainly used <a rel="nofollow noreferrer" href=https://expressjs.com>express</a> as a webserver. It’s a really great framework and what I tend to compare all others to. One of it’s cooler features is router composition. With that you could create many sub routers and then combine them all at the top level of your app, usually in or near the entry point of your code. Generally, these sub routers are defined in the same file that your handlers are defined, keeping related concepts together in files/modules.<p>A quick note: I’m a big fan of express. If you’re <em>not</em> a big fan of how you create servers with it, you may not like what I’m about to show. Everyone’s different!<p>Before jumping into the rust side, let’s take a quick look at how this works in express today.<p><strong>/src/index.js</strong><pre style=background-color:#2e3440;color:#d8dee9;><code><span>// server entrypoint
+</span><span>const express = require("express");
+</span><span>const { apiRouter } = require("./routes/api");
+</span><span>
+</span><span>const app = express();
+</span><span>
+</span><span>app.use("/api", apiRouter);
+</span><span>
+</span><span>app.listen(3000);
+</span></code></pre><p><strong>/src/routes/api/index.js</strong><pre style=background-color:#2e3440;color:#d8dee9;><code><span>const { Router } = require("express");
+</span><span>const { pingRouter } = require("./ping");
+</span><span>const { usersRouter } = require("./users");
+</span><span>
+</span><span>const apiRouter = Router();
+</span><span>
+</span><span>apiRouter.use("/ping", pingRouter);
+</span><span>apiRouter.use("/users", usersRouter);
+</span><span>
+</span><span>export apiRouter;
+</span></code></pre><p><strong>/src/routes/api/ping.js</strong><pre style=background-color:#2e3440;color:#d8dee9;><code><span>const { Router } = require("express");
+</span><span>
+</span><span>const pingRouter = Router();
+</span><span>
+</span><span>// this will resolve to `/api/ping`
+</span><span>pingRouter.route("/").get((req, res) => { res.send(204); });
+</span><span>
+</span><span>export pingRouter;
+</span></code></pre><p><strong>/src/routes/api/users.js</strong><pre style=background-color:#2e3440;color:#d8dee9;><code><span>const { Router } = require("express");
+</span><span>
+</span><span>const usersRouter = Router();
+</span><span>
+</span><span>// this will resolve to `/api/users`
+</span><span>usersRouter.route("/").get((req, res) => {
+</span><span>    console.log("Return some information about your users");
+</span><span>    res.send(200, "");
+</span><span>});
+</span><span>
+</span><span>export usersRouter;
+</span></code></pre><p>That’s a very brief example that hopefully demonstrates the potential of router composition. It may seem a little verbose to have the <code>ping</code> and <code>users</code> routers in separate files, but as your app grows it makes things much easier in my experience.<p>Now, given how express handles router composition, how can we apply that to Gotham? It’s not going to have the exact same implementation due to the way Rust works, but we can get pretty close!<p>Let’s take the same functionality above and create it with Gotham! The following code are snippets to keep things focused. I’ve set up an <a rel="nofollow noreferrer" href=https://github.com/mike-engel/gotham-router-composition>example project</a> where you can download and play with this implementation.<p><strong>/src/main.rs</strong><pre style=background-color:#2e3440;color:#d8dee9;><code><span>mod routes;
+</span><span>
+</span><span>fn main() {
+</span><span>    let addr = "0.0.0.0:7878".parse().unwrap();
+</span><span>    let server = Http::new()
+</span><span>        .bind(&addr, NewHandlerService::new(routes::router()))
+</span><span>        .unwrap();
+</span><span>
+</span><span>    server.run().unwrap();
+</span><span>}
+</span></code></pre><p><strong>/src/routes/mod.rs</strong><pre style=background-color:#2e3440;color:#d8dee9;><code><span>pub mod api;
+</span><span>
+</span><span># this is a helper function to setup a handler for a route from the gotham examples
+</span><span>pub fn static_route&LTNH>(methods: Vec&LTMethod>, new_handler: NH) -> Box&LTRoute + Send + Sync>
+</span><span>where
+</span><span>    NH: NewHandler + 'static,
+</span><span>{
+</span><span>    let matcher = MethodOnlyRouteMatcher::new(methods);
+</span><span>    let pipeline_set = finalize_pipeline_set(new_pipeline_set());
+</span><span>    let extractors: Extractors&LTNoopPathExtractor, NoopQueryStringExtractor> = Extractors::new();
+</span><span>    let dispatcher = DispatcherImpl::new(new_handler, (), pipeline_set);
+</span><span>    let route = RouteImpl::new(matcher, Box::new(dispatcher), extractors, Delegation::Internal);
+</span><span>
+</span><span>    Box::new(route)
+</span><span>}
+</span><span>
+</span><span>pub fn router() -> Router {
+</span><span>    # this is the root of the router, a "Tree" in Gotham terms
+</span><span>    let mut tree_builder = TreeBuilder::new();
+</span><span>
+</span><span>    # this server only has routes under `/api`, but you could
+</span><span>    # add more children!
+</span><span>    tree_builder.add_child(api::router());
+</span><span>
+</span><span>    let tree = tree_builder.finalize();
+</span><span>
+</span><span>    let response_finalizer_builder = ResponseFinalizerBuilder::new();
+</span><span>    let response_finalizer = response_finalizer_builder.finalize();
+</span><span>
+</span><span>    Router::new(tree, response_finalizer)
+</span><span>}
+</span></code></pre><p><strong>/src/routes/api/mod.rs</strong><pre style=background-color:#2e3440;color:#d8dee9;><code><span># this is the entry point for our API routes
+</span><span>pub mod ping;
+</span><span>pub mod users;
+</span><span>
+</span><span>pub fn router() -> NodeBuilder {
+</span><span>  let mut node = NodeBuilder::new("api", SegmentType::Static);
+</span><span>
+</span><span>  node.add_child(ping::router());
+</span><span>  node.add_child(users::router());
+</span><span>
+</span><span>  node
+</span><span>}
+</span></code></pre><p><strong>/src/routes/api/ping.rs</strong><pre style=background-color:#2e3440;color:#d8dee9;><code><span>pub fn router() -> NodeBuilder {
+</span><span>    let mut node = NodeBuilder::new("ping", SegmentType::Static);
+</span><span>
+</span><span>    node.add_route(static_route(vec![Method::Get], || Ok(get)));
+</span><span>
+</span><span>    node
+</span><span>}
+</span><span>
+</span><span>pub fn get(state: State, _req: Request) -> (State, Response) {
+</span><span>    let res = create_response(&state, StatusCode::NoContent, None);
+</span><span>
+</span><span>    (state, res)
+</span><span>}
+</span></code></pre><p><strong>/src/routes/api/users.rs</strong><pre style=background-color:#2e3440;color:#d8dee9;><code><span>pub fn router() -> NodeBuilder {
+</span><span>    let mut node = NodeBuilder::new("users", SegmentType::Static);
+</span><span>
+</span><span>    node.add_route(static_route(vec![Method::Get], || Ok(get)));
+</span><span>
+</span><span>    node
+</span><span>}
+</span><span>
+</span><span>pub fn get(state: State, _req: Request) -> (State, Response) {
+</span><span>    let res = create_response(&state, StatusCode::Ok, Some("".to_owned().as_bytes, mime::TEXT_PLAIN);
+</span><span>
+</span><span>    (state, res)
+</span><span>}
+</span></code></pre><p>With that, we almost have the same structure as the express app. Rather than having all of our routes declared in a single place that you need to keep going back to, we now have them included in every file. This makes maintenance and refactoring easier. I also think it makes development easier since you don’t need to jump between contexts to add or remove functionality.<p>If you have even better ideas or found a typo/bug I would love to hear about them! The Rust web space is just starting, but it’s incredibly exciting to see where it’s going.</article></main></div><footer class="footer site-constraint text--xs"><span class=text--darker>© 2022 Mike Engel</span><a href=https://github.com/mike-engel rel=noreferrer target=_blank>GitHub</a><a href=https://matrix.to/#/@vegemike:matrix.org rel=noreferrer target=_blank>[matrix]</a><a href=https://twitter.com/beardfury rel=noreferrer target=_blank>Twitter</a><a href=https://im-in.space/@vegemike rel=me target=_blank>Mastodon</a><a href=https://www.instagram.com/vegemike rel=noreferrer target=_blank>Instagram</a><a href=https://mike-engel.com/index.xml rel=noreferrer target=_blank>RSS feed</a></footer>
