@@ -19,8 +19,8 @@ weight = 300
 		<ul class="plain-list resume-meta">
 			<li>Mike Engel</li>
 			<li>mike@mike-engel.com</li>
-			<li>United States</li>
-			<li>English (Native), German (A2)</li>
+			<li>Zürich, Switzerland</li>
+			<li><a href="/resume">English</a> (Native), <a href="/de/resume">German</a> (B2)</li>
 			<li class="hide-from-screen">
 				<a href="https://mike-engel.com">mike-engel.com</a>
 			</li>
@@ -45,9 +45,26 @@ weight = 300
 	</h2>
 	<ul class="plain-list resume-experience">
 		<li>
+			<h3>Senior Front End Developer</h3>
+			<p class="h5 text--darker">
+				Current | Remote
+			</p>
+			<ul>
+				<li>
+					Developing and maintaining new features for a web app which allows businesses and people to send personalized messages to their customers and audience using data for personalization.
+				</li>
+				<li>
+					Working with other senior front end developers to scale and maintain our front end technology stack as we hire new developers and add new features to the web app.
+				</li>
+				<li>
+					Mentoring junior and mid level developers to level up their skills and learn our technology stack.
+				</li>
+			</ul>
+		</li>
+		<li>
 			<h3>Consulting / Self development</h3>
 			<p class="h5 text--darker">
-				Current | Boulder, CO, USA
+				January 2019 &ndash; October 2019 | Boulder, CO, USA
 			</p>
 			<ul>
 				<li>
@@ -86,8 +103,7 @@ weight = 300
 					rest of the company
 				</li>
 				<li>
-					Led a small team of 5 full-stack developers creating a
-					<a href="https://unself.com" target="_blank" rel="noopener noreferrer">mobile-first web app</a>
+					Led a small team of 5 full-stack developers creating a mobile-first web app
 					for volunteers to track their hours and organizations to track who
 					volunteers and how much to receive grants and other support
 				</li>
@@ -185,13 +201,13 @@ weight = 300
 		HTML & Semantic markup, CSS, JavaScript, Typescript, CSS-in-JS, React,
 		Accessibility, Redux, GraphQL, Progressive Web Apps, Next.js, Gatsby,
 		Flexbox, Grid, Performance, Animation, Functional programming, Vue,
-		Less, Sass, Webpack, and Web Assembly
+		Less, Sass, Webpack, Web Assembly, und Ember.js
 	</p>
 	<h3>Back end</h3>
 	<p>
 		Node.js, Express.js, Twelve factor app, Next.js, GraphQL, API design,
-		REST, Schema design, Rust, Swift, SQL (PostgreSQL, MySQL), and NoSQL
-		(RethinkDB, MongoDB)
+		REST, Schema design, Rust, Swift, SQL (PostgreSQL, MySQL), NoSQL
+		(RethinkDB, MongoDB), and Golang
 	</p>
 	<h3>Design</h3>
 	<p>

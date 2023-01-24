@@ -1,9 +1,6 @@
 # The URL the site will be built for
 base_url = "https://mike-engel.com"
 
-title = "Mike Engel"
-description = "Personal portfolio of Mike Engel"
-
 # The default language; used in feeds.
 default_language = "en"
 
@@ -44,3 +41,15 @@ smart_punctuation = true
 
 [extra]
 # Put all your custom variables here
+
+[translations]
+title = "Mike Engel"
+description = "Personal portfolio of Mike Engel"
+
+[languages.de]
+generate_feed = false
+build_search_index = false
+
+[languages.de.translations]
+title = "Mike Engel"
+description = "Persönliche Portfolio von Mike Engel"
