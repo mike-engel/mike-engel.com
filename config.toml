@@ -19,7 +19,9 @@ generate_feed = true
 feed_filename = "rss.xml"
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
+
+ignored_content = ["*.json"]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -48,7 +50,6 @@ description = "Personal portfolio of Mike Engel"
 
 [languages.de]
 generate_feed = false
-build_search_index = false
 
 [languages.de.translations]
 title = "Mike Engel"
