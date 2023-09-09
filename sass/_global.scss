@@ -44,6 +44,15 @@ pre {
 	overflow-x: scroll;
 }
 
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+figcaption {
+	color: var(--darker);
+}
+
 @media (min-width: #{breakpoint("small")}) {
 	.site-constraint {
 		width: calc(#{breakpoint("small")} - 7vw);
