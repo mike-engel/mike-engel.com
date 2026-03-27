@@ -39,9 +39,9 @@ weight = 300
 	</h2>
 	<ul class="plain-list resume-experience">
 		<li>
-			<h3>Senior-Front-End-Entwickler</h3>
+			<p class="h5">Senior-Front-End-Entwickler</p>
 			<p class="h5 text--darker">
-				Aktuell | von zu Hause aus
+				Oktober 2019 &mdash; Aktuell | Remote
 			</p>
 			<ul>
 				<li>
