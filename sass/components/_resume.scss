@@ -1,194 +1,246 @@
 .resume {
-	ul:not(.plain-list) {
-		list-style: disc;
-	}
+    --gap: 1.5em;
+    --bg: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIyIiB2aWV3Qm94PSIwIDAgMiAyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIwLjUiIGN5PSIwLjUiIHI9IjAuNSIgZmlsbD0iI0NGRTFFRSIvPgo8L3N2Zz4K")
+        0 0 / 2px 2px repeat;
 
-	h3 {
-		margin-bottom: 0.25em;
-	}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "content content sidebar";
+    row-gap: var(--gap);
+    line-height: 1.4;
 
-	.logo,
-	.resume-meta {
-		display: inline-block;
-		vertical-align: top;
-	}
+    & > header {
+        grid-area: header;
+        break-after: avoid;
+    }
 
-	.logo {
-		display: none;
-		width: auto;
-		height: 50px;
-		margin-right: 1.7em;
-		fill: var(--foreground);
-	}
+    & > section {
+        grid-area: content;
+        padding-right: var(--gap);
+        break-before: avoid;
+    }
 
-	.resume-header {
-		padding-top: 1px;
-	}
+    & > aside {
+        grid-area: sidebar;
+        background: var(--bg);
+        padding: var(--gap);
+        overflow: hidden;
+    }
 
-	.resume-meta {
-		margin: 0;
+    ul:not(.plain-list) {
+        list-style: disc;
+    }
 
-		li {
-			font-size: 0.777778rem;
-			line-height: 1.4;
-		}
-	}
+    h1 {
+        margin: 0 0;
+        break-after: avoid;
+    }
 
-	.resume-summary {
-		margin: 2em 0 0.5em 0;
-		font-weight: 400;
-		max-width: 40em;
-		line-height: 1.4;
-	}
+    h3 {
+        margin-bottom: 0.25em;
+    }
 
-	.resume-summary ~ h2 {
-		margin: 1em 0 0.5em 0;
-	}
+    .logo,
+    .resume-meta {
+        display: inline-block;
+        vertical-align: top;
+    }
 
-	.resume-experience > li + li,
-	.resume-education > li + li {
-		margin-top: 2em;
-	}
+    .logo {
+        display: none;
+        width: auto;
+        height: 50px;
+        margin-right: 1.7em;
+        fill: var(--foreground);
+    }
 
-	.resume-experience h3,
-	.resume-education h3 {
-		margin: 0 0 0.2em 0;
-	}
+    .resume-header {
+        padding-top: 1px;
+    }
 
-	.resume-experience p, .resume-education p {
-		margin: 0;
-	}
+    .resume-meta {
+        margin: 0;
 
-	.links {
-		margin-top: 1em;
-	}
+        li {
+            font-size: 0.777778rem;
+            line-height: 1.4;
+        }
 
-	h3 + p {
-		margin-top: 0;
-	}
+        li + li {
+            margin-top: 0.2em;
+        }
+    }
 
-	.hide-from-screen {
-		display: none;
+    .resume-summary {
+        font-size: 1rem;
+        margin: 0 0 0.5em 0;
+        font-weight: 500;
+        max-width: 40em;
+        line-height: 1.4;
+        border-left: 4px solid var(--accent);
+        padding: 1em;
+        background: var(--bg);
+        overflow: hidden;
+    }
 
-		@media (print) {
-			display: initial;
-		}
-	}
+    .resume-summary ~ h2 {
+        margin: 1em 0 0.5em 0;
+    }
+
+    .resume-experience > li + li,
+    .resume-education > li + li {
+        margin-top: 2em;
+    }
+
+    .resume-experience h3,
+    .resume-education h3 {
+        margin: 0 0 0.2em 0;
+    }
+
+    .resume-experience p,
+    .resume-education p {
+        margin: 0;
+    }
+
+    .links {
+        margin-top: 1em;
+    }
+
+    h3 + p {
+        margin-top: 0;
+    }
+
+    .hide-from-screen {
+        display: none;
+
+        @media (print) {
+            display: initial;
+        }
+    }
 }
 
 @media print {
-	body > header {
-		display: none;
-	}
+    @page {
+        margin: 10mm;
+    }
 
-	html,
-	body {
-		font-size: 10pt;
-	}
+    body > header {
+        display: none;
+    }
 
-	body {
-		line-height: 1.2;
-	}
+    html,
+    body {
+        font-size: 10pt !important;
+    }
 
-	.site-constraint {
-		width: 670px;
-	}
+    body {
+        line-height: 1.2;
+    }
 
-	footer {
-		display: none !important;
-	}
+    .site-constraint {
+        width: 100% !important;
+    }
 
-	.back-button {
-		display: none !important;
-	}
+    footer {
+        display: none !important;
+    }
 
-	h2,
-	h3 {
-		padding: 0 !important;
-	}
+    .back-button {
+        display: none !important;
+    }
 
-	h2 {
-		font-size: 1.25rem;
-	}
+    h2,
+    h3 {
+        padding: 0 !important;
+    }
 
-	h3 {
-		font-size: 1rem;
-		margin-top: .25em !important;
-	}
+    h2 {
+        font-size: 1.25rem;
+        margin-top: 1em !important;
+        margin-bottom: 0em !important;
+    }
 
-	p {
-		line-height: 1.3;
-	}
+    h3 {
+        font-size: 1rem;
+        margin-top: 0.5em !important;
+    }
 
-	p + p {
-		margin: 1em 0;
-	}
+    p {
+        line-height: 1.3;
+    }
 
-	a {
-		border: none;
-	}
+    p + p {
+        margin: 1em 0;
+    }
 
-	h2 > * {
-		margin-bottom: 1em;
-	}
+    a {
+        border: none;
+    }
 
-	h2 + h3 {
-		margin-top: 0;
-	}
+    h2 > * {
+        margin-bottom: 1em;
+    }
 
-	h3 + p {
-		margin-bottom: .5em;
-	}
+    h2 + h3 {
+        margin-top: 0;
+    }
 
-	li, p, .resume-summary {
-		max-width: unset !important;
-		line-height: 1.3 !important;
-	}
+    h3 + p {
+        margin-bottom: 0.5em;
+    }
 
-	.logo {
-		display: initial !important;
-		height: 35px !important;
-		margin-right: 1em !important;
-	}
+    li,
+    p,
+    .resume-summary {
+        max-width: unset !important;
+        line-height: 1.3 !important;
+    }
 
-	.resume-meta li:first-child {
-		font-weight: bold;
-		font-size: 1rem;
-	}
+    .resume {
+        --gap: 7mm;
+        display: inline-grid;
+    }
 
-	.resume-summary {
-		margin-top: 1.25em !important;
-		margin-bottom: 0 !important;
-	}
+    .logo {
+        display: initial !important;
+        height: 35px !important;
+        margin-right: 1em !important;
+    }
 
-	.resume-summary ~ h2 {
-		margin-top: 1.25em !important;
-		margin-bottom: 0.5em !important;
-	}
+    .resume-meta li:first-child {
+        font-weight: bold;
+        font-size: 1rem;
+    }
 
-	.resume-experience li + li,
-	.resume-education li + li {
-		margin-top: 1em !important;
-	}
+    .resume-summary {
+        margin-bottom: 0 !important;
+    }
 
-	.resume-experience,
-	.resume-education {
-		margin-top: 0.5em !important;
-	}
+    .resume-experience li + li,
+    .resume-education li + li {
+        margin-top: 1em !important;
+    }
 
-	ul:not(.plain-list) {
-		margin: 0.25em 0 0 1em !important;
+    .resume-experience,
+    .resume-education {
+        margin-top: 0.5em !important;
+    }
 
-		li + li {
-			margin-top: 0 !important;
-		}
-	}
+    ul:not(.plain-list) {
+        margin: 0.25em 0 0 1em !important;
 
-	.hide-from-print {
-		display: none;
-	}
+        li + li {
+            margin-top: 0 !important;
+        }
+    }
 
-	.hide-from-screen {
-		display: initial;
-	}
+    .hide-from-print {
+        display: none;
+    }
+
+    .hide-from-screen {
+        display: initial;
+    }
 }

@@ -100,16 +100,16 @@ $font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto'
 /* GLOBAL OVERRIDES */
 a {
 	display: inline-block;
-	color: var(--foreground);
+	color: var(--accent);
 	text-decoration: none;
 	line-height: 1.4;
-	border-bottom: 2px solid var(--foreground);
+	border-bottom: 2px solid var(--accent);
 	transition: color 250ms, background-color 250ms;
 
 	&:not(.hidden-link):hover,
 	&:not(.hidden-link):active {
 		color: var(--background);
-		background-color: var(--foreground);
+		background-color: var(--accent);
 	}
 
 	&.hidden-link {
