@@ -103,9 +103,6 @@ aliases = ["resume"]
 				<li>
 				  Co-founded and led working group tasked with stabilizing, documenting, and standardizing a front end tech stack
 				</li>
-				<li>
-				  Worked with other senior front end engineers to research and implement better documentation, testing practices, and tooling
-				</li>
  			</ul>
   		</li>
   		<li>

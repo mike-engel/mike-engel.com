@@ -10,7 +10,7 @@ aliases = ["de/resume"]
 	</header>
 	<section>
    	<p class="resume-summary">
-      Senior Frontend-Entwickler mit über 15 Jahren Erfahrung in der Entwicklung komplexer, nutzerorientierter Webanwendungen in den Bereichen Fintech, Gesundheitswesen und SaaS. Spezialisiert auf React, Ember, TypeScript und Designsysteme – einschliesslich der Leitung gross angelegter Migrationsprojekte in den Bereichen Datenarchitektur, Sicherheit und Abrechnung unter Wahrung vollständiger Abwärtskompatibilität. Bekannt für die enge Zusammenarbeit mit den Design- und Entwicklungsteams, um barrierefreie, einheitliche Funktionen zu liefern, die täglich von Tausenden von Unternehmen genutzt werden.
+      Senior Frontend-Entwickler mit über 15 Jahren Erfahrung in der Entwicklung komplexer, nutzerorientierter Webanwendungen in den Bereichen Fintech, Gesundheitswesen und SaaS. Spezialisiert auf React, Ember, TypeScript und Designsysteme–einschliesslich der Leitung gross angelegter Migrationsprojekte in den Bereichen Architektur, Sicherheit und Abrechnung unter Wahrung vollständiger Abwärtskompatibilität. Bekannt für die enge Zusammenarbeit mit den Design- und Entwicklungsteams, um barrierefreie, einheitliche Funktionen zu liefern, die täglich von Tausenden von Unternehmen genutzt werden.
    	</p>
    	<h2 id="experience">
       Erfahrungen
@@ -18,7 +18,7 @@ aliases = ["de/resume"]
    	<ul class="plain-list resume-experience">
   		<li>
  			<h3>Customer.io</h3>
- 			<p class="h5">Senior-Front-End-Entwickler</p>
+ 			<p class="h5">Senior Front-End-Entwickler</p>
  			<p class="h5 text--darker">
 				Oktober 2019 &ndash; Aktuell | Remote
  			</p>
@@ -103,9 +103,6 @@ aliases = ["de/resume"]
 				<li>
 		      Mitbegründung und Leitung einer Arbeitsgruppe, deren Aufgabe darin bestand, den Frontend-Tech-Stack zu stabilisieren, zu dokumentieren und zu standardisieren
 				</li>
-				<li>
-		      Arbeitete gemeinsam mit anderen erfahrenen Frontend-Entwicklern daran, bessere Dokumentations- und Testverfahren sowie Werkzeuge zu erforschen und umzusetzen
-				</li>
  			</ul>
   		</li>
   		<li>
@@ -165,7 +162,7 @@ aliases = ["de/resume"]
 			<li>mike@mike-engel.com</li>
 			<li>Zürich, Schweiz</li>
 			<li>Amerikaner</li>
-			<li><a href="/resume">Englisch</a> (Native), <a href="/de/resume">Deutsch</a> (B2)</li>
+			<li><a href="/resume">Englisch</a> (Muttersprache), <a href="/de/resume">Deutsch</a> (B2)</li>
 			<li class="hide-from-screen">
 				<a href="https://mike-engel.com">mike-engel.com</a>
 			</li>
